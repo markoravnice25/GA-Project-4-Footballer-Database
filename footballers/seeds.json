@@ -1,0 +1,42 @@
+[
+{
+  "model": "footballers.footballer",
+  "pk": 1,
+  "fields": {
+    "full_name": "Luka Modric",
+    "age": 36
+  }
+},
+{
+  "model": "footballers.footballer",
+  "pk": 2,
+  "fields": {
+    "full_name": "Marcus Rashford",
+    "age": 24
+  }
+},
+{
+  "model": "footballers.footballer",
+  "pk": 3,
+  "fields": {
+    "full_name": "test1",
+    "age": 1
+  }
+},
+{
+  "model": "footballers.footballer",
+  "pk": 4,
+  "fields": {
+    "full_name": "test2",
+    "age": 2
+  }
+},
+{
+  "model": "footballers.footballer",
+  "pk": 5,
+  "fields": {
+    "full_name": "test3 - updated",
+    "age": 3
+  }
+}
+]
