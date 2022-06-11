@@ -1,0 +1,30 @@
+[
+{
+  "model": "styles.style",
+  "pk": 1,
+  "fields": {
+    "name": "Attacking"
+  }
+},
+{
+  "model": "styles.style",
+  "pk": 2,
+  "fields": {
+    "name": "defensive"
+  }
+},
+{
+  "model": "styles.style",
+  "pk": 3,
+  "fields": {
+    "name": "creative"
+  }
+},
+{
+  "model": "styles.style",
+  "pk": 4,
+  "fields": {
+    "name": "destructive"
+  }
+}
+]

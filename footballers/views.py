@@ -3,6 +3,7 @@ from rest_framework.views import APIView
 from rest_framework.response import Response
 from rest_framework import status
 from rest_framework.exceptions import NotFound
+from rest_framework.permissions import IsAuthenticatedOrReadOnly
 
 # custom imports
 from .models import Footballer
@@ -12,6 +13,9 @@ from .serializers.populated import PopulatedFootballerSerializer
 
 # List View
 class FootballerListView(APIView):
+  # authentication required for all requests except 'get all'
+  permission_classes = (IsAuthenticatedOrReadOnly, )
+
   # Get all
   def get(self, request):
     footballers = Footballer.objects.all()
@@ -70,5 +74,3 @@ class FootballerDetailView(APIView):
     except Exception as e:
       print(e)
       return Response({ 'detail': str(e) }, status.HTTP_422_UNPROCESSABLE_ENTITY)
-
-  # 
