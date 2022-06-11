@@ -10,6 +10,10 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/4.0/ref/settings/
 """
 
+import environ
+# Initialise environment variables
+env = environ.Env()
+environ.Env.read_env()
 
 from pathlib import Path
 
@@ -21,7 +25,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/4.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-$!+t#eh0lpa@e)!1ps62g1htb$s!#!yk*((wi#7tjjnd#rhg4o'
+SECRET_KEY = env('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -80,7 +84,7 @@ WSGI_APPLICATION = 'project.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'footballer-database',
+        'NAME': env('DATABASE_NAME'),
         'HOST': 'localhost',
         'PORT': 5432
     }
