@@ -20,5 +20,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('footballers/', include('footballers.urls')),
     path('reviews/', include('reviews.urls')),
-    path('styles/', include('styles.urls'))
+    path('styles/', include('styles.urls')),
+    path('auth/', include('jwt_auth.urls'))
 ]

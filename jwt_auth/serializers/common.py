@@ -5,7 +5,7 @@ from django.contrib.auth.hashers import make_password
 from django.core.exceptions import ValidationError
 
 # User model
-User = get_user_model
+User = get_user_model()
 
 # inherit model serializer
 class UserSerializer(serializers.ModelSerializer):
