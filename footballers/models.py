@@ -16,6 +16,10 @@ class Footballer(models.Model):
   #club = models.CharField(max_length=50, default=None)
   #joined_club = models.CharField(max_length=30, default=None)
   #contract_expires = models.CharField(max_length=30, default=None)
+  styles = models.ManyToManyField(
+    'styles.Style',
+    related_name='footballers'
+  )
 
   def __str__(self):
     return f"Name: {self.full_name} - Age: {self.age}"
