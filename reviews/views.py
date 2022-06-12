@@ -2,7 +2,7 @@
 from rest_framework.views import APIView
 from rest_framework.response import Response
 from rest_framework import status
-from rest_framework.exceptions import NotFound, ValidationError
+from rest_framework.exceptions import NotFound, ValidationError, PermissionDenied
 from rest_framework.permissions import IsAuthenticated
 
 # custom imports
@@ -30,6 +30,7 @@ class ReviewListView(APIView):
 
 # Detail View
 class ReviewDetailView(APIView):
+  permission_classes = (IsAuthenticated, )
 
   # custom function
   def get_review(self, pk):
@@ -42,5 +43,11 @@ class ReviewDetailView(APIView):
   def delete(self, request, pk):
     print('PK -> ', pk)
     review_to_delete = self.get_review(pk)
+    print('review owner -> ', review_to_delete.owner)
+    print('review user -> ', request.user)
+    if review_to_delete.owner != request.user:
+      print('Can\'t delete record.')
+      raise PermissionDenied
+    print('We can delete record')
     review_to_delete.delete()
     return Response(status=status.HTTP_204_NO_CONTENT)

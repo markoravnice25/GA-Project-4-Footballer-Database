@@ -1,7 +1,7 @@
 from .common import FootballerSerializer
-from reviews.serializers.common import ReviewSerializer
+from reviews.serializers.populated import PopulatedReviewSerializer
 from styles.serializers.common import StyleSerializer
 
 class PopulatedFootballerSerializer(FootballerSerializer):
-  reviews = ReviewSerializer(many=True)
+  reviews = PopulatedReviewSerializer(many=True)
   styles = StyleSerializer(many=True)
