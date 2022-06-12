@@ -54,7 +54,7 @@ const Home = () => {
             if (item.continent === 'Europe') {
               return (
                 <div key={pk}>
-                  <Link to={`/books/${pk}`}>
+                  <Link to={'/'}>
                     <div className="image-wrapper">
                       <img src={profileImage} />
                     </div>
@@ -80,24 +80,24 @@ const Home = () => {
         <h2>South America</h2>
         <Slider {...settings} className='carousel-wrapper'>
           {footballers.map((item, index) => {
-            const { title, author, image, price, _id } = item
-            if (item.genre === 'Crime') {
+            const { fullName, age, profileImage, citizenship, pk } = item
+            if (item.continent === 'South America') {
               return (
-                <div key={_id}>
+                <div key={pk}>
 
-                  <Link to={`/books/${_id}`}>
+                  <Link to={'/'}>
                     <div key={index}>
                       <div className="image-wrapper">
-                        <img src={image} />
+                        <img src={profileImage} />
                       </div>
                       <div className='card-body-home'>
                         <div className='card-title'>
-                          <h4>{title}</h4>
+                          <h4>{fullName}</h4>
                         </div>
                         <div className='authors-home'>
-                          <h5>{author}</h5>
+                          <h5>{age}</h5>
                         </div>
-                        <h4 className="price">£ {price}</h4>
+                        <h4 className="price">{citizenship}</h4>
                       </div>
                     </div>
                   </Link>
