@@ -3,6 +3,7 @@ from rest_framework.views import APIView
 from rest_framework.response import Response
 from rest_framework import status
 from rest_framework.exceptions import NotFound, ValidationError
+from rest_framework.permissions import IsAuthenticated
 
 # custom imports
 from .serializers.common import ReviewSerializer
@@ -10,9 +11,11 @@ from .models import Review
 
 # List View
 class ReviewListView(APIView):
+  permission_classes  = (IsAuthenticated, )
   
   # Add review
   def post(self, request):
+    request.data['owner'] = request.user.id
     print('request -> ', request.data)
     review_to_add = ReviewSerializer(data=request.data)
     try:
