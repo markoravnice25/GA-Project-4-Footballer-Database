@@ -108,29 +108,26 @@ const Home = () => {
         </Slider>
       </div>
 
-      <div className='genre-row science-fiction'>
-        <hr />
+      <div className='genre-row fiction'>
         <h2>Africa</h2>
         <Slider {...settings} className='carousel-wrapper'>
-          {footballers.map((item, index) => {
-            const { title, author, image, price, _id } = item
-            if (item.genre === 'Science Fiction') {
+          {footballers.map(item => {
+            const { fullName, age, profileImage, citizenship, pk } = item
+            if (item.continent === 'Africa') {
               return (
-                <div key={_id}>
-                  <Link to={`/books/${_id}`}>
-                    <div key={index}>
-                      <div className="image-wrapper">
-                        <img src={image} />
+                <div key={pk}>
+                  <Link to={'/'}>
+                    <div className="image-wrapper">
+                      <img src={profileImage} />
+                    </div>
+                    <div className='card-body-home'>
+                      <div className='card-title'>
+                        <h4>{fullName}</h4>
                       </div>
-                      <div className='card-body-home'>
-                        <div className='card-title'>
-                          <h4>{title}</h4>
-                        </div>
-                        <div className='authors-home'>
-                          <h5>{author}</h5>
-                        </div>
-                        <h4 className="price">£ {price}</h4>
+                      <div className='authors-home'>
+                        <h5>{age}</h5>
                       </div>
+                      <h4 className="price">{citizenship}</h4>
                     </div>
                   </Link>
                 </div>
@@ -140,29 +137,26 @@ const Home = () => {
         </Slider>
       </div>
 
-      <div className='genre-row children-teenage'>
-        <hr />
+      <div className='genre-row fiction'>
         <h2>North America</h2>
         <Slider {...settings} className='carousel-wrapper'>
-          {footballers.map((item, index) => {
-            const { title, author, image, price, _id } = item
-            if (item.genre === 'Children\'s & Teenage') {
+          {footballers.map(item => {
+            const { fullName, age, profileImage, citizenship, pk } = item
+            if (item.continent === 'North America') {
               return (
-                <div key={_id}>
-                  <Link to={`/books/${_id}`}>
-                    <div key={index}>
-                      <div className="image-wrapper">
-                        <img src={image} />
+                <div key={pk}>
+                  <Link to={'/'}>
+                    <div className="image-wrapper">
+                      <img src={profileImage} />
+                    </div>
+                    <div className='card-body-home'>
+                      <div className='card-title'>
+                        <h4>{fullName}</h4>
                       </div>
-                      <div className='card-body-home'>
-                        <div className='card-title'>
-                          <h4>{title}</h4>
-                        </div>
-                        <div className='authors-home'>
-                          <h5>{author}</h5>
-                        </div>
-                        <h4 className="price">£ {price}</h4>
+                      <div className='authors-home'>
+                        <h5>{age}</h5>
                       </div>
+                      <h4 className="price">{citizenship}</h4>
                     </div>
                   </Link>
                 </div>
@@ -172,29 +166,26 @@ const Home = () => {
         </Slider>
       </div>
 
-      <div className='genre-row non-fiction'>
-        <hr />
+      <div className='genre-row fiction'>
         <h2>Asia</h2>
         <Slider {...settings} className='carousel-wrapper'>
-          {footballers.map((item, index) => {
-            const { title, author, image, price, _id } = item
-            if (item.genre === 'Non-Fiction Books') {
+          {footballers.map(item => {
+            const { fullName, age, profileImage, citizenship, pk } = item
+            if (item.continent === 'Asia') {
               return (
-                <div key={_id}>
-                  <Link to={`/books/${_id}`}>
-                    <div key={index}>
-                      <div className="image-wrapper">
-                        <img src={image} />
+                <div key={pk}>
+                  <Link to={'/'}>
+                    <div className="image-wrapper">
+                      <img src={profileImage} />
+                    </div>
+                    <div className='card-body-home'>
+                      <div className='card-title'>
+                        <h4>{fullName}</h4>
                       </div>
-                      <div className='card-body-home'>
-                        <div className='card-title'>
-                          <h4>{title}</h4>
-                        </div>
-                        <div className='authors-home'>
-                          <h5>{author}</h5>
-                        </div>
-                        <h4 className="price">£ {price}</h4>
+                      <div className='authors-home'>
+                        <h5>{age}</h5>
                       </div>
+                      <h4 className="price">{citizenship}</h4>
                     </div>
                   </Link>
                 </div>
@@ -204,29 +195,26 @@ const Home = () => {
         </Slider>
       </div>
 
-      <div className='genre-row graphic-novel'>
-        <hr />
+      <div className='genre-row fiction'>
         <h2>Oceania</h2>
         <Slider {...settings} className='carousel-wrapper'>
-          {footballers.map((item, index) => {
-            const { title, author, image, price, _id } = item
-            if (item.genre === 'Graphic Novels & Manga') {
+          {footballers.map(item => {
+            const { fullName, age, profileImage, citizenship, pk } = item
+            if (item.continent === 'Oceania') {
               return (
-                <div key={_id}>
-                  <Link to={`/books/${_id}`}>
-                    <div key={index}>
-                      <div className="image-wrapper">
-                        <img src={image} />
+                <div key={pk}>
+                  <Link to={'/'}>
+                    <div className="image-wrapper">
+                      <img src={profileImage} />
+                    </div>
+                    <div className='card-body-home'>
+                      <div className='card-title'>
+                        <h4>{fullName}</h4>
                       </div>
-                      <div className='card-body-home'>
-                        <div className='card-title'>
-                          <h4>{title}</h4>
-                        </div>
-                        <div className='authors-home'>
-                          <h5>{author}</h5>
-                        </div>
-                        <h4 className="price">£ {price}</h4>
+                      <div className='authors-home'>
+                        <h5>{age}</h5>
                       </div>
+                      <h4 className="price">{citizenship}</h4>
                     </div>
                   </Link>
                 </div>
