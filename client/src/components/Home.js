@@ -46,7 +46,7 @@ const Home = () => {
         <img src="/images/USA.jpg" alt="USA" />
         <img src="/images/Australia.jpeg" alt="Australia" />
         <img src="/images/Italy.webp" alt="Italy" />
-        <img src="/images/Senegal.jpeg" alt='Senegal'/>
+        <img src="/images/Senegal.jpeg" alt='Senegal' />
       </Slider>
 
       <div className='genre-row fiction'>

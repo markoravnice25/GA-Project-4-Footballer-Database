@@ -5,6 +5,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
 import Home from './components/Home.js'
 import PageNavBar from './components/common/PageNavBar.js'
+import Footer from './components/common/Footer.js'
 
 const App = () => {
 
@@ -14,6 +15,7 @@ const App = () => {
       <Routes>
         <Route path="/" element={<Home />} />
       </Routes>
+      <Footer />
     </BrowserRouter>
   )
 }
