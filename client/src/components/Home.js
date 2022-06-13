@@ -31,19 +31,27 @@ const Home = () => {
   const settingsSingle = {
     dots: true,
     infinite: true,
-    speed: 400,
+    speed: 3000,
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 1500,
   }
-
+  // <img src="https://im.ezgif.com/tmp/ezgif-1-4e915db8f5.jpg" alt='Argentina' />
+  // <img src="https://im.ezgif.com/tmp/ezgif-1-88ad306a69.jpg" alt="Qatar" />
+  // <img src="https://im5.ezgif.com/tmp/ezgif-5-90d59e1b33.jpg" alt="USA" />
+  // <img src="https://im.ezgif.com/tmp/ezgif-1-27974ad711.jpg" alt="Australia" />
+  // <img src="https://im.ezgif.com/tmp/ezgif-1-0d4eeb1ca7.webp" alt="Italy" />
+  // <img src="https://im.ezgif.com/tmp/ezgif-1-612378551b.jpg" alt='Senegal'/>
   return (
     <main>
       <Slider {...settingsSingle} className='big-slider'>
-        <img src="https://cdn.waterstones.com/images/00225298-1920x533.jpeg" />
-        <img src="https://cdn.waterstones.com/images/00225721-1920x533.jpeg" />
-        <img src="https://cdn.waterstones.com/images/00225177-1920x533.jpeg" />
+        <img src="https://im.ezgif.com/tmp/ezgif-1-4e915db8f5.jpg" alt='Argentina' />
+        <img src="https://im.ezgif.com/tmp/ezgif-1-88ad306a69.jpg" alt="Qatar" />
+        <img src="https://im5.ezgif.com/tmp/ezgif-5-90d59e1b33.jpg" alt="USA" />
+        <img src="https://im5.ezgif.com/tmp/ezgif-5-0ebd971e78.jpg" alt="Australia" />
+        <img src="https://im.ezgif.com/tmp/ezgif-1-0d4eeb1ca7.webp" alt="Italy" />
+        <img src="https://im.ezgif.com/tmp/ezgif-1-612378551b.jpg" alt='Senegal'/>
       </Slider>
 
       <div className='genre-row fiction'>
