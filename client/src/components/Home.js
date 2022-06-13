@@ -37,21 +37,16 @@ const Home = () => {
     autoplay: true,
     autoplaySpeed: 1500,
   }
-  // <img src="https://im.ezgif.com/tmp/ezgif-1-4e915db8f5.jpg" alt='Argentina' />
-  // <img src="https://im.ezgif.com/tmp/ezgif-1-88ad306a69.jpg" alt="Qatar" />
-  // <img src="https://im5.ezgif.com/tmp/ezgif-5-90d59e1b33.jpg" alt="USA" />
-  // <img src="https://im.ezgif.com/tmp/ezgif-1-27974ad711.jpg" alt="Australia" />
-  // <img src="https://im.ezgif.com/tmp/ezgif-1-0d4eeb1ca7.webp" alt="Italy" />
-  // <img src="https://im.ezgif.com/tmp/ezgif-1-612378551b.jpg" alt='Senegal'/>
+
   return (
     <main>
       <Slider {...settingsSingle} className='big-slider'>
-        <img src="https://im.ezgif.com/tmp/ezgif-1-4e915db8f5.jpg" alt='Argentina' />
-        <img src="https://im.ezgif.com/tmp/ezgif-1-88ad306a69.jpg" alt="Qatar" />
-        <img src="https://im5.ezgif.com/tmp/ezgif-5-90d59e1b33.jpg" alt="USA" />
-        <img src="https://im5.ezgif.com/tmp/ezgif-5-0ebd971e78.jpg" alt="Australia" />
-        <img src="https://im.ezgif.com/tmp/ezgif-1-0d4eeb1ca7.webp" alt="Italy" />
-        <img src="https://im.ezgif.com/tmp/ezgif-1-612378551b.jpg" alt='Senegal'/>
+        <img src="/images/Argentina.jpg" alt="" />
+        <img src="/images/Qatar.jpeg" alt="Qatar" />
+        <img src="/images/USA.jpg" alt="USA" />
+        <img src="/images/Australia.jpeg" alt="Australia" />
+        <img src="/images/Italy.webp" alt="Italy" />
+        <img src="/images/Senegal.jpeg" alt='Senegal'/>
       </Slider>
 
       <div className='genre-row fiction'>
