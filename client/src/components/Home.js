@@ -87,7 +87,6 @@ const Home = () => {
             if (item.continent === 'South America') {
               return (
                 <div key={pk}>
-
                   <Link to={'/'}>
                     <div key={index}>
                       <div className="image-wrapper">
