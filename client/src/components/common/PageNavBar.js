@@ -33,14 +33,16 @@ const PageNavBar = () => {
         {/* Wherever you use a href on a bootstrap component, replace it with an as={Link} and a to="/" */}
         <Navbar.Brand as={Link} to="/">⚽️</Navbar.Brand>
         {/* Navbar collapse is our menu wrapped in a collapsible container for mobile */}
-        <Navbar.Collapse id="basic-navbar-nav" className='justify-content-end'>
+        {/* Navbar Toggle is our mobile burger icon - this is displayed at a breakpoint specified on the Navbar component above */}
+        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Collapse id="basic-navbar-nav">
           {/* Nav Link is an individual link inside a nav. Same as Nav Brand, to spcifiy react navigation use "as" and "to" */}
           {userIsAuthenticated() ?
             <>
               <Nav.Link as={Link} to="/">ACCOUNT</Nav.Link>
               <Nav.Link onClick={handleLogout}>LOGOUT</Nav.Link>
               <Nav.Link as={Link} to="/">FAVOURITES</Nav.Link>
-              
+
             </>
 
             :

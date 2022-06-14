@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom'
 import Slider from 'react-slick'
 
 //TODO - component
-const FootballersCarousel = ({ settings, footballers, continent }) => {
+const FootballersCarousel = ({ settings, footballers, continent, club }) => {
   return (
     <div className='continent-row'>
       <h2>{continent}</h2>

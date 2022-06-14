@@ -42,7 +42,7 @@ const Home = () => {
     dots: false,
     infinite: true,
     speed: 400,
-    slidesToShow: 5,
+    slidesToShow: 7,
     slidesToScroll: 1,
   }
 
@@ -50,12 +50,14 @@ const Home = () => {
   return (
     <main>
       <FootballersSlider settingsSingle={settingsSingle} />
-      <FootballersCarousel settings={settings} footballers={footballers} continent='Europe' />
-      <FootballersCarousel settings={settings} footballers={footballers} continent='South America' />
-      <FootballersCarousel settings={settings} footballers={footballers} continent='Africa' />
-      <FootballersCarousel settings={settings} footballers={footballers} continent='North America' />
-      <FootballersCarousel settings={settings} footballers={footballers} continent='Asia' />
-      <FootballersCarousel settings={settings} footballers={footballers} continent='Oceania' />
+      <div className='carousel-column'>
+        <FootballersCarousel settings={settings} footballers={footballers} continent='Europe' />
+        <FootballersCarousel settings={settings} footballers={footballers} continent='South America' />
+        <FootballersCarousel settings={settings} footballers={footballers} continent='Africa' />
+        <FootballersCarousel settings={settings} footballers={footballers} continent='North America' />
+        <FootballersCarousel settings={settings} footballers={footballers} continent='Asia' />
+        <FootballersCarousel settings={settings} footballers={footballers} continent='Oceania' />
+      </div>
     </main>
   )
 }

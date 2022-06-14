@@ -6,10 +6,12 @@
   margin-bottom: 10px;
   background-color: #1a3151;
 
-  font-size: 18px;
+  font-size: 20px;
   line-height: 1.6;
   list-style-position: outside;
-  font-family: "Source Sans Pro","Source Sans Pro-fallback",sans-serif;
+  font-family: "Source Sans Pro",sans-serif;
   font-weight: normal;
   font-style: normal;
+  display: flex;
+  justify-content: space-between;
 }
