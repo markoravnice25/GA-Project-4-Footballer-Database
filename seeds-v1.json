@@ -1,0 +1,1650 @@
+[
+  {
+    "model": "footballers.footballer",
+    "pk": 17,
+    "fields": {
+      "number": "#10",
+      "fullName": "Marcus Rashford",
+      "age": 24,
+      "profileImage": "https://img.a.transfermarkt.technology/portrait/big/258923-1565603308.png?lm=1",
+      "dateOfBirth": "Oct 31, 1997",
+      "placeOfBirth": "Manchester",
+      "citizenship": "England",
+      "height": 185,
+      "position": "Left Winger",
+      "currentInternational": "England",
+      "caps": 46,
+      "goals": 12,
+      "club": "Man Utd",
+      "league": "Premier League",
+      "leagueLevel": "First Tier",
+      "joinedClub": "Jan 1, 2016",
+      "contractExpires": "Jun 30, 2023",
+      "marketValue": "€70.00",
+      "continent": "Europe",
+      "styles": [
+        1,
+        3
+      ]
+    }
+  },
+  {
+    "model": "footballers.footballer",
+    "pk": 18,
+    "fields": {
+      "number": "#10",
+      "fullName": "Luka Modric",
+      "age": 36,
+      "profileImage": "https://img.a.transfermarkt.technology/portrait/big/27992-1653037871.jpg?lm=1",
+      "dateOfBirth": "Sep 9, 1985",
+      "placeOfBirth": "Zadar",
+      "citizenship": "Croatian",
+      "height": 172,
+      "position": "Central Midfield",
+      "currentInternational": "Croatia",
+      "caps": 151,
+      "goals": 21,
+      "club": "Real Madrid",
+      "league": "La Liga",
+      "leagueLevel": "First Tier",
+      "joinedClub": "Aug 27, 2012",
+      "contractExpires": "Jun 30, 2023",
+      "marketValue": "€10.00",
+      "continent": "Europe",
+      "styles": [
+        1,
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "model": "footballers.footballer",
+    "pk": 19,
+    "fields": {
+      "number": "#9",
+      "fullName": "Robert Lewandowski",
+      "age": 33,
+      "profileImage": "https://img.a.transfermarkt.technology/portrait/big/38253-1642434304.jpg?lm=1",
+      "dateOfBirth": "Aug 21, 1988",
+      "placeOfBirth": "Warszawa",
+      "citizenship": "Poland",
+      "height": 185,
+      "position": "Centre-Forward",
+      "currentInternational": "Poland",
+      "caps": 130,
+      "goals": 75,
+      "club": "Bayern Munich",
+      "league": "Bundesliga",
+      "leagueLevel": "First Tier",
+      "joinedClub": "Jul 1, 2014",
+      "contractExpires": "Jun 30, 2023",
+      "marketValue": "€45.00",
+      "continent": "Europe",
+      "styles": [
+        1,
+        3
+      ]
+    }
+  },
+  {
+    "model": "footballers.footballer",
+    "pk": 20,
+    "fields": {
+      "number": "#25",
+      "fullName": "Thomas Müller",
+      "age": 32,
+      "profileImage": "https://img.a.transfermarkt.technology/portrait/big/58358-1540568657.jpg?lm=1",
+      "dateOfBirth": "Sep 13, 1989",
+      "placeOfBirth": "Weilheim",
+      "citizenship": "Germany",
+      "height": 185,
+      "position": "Second Striker",
+      "currentInternational": "Germany",
+      "caps": 114,
+      "goals": 43,
+      "club": "Bayern Munich",
+      "league": "Bundesliga",
+      "leagueLevel": "First Tier",
+      "joinedClub": "Jul 1, 2009",
+      "contractExpires": "Jun 30, 2024",
+      "marketValue": "€22.00",
+      "continent": "Europe",
+      "styles": [
+        1,
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "model": "footballers.footballer",
+    "pk": 21,
+    "fields": {
+      "number": "#4",
+      "fullName": "Virgil van Dijk",
+      "age": 30,
+      "profileImage": "https://img.a.transfermarkt.technology/portrait/big/139208-1620651710.jpg?lm=1",
+      "dateOfBirth": "Jul 8, 1991",
+      "placeOfBirth": "Breda",
+      "citizenship": "Netherlands",
+      "height": 193,
+      "position": "Centre-Back",
+      "currentInternational": "Netherlands",
+      "caps": 47,
+      "goals": 5,
+      "club": "Liverpool",
+      "league": "Premier League",
+      "leagueLevel": "First Tier",
+      "joinedClub": "Jan 1, 2018",
+      "contractExpires": "Jun 30, 2025",
+      "marketValue": "€55.00",
+      "continent": "Europe",
+      "styles": [
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "model": "footballers.footballer",
+    "pk": 22,
+    "fields": {
+      "number": "#7",
+      "fullName": "Cristiano Ronaldo",
+      "age": 37,
+      "profileImage": "https://img.a.transfermarkt.technology/portrait/big/8198-1631656078.jpg?lm=1",
+      "dateOfBirth": "Feb 5, 1985",
+      "placeOfBirth": "Funchal",
+      "citizenship": "Portugal",
+      "height": 187,
+      "position": "Centre-Forward",
+      "currentInternational": "Portugal",
+      "caps": 188,
+      "goals": 117,
+      "club": "Manchester United",
+      "league": "Premier League",
+      "leagueLevel": "First Tier",
+      "joinedClub": "Aug 31, 2021",
+      "contractExpires": "Jun 30, 2023",
+      "marketValue": "€35.00",
+      "continent": "Europe",
+      "styles": [
+        1,
+        3
+      ]
+    }
+  },
+  {
+    "model": "footballers.footballer",
+    "pk": 23,
+    "fields": {
+      "number": "#30",
+      "fullName": "Lionel Messi",
+      "age": 34,
+      "profileImage": "https://img.a.transfermarkt.technology/portrait/big/28003-1631171950.jpg?lm=1",
+      "dateOfBirth": "Jun 24, 1987",
+      "placeOfBirth": "Rosario",
+      "citizenship": "Argentina",
+      "height": 170,
+      "position": "Right Winger",
+      "currentInternational": "Argentina",
+      "caps": 162,
+      "goals": 86,
+      "club": "Paris SG",
+      "league": "Ligue 1",
+      "leagueLevel": "First Tier",
+      "joinedClub": "Aug 10, 2021",
+      "contractExpires": "Jun 30, 2023",
+      "marketValue": "€50.00",
+      "continent": "South America",
+      "styles": [
+        1,
+        3
+      ]
+    }
+  },
+  {
+    "model": "footballers.footballer",
+    "pk": 24,
+    "fields": {
+      "number": "#10",
+      "fullName": "Neymar",
+      "age": 30,
+      "profileImage": "https://img.a.transfermarkt.technology/portrait/big/68290-1632687616.jpg?lm=1",
+      "dateOfBirth": "Feb 5, 1992",
+      "placeOfBirth": "Mogi das Cruzes",
+      "citizenship": "Brazil",
+      "height": 175,
+      "position": "Left Winger",
+      "currentInternational": "Brazil",
+      "caps": 119,
+      "goals": 74,
+      "club": "Paris SG",
+      "league": "Ligue 1",
+      "leagueLevel": "First Tier",
+      "joinedClub": "Aug 3, 2017",
+      "contractExpires": "Jun 30, 2025",
+      "marketValue": "€75.00",
+      "continent": "South America",
+      "styles": [
+        1,
+        3
+      ]
+    }
+  },
+  {
+    "model": "footballers.footballer",
+    "pk": 25,
+    "fields": {
+      "number": "#6",
+      "fullName": "Marco Veratti",
+      "age": 29,
+      "profileImage": "https://img.a.transfermarkt.technology/portrait/big/102558-1602849501.jpg?lm=1",
+      "dateOfBirth": "Nov 5, 1992",
+      "placeOfBirth": "Pescara",
+      "citizenship": "Italy",
+      "height": 165,
+      "position": "Central Midfield",
+      "currentInternational": "Italy",
+      "caps": 49,
+      "goals": 3,
+      "club": "Paris SG",
+      "league": "Ligue 1",
+      "leagueLevel": "Tier 1",
+      "joinedClub": "Jul 18, 2012",
+      "contractExpires": "Jun 30, 2024",
+      "marketValue": "€50.00",
+      "continent": "Europe",
+      "styles": [
+        1,
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "model": "footballers.footballer",
+    "pk": 26,
+    "fields": {
+      "number": "#7",
+      "fullName": "Kylian Mbappé",
+      "age": 23,
+      "profileImage": "https://img.a.transfermarkt.technology/portrait/big/342229-1632686046.jpg?lm=1",
+      "dateOfBirth": "Dec 20, 1998",
+      "placeOfBirth": "Paris",
+      "citizenship": "France",
+      "height": 178,
+      "position": "Centre-Forward",
+      "currentInternational": "France",
+      "caps": 54,
+      "goals": 26,
+      "club": "Paris SG",
+      "league": "Ligue 1",
+      "leagueLevel": "Tier 1",
+      "joinedClub": "Jul 1, 2018",
+      "contractExpires": "Jun 30, 2025",
+      "marketValue": "€160.00",
+      "continent": "Europe",
+      "styles": [
+        1,
+        3
+      ]
+    }
+  },
+  {
+    "model": "footballers.footballer",
+    "pk": 27,
+    "fields": {
+      "number": "#10",
+      "fullName": "Harry Kane",
+      "age": 28,
+      "profileImage": "https://img.a.transfermarkt.technology/portrait/big/132098-1623778520.jpg?lm=1",
+      "dateOfBirth": "Jul 28, 1993",
+      "placeOfBirth": "London",
+      "citizenship": "England",
+      "height": 188,
+      "position": "Centre-Forward",
+      "currentInternational": "England",
+      "caps": 69,
+      "goals": 49,
+      "club": "Spurs",
+      "league": "Premier League",
+      "leagueLevel": "Tier 1",
+      "joinedClub": "Jan 1, 2011",
+      "contractExpires": "Jun 30, 2024",
+      "marketValue": "€100.00",
+      "continent": "Europe",
+      "styles": [
+        1,
+        3
+      ]
+    }
+  },
+  {
+    "model": "footballers.footballer",
+    "pk": 28,
+    "fields": {
+      "number": "#1",
+      "fullName": "Manuel Neuer",
+      "age": 36,
+      "profileImage": "https://img.a.transfermarkt.technology/portrait/big/17259-1540567890.jpg?lm=1",
+      "dateOfBirth": "Mar 27, 1986",
+      "placeOfBirth": "Gelsenkirchen",
+      "citizenship": "Germany",
+      "height": 193,
+      "position": "Goalkeeper",
+      "currentInternational": "Germany",
+      "caps": 111,
+      "goals": 0,
+      "club": "Bayern Munich",
+      "league": "Bundesliga",
+      "leagueLevel": "Tier 1",
+      "joinedClub": "Jul 1, 2011",
+      "contractExpires": "Jun 30, 2024",
+      "marketValue": "€15.00",
+      "continent": "Europe",
+      "styles": [
+        2
+      ]
+    }
+  },
+  {
+    "model": "footballers.footballer",
+    "pk": 29,
+    "fields": {
+      "number": "#19",
+      "fullName": "Alphonso Davies",
+      "age": 21,
+      "profileImage": "https://img.a.transfermarkt.technology/portrait/big/424204-1570372661.jpg?lm=1",
+      "dateOfBirth": "Nov 2, 2000",
+      "placeOfBirth": "Buduburam",
+      "citizenship": "Canada",
+      "height": 183,
+      "position": "Left-back",
+      "currentInternational": "Canada",
+      "caps": 30,
+      "goals": 10,
+      "club": "Bayern Munich",
+      "league": "Bundesliga",
+      "leagueLevel": "Tier 1",
+      "joinedClub": "Jan 1, 2019",
+      "contractExpires": "Jun 30, 2025",
+      "marketValue": "€70.00",
+      "continent": "North America",
+      "styles": [
+        1,
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "model": "footballers.footballer",
+    "pk": 30,
+    "fields": {
+      "number": "#31",
+      "fullName": "Ederson",
+      "age": 28,
+      "profileImage": "https://img.a.transfermarkt.technology/portrait/big/238223-1474545573.jpg?lm=1",
+      "dateOfBirth": "Aug 17, 1993",
+      "placeOfBirth": "Osasco",
+      "citizenship": "Brazil",
+      "height": 188,
+      "position": "Goalkeeper",
+      "currentInternational": "Brazil",
+      "caps": 18,
+      "goals": 0,
+      "club": "Manchester City",
+      "league": "Premier League",
+      "leagueLevel": "Tier 1",
+      "joinedClub": "Jul 1, 2017",
+      "contractExpires": "Jun 30, 2026",
+      "marketValue": "€50.00",
+      "continent": "South America",
+      "styles": [
+        2
+      ]
+    }
+  },
+  {
+    "model": "footballers.footballer",
+    "pk": 31,
+    "fields": {
+      "number": "#9",
+      "fullName": "Gabriel Jesus",
+      "age": 25,
+      "profileImage": "https://img.a.transfermarkt.technology/portrait/big/363205-1533284263.jpg?lm=1",
+      "dateOfBirth": "Apr 3, 1997",
+      "placeOfBirth": "São Paulo",
+      "citizenship": "Brazil",
+      "height": 175,
+      "position": "Centre-Forward",
+      "currentInternational": "Brazil",
+      "caps": 56,
+      "goals": 19,
+      "club": "Manchester City",
+      "league": "Premier League",
+      "leagueLevel": "Tier 1",
+      "joinedClub": "Jan 1, 2017",
+      "contractExpires": "Jun 30, 2023",
+      "marketValue": "€50.00",
+      "continent": "South America",
+      "styles": [
+        1,
+        3
+      ]
+    }
+  },
+  {
+    "model": "footballers.footballer",
+    "pk": 32,
+    "fields": {
+      "number": "#26",
+      "fullName": "Riyad Mahrez",
+      "age": 31,
+      "profileImage": "https://img.a.transfermarkt.technology/portrait/big/171424-1461578220.jpg?lm=1",
+      "dateOfBirth": "Feb 21, 1991",
+      "placeOfBirth": "Sarcelles",
+      "citizenship": "Algeria",
+      "height": 179,
+      "position": "Right Winger",
+      "currentInternational": "Algeria",
+      "caps": 75,
+      "goals": 26,
+      "club": "Manchester City",
+      "league": "Premier League",
+      "leagueLevel": "Tier 1",
+      "joinedClub": "Jul 10, 2018",
+      "contractExpires": "Jun 30, 2023",
+      "marketValue": "€40.00",
+      "continent": "Africa",
+      "styles": [
+        1,
+        3
+      ]
+    }
+  },
+  {
+    "model": "footballers.footballer",
+    "pk": 33,
+    "fields": {
+      "number": "#7",
+      "fullName": "Heung-min Son",
+      "age": 29,
+      "profileImage": "https://img.a.transfermarkt.technology/portrait/big/91845-1599987413.jpg?lm=1",
+      "dateOfBirth": "Jul 8, 1992",
+      "placeOfBirth": "Chuncheon, Gangwon",
+      "citizenship": "Korea, South",
+      "height": 184,
+      "position": "Left Winger",
+      "currentInternational": "South Korea",
+      "caps": 100,
+      "goals": 32,
+      "club": "Spurs",
+      "league": "Premier League",
+      "leagueLevel": "Tier 1",
+      "joinedClub": "Aug 28, 2015",
+      "contractExpires": "Jun 30, 2025",
+      "marketValue": "€80.00",
+      "continent": "Asia",
+      "styles": [
+        1,
+        3
+      ]
+    }
+  },
+  {
+    "model": "footballers.footballer",
+    "pk": 34,
+    "fields": {
+      "number": "#13",
+      "fullName": "Mathew Ryan",
+      "age": 30,
+      "profileImage": "https://img.a.transfermarkt.technology/portrait/big/128969-1447247525.jpg?lm=1",
+      "dateOfBirth": "Apr 8, 1992",
+      "placeOfBirth": "Plumpton",
+      "citizenship": "Australia",
+      "height": 184,
+      "position": "Goalkeeper",
+      "currentInternational": "Australia",
+      "caps": 67,
+      "goals": 0,
+      "club": "Real Sociedad",
+      "league": "La liga",
+      "leagueLevel": "Tier 1",
+      "joinedClub": "Jul 12, 2021",
+      "contractExpires": "Jun 30, 2023",
+      "marketValue": "€5.00",
+      "continent": "Oceania",
+      "styles": [
+        2
+      ]
+    }
+  },
+  {
+    "model": "footballers.footballer",
+    "pk": 35,
+    "fields": {
+      "number": "#3",
+      "fullName": "Fabinho",
+      "age": 28,
+      "profileImage": "https://img.a.transfermarkt.technology/portrait/big/225693-1580133493.jpg?lm=1",
+      "dateOfBirth": "Oct 23, 1993",
+      "placeOfBirth": "Campinas",
+      "citizenship": "Brazil",
+      "height": 188,
+      "position": "Defensive Midfield",
+      "currentInternational": "Brazil",
+      "caps": 27,
+      "goals": 0,
+      "club": "Liverpool",
+      "league": "Premier League",
+      "leagueLevel": "Tier 1",
+      "joinedClub": "Jul 1, 2018",
+      "contractExpires": "Jun 30, 2026",
+      "marketValue": "€60.00",
+      "continent": "South America",
+      "styles": [
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "model": "footballers.footballer",
+    "pk": 36,
+    "fields": {
+      "number": "#23",
+      "fullName": "Luis Díaz",
+      "age": 25,
+      "profileImage": "https://img.a.transfermarkt.technology/portrait/big/480692-1582712860.png?lm=1",
+      "dateOfBirth": "Jan 13, 1997",
+      "placeOfBirth": "Barrancas",
+      "citizenship": "Colombia",
+      "height": 180,
+      "position": "Left Winger",
+      "currentInternational": "Colombia",
+      "caps": 35,
+      "goals": 8,
+      "club": "Liverpool",
+      "league": "Premier League",
+      "leagueLevel": "Tier 1",
+      "joinedClub": "Jan 30, 2022",
+      "contractExpires": "Jun 30, 2027",
+      "marketValue": "€45.00",
+      "continent": "South America",
+      "styles": [
+        1,
+        3
+      ]
+    }
+  },
+  {
+    "model": "footballers.footballer",
+    "pk": 37,
+    "fields": {
+      "number": "#18",
+      "fullName": "Takumi Minamino",
+      "age": 27,
+      "profileImage": "https://img.a.transfermarkt.technology/portrait/big/165793-1565700962.jpg?lm=1",
+      "dateOfBirth": "Jan 16, 1995",
+      "placeOfBirth": "Izumisano, Osaka",
+      "citizenship": "Japan",
+      "height": 174,
+      "position": "Left Winger",
+      "currentInternational": "Japan",
+      "caps": 41,
+      "goals": 17,
+      "club": "Liverpool",
+      "league": "Premier League",
+      "leagueLevel": "Tier 1",
+      "joinedClub": "Jan 1, 2020",
+      "contractExpires": "Jun 30, 2024",
+      "marketValue": "€12.00",
+      "continent": "Asia",
+      "styles": [
+        1,
+        3
+      ]
+    }
+  },
+  {
+    "model": "footballers.footballer",
+    "pk": 38,
+    "fields": {
+      "number": "#16",
+      "fullName": "Edouard Mendy",
+      "age": 30,
+      "profileImage": "https://img.a.transfermarkt.technology/portrait/big/442531-1600951863.jpg?lm=1",
+      "dateOfBirth": "Mar 1, 1992",
+      "placeOfBirth": "Montivilliers",
+      "citizenship": "Senegal",
+      "height": 195,
+      "position": "Goalkeeper",
+      "currentInternational": "Senegal",
+      "caps": 20,
+      "goals": 0,
+      "club": "Chelsea",
+      "league": "Premier League",
+      "leagueLevel": "Tier 1",
+      "joinedClub": "Sep 24, 2020",
+      "contractExpires": "Jun 30, 2025",
+      "marketValue": "€32.00",
+      "continent": "Africa",
+      "styles": [
+        2
+      ]
+    }
+  },
+  {
+    "model": "footballers.footballer",
+    "pk": 39,
+    "fields": {
+      "number": "#8",
+      "fullName": "Mateo Kovacic",
+      "age": 28,
+      "profileImage": "https://img.a.transfermarkt.technology/portrait/big/51471-1624351322.jpg?lm=1",
+      "dateOfBirth": "May 6, 1994",
+      "placeOfBirth": "Linz",
+      "citizenship": "Croatia",
+      "height": 176,
+      "position": "Central Midfield",
+      "currentInternational": "Croatia",
+      "caps": 80,
+      "goals": 3,
+      "club": "Chelsea",
+      "league": "Premier League",
+      "leagueLevel": "Tier 1",
+      "joinedClub": "Jul 1, 2019",
+      "contractExpires": "Jun 30, 2024",
+      "marketValue": "€45.00",
+      "continent": "Europe",
+      "styles": [
+        1,
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "model": "footballers.footballer",
+    "pk": 40,
+    "fields": {
+      "number": "#10",
+      "fullName": "Christian Pulisic",
+      "age": 23,
+      "profileImage": "https://img.a.transfermarkt.technology/portrait/big/315779-1638811757.jpg?lm=1",
+      "dateOfBirth": "Sep 18, 1998",
+      "placeOfBirth": "Hershey",
+      "citizenship": "United States",
+      "height": 177,
+      "position": "Winger",
+      "currentInternational": "USA",
+      "caps": 50,
+      "goals": 21,
+      "club": "Chelsea",
+      "league": "Premier League",
+      "leagueLevel": "Tier 1",
+      "joinedClub": "Jan 12 2019",
+      "contractExpires": "Jun 30, 2024",
+      "marketValue": "€45.00",
+      "continent": "North America",
+      "styles": [
+        1,
+        3
+      ]
+    }
+  },
+  {
+    "model": "footballers.footballer",
+    "pk": 41,
+    "fields": {
+      "number": "#10",
+      "fullName": "Lautaro Martínez",
+      "age": 24,
+      "profileImage": "https://img.a.transfermarkt.technology/portrait/big/406625-1535015019.jpg?lm=1",
+      "dateOfBirth": "Aug 22, 1997",
+      "placeOfBirth": "Bahía Blanca",
+      "citizenship": "Argentina",
+      "height": 174,
+      "position": "Centre-Forward",
+      "currentInternational": "Argentina",
+      "caps": 38,
+      "goals": 20,
+      "club": "Inter",
+      "league": "Serie A",
+      "leagueLevel": "Tier 1",
+      "joinedClub": "Jul 4, 2018",
+      "contractExpires": "Jun 30, 2026",
+      "marketValue": "€75.00",
+      "continent": "South America",
+      "styles": [
+        1,
+        3
+      ]
+    }
+  },
+  {
+    "model": "footballers.footballer",
+    "pk": 42,
+    "fields": {
+      "number": "#11",
+      "fullName": "Ángel Di María",
+      "age": 34,
+      "profileImage": "https://img.a.transfermarkt.technology/portrait/big/45320-1602849270.jpg?lm=1",
+      "dateOfBirth": "Feb 14, 1988",
+      "placeOfBirth": "Rosario",
+      "citizenship": "Argentina",
+      "height": 180,
+      "position": "Right Winger",
+      "currentInternational": "Argentina",
+      "caps": 122,
+      "goals": 25,
+      "club": "Paris SG",
+      "league": "Ligue 1",
+      "leagueLevel": "Tier 1",
+      "joinedClub": "Aug 6, 2015",
+      "contractExpires": "Jun 30, 2022",
+      "marketValue": "€12.00",
+      "continent": "South America",
+      "styles": [
+        1,
+        3
+      ]
+    }
+  },
+  {
+    "model": "footballers.footballer",
+    "pk": 43,
+    "fields": {
+      "number": "#15",
+      "fullName": "Federico Valverde",
+      "age": 23,
+      "profileImage": "https://img.a.transfermarkt.technology/portrait/big/369081-1581501132.jpg?lm=1",
+      "dateOfBirth": "Jul 22, 1998",
+      "placeOfBirth": "Montevideo",
+      "citizenship": "Uruguay",
+      "height": 182,
+      "position": "Central Midfield",
+      "currentInternational": "Uruguay",
+      "caps": 42,
+      "goals": 4,
+      "club": "Real Madrid",
+      "league": "La liga",
+      "leagueLevel": "Tier 1",
+      "joinedClub": "Jul 1, 2018",
+      "contractExpires": "Jun 30, 2027",
+      "marketValue": "€70.00",
+      "continent": "South America",
+      "styles": [
+        1,
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "model": "footballers.footballer",
+    "pk": 44,
+    "fields": {
+      "number": "#2",
+      "fullName": "José María Giménez",
+      "age": 27,
+      "profileImage": "https://img.a.transfermarkt.technology/portrait/big/250845-1447152624.jpg?lm=1",
+      "dateOfBirth": "Jan 20, 1995",
+      "placeOfBirth": "Toledo",
+      "citizenship": "Uruguay",
+      "height": 185,
+      "position": "Centre-Back",
+      "currentInternational": "Uruguay",
+      "caps": 78,
+      "goals": 8,
+      "club": "Atlético Madrid",
+      "league": "La liga",
+      "leagueLevel": "Tier 1",
+      "joinedClub": "Apr 25, 2013",
+      "contractExpires": "Jun 30, 2025",
+      "marketValue": "€50.00",
+      "continent": "South America",
+      "styles": [
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "model": "footballers.footballer",
+    "pk": 45,
+    "fields": {
+      "number": "#10",
+      "fullName": "Sadio Mané",
+      "age": 30,
+      "profileImage": "https://img.a.transfermarkt.technology/portrait/big/200512-1559901727.jpg?lm=1",
+      "dateOfBirth": "Apr 10, 1992",
+      "placeOfBirth": "Sedhiou",
+      "citizenship": "Senegal",
+      "height": 174,
+      "position": "Left Winger",
+      "currentInternational": "Senegal",
+      "caps": 89,
+      "goals": 31,
+      "club": "Liverpool",
+      "league": "Premier League",
+      "leagueLevel": "Tier 1",
+      "joinedClub": "Jul 1, 2016",
+      "contractExpires": "Jun 30, 2023",
+      "marketValue": "€80.00",
+      "continent": "Africa",
+      "styles": [
+        1,
+        3
+      ]
+    }
+  },
+  {
+    "model": "footballers.footballer",
+    "pk": 46,
+    "fields": {
+      "number": "#2",
+      "fullName": "Achraf Hakimi",
+      "age": 23,
+      "profileImage": "https://img.a.transfermarkt.technology/portrait/big/398073-1633679363.jpg?lm=1",
+      "dateOfBirth": "Nov 4, 1998",
+      "placeOfBirth": "Madrid",
+      "citizenship": "Morocco",
+      "height": 181,
+      "position": "Right-Back",
+      "currentInternational": "Morocco",
+      "caps": 48,
+      "goals": 8,
+      "club": "Paris SG",
+      "league": "Ligue 1",
+      "leagueLevel": "Tier 1",
+      "joinedClub": "Jul 6, 2021",
+      "contractExpires": "Jun 30, 2026",
+      "marketValue": "€65.00",
+      "continent": "Africa",
+      "styles": [
+        1,
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "model": "footballers.footballer",
+    "pk": 47,
+    "fields": {
+      "number": "#9",
+      "fullName": "Victor Osimhen",
+      "age": 23,
+      "profileImage": "https://img.a.transfermarkt.technology/portrait/big/401923-1570439308.jpg?lm=1",
+      "dateOfBirth": "Dec 29, 1998",
+      "placeOfBirth": "Lagos",
+      "citizenship": "Nigeria",
+      "height": 186,
+      "position": "Centre-Forward",
+      "currentInternational": "Nigeria",
+      "caps": 18,
+      "goals": 10,
+      "club": "SSC Napoli",
+      "league": "Serie A",
+      "leagueLevel": "Tier 1",
+      "joinedClub": "Sep 1, 2020",
+      "contractExpires": "Jun 30, 2025",
+      "marketValue": "€65.00",
+      "continent": "Africa",
+      "styles": [
+        1,
+        3
+      ]
+    }
+  },
+  {
+    "model": "footballers.footballer",
+    "pk": 48,
+    "fields": {
+      "number": "#79",
+      "fullName": "Franck Kessié",
+      "age": 25,
+      "profileImage": "https://img.a.transfermarkt.technology/portrait/big/294808-1594276547.jpg?lm=1",
+      "dateOfBirth": "Dec 19, 1996",
+      "placeOfBirth": "Ouragahio",
+      "citizenship": "Cote d'Ivoire",
+      "height": 183,
+      "position": "Central Midfield",
+      "currentInternational": "Ivory Coast",
+      "caps": 52,
+      "goals": 5,
+      "club": "AC Milan",
+      "league": "Serie A",
+      "leagueLevel": "Tier 1",
+      "joinedClub": "Jul 1, 2019",
+      "contractExpires": "Jun 30, 2022",
+      "marketValue": "€45.00",
+      "continent": "Africa",
+      "styles": [
+        1,
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "model": "footballers.footballer",
+    "pk": 49,
+    "fields": {
+      "number": "#11",
+      "fullName": "Wilfried Zaha",
+      "age": 29,
+      "profileImage": "https://img.a.transfermarkt.technology/portrait/big/145988-1617958742.jpg?lm=1",
+      "dateOfBirth": "Nov 10, 1992",
+      "placeOfBirth": "Abidjan",
+      "citizenship": "Cote d'Ivoire",
+      "height": 180,
+      "position": "Left Winger",
+      "currentInternational": "Ivory Coast",
+      "caps": 21,
+      "goals": 5,
+      "club": "Crystal Palace",
+      "league": "Premier League",
+      "leagueLevel": "Tier 1",
+      "joinedClub": "Feb 2, 2015",
+      "contractExpires": "Jun 30, 2023",
+      "marketValue": "€40.00",
+      "continent": "Africa",
+      "styles": [
+        1,
+        3
+      ]
+    }
+  },
+  {
+    "model": "footballers.footballer",
+    "pk": 50,
+    "fields": {
+      "number": "#12",
+      "fullName": "Edmond Tapsoba",
+      "age": 23,
+      "profileImage": "https://img.a.transfermarkt.technology/portrait/big/564545-1615892859.jpg?lm=1",
+      "dateOfBirth": "Feb 2, 1999",
+      "placeOfBirth": "Ouagadougou",
+      "citizenship": "Burkina Faso",
+      "height": 194,
+      "position": "Centre-Back",
+      "currentInternational": "Burkina Faso",
+      "caps": 30,
+      "goals": 0,
+      "club": "Bayern Leverkusen",
+      "league": "Bundesliga",
+      "leagueLevel": "Tier 1",
+      "joinedClub": "Jan 31, 2020",
+      "contractExpires": "Jun 30, 2026",
+      "marketValue": "€35.00",
+      "continent": "Africa",
+      "styles": [
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "model": "footballers.footballer",
+    "pk": 51,
+    "fields": {
+      "number": "#22",
+      "fullName": "Sébastien Haller",
+      "age": 27,
+      "profileImage": "https://img.a.transfermarkt.technology/portrait/big/181375-1533115156.jpg?lm=1",
+      "dateOfBirth": "Jun 22, 1994",
+      "placeOfBirth": "Ris-Orangis",
+      "citizenship": "Cote d'Ivoire",
+      "height": 190,
+      "position": "Centre-Forward",
+      "currentInternational": "Ivory Coast",
+      "caps": 12,
+      "goals": 4,
+      "club": "Ajax",
+      "league": "Eredivisie",
+      "leagueLevel": "Tier 1",
+      "joinedClub": "Jan 8, 2021",
+      "contractExpires": "Jun 30, 2025",
+      "marketValue": "€35.00",
+      "continent": "Africa",
+      "styles": [
+        1,
+        3
+      ]
+    }
+  },
+  {
+    "model": "footballers.footballer",
+    "pk": 52,
+    "fields": {
+      "number": "#26",
+      "fullName": "Kalidou Koulibaly",
+      "age": 30,
+      "profileImage": "https://img.a.transfermarkt.technology/portrait/big/93128-1448528991.jpg?lm=1",
+      "dateOfBirth": "Jun 20, 1991",
+      "placeOfBirth": "Saint-Dié-des-Vosge",
+      "citizenship": "Senegal",
+      "height": 187,
+      "position": "Centre-Back",
+      "currentInternational": "Senegal",
+      "caps": 57,
+      "goals": 0,
+      "club": "SSC Napoli",
+      "league": "Serie A",
+      "leagueLevel": "Tier 1",
+      "joinedClub": "Jul 1, 2014",
+      "contractExpires": "Jun 30, 2023",
+      "marketValue": "€35.00",
+      "continent": "Africa",
+      "styles": [
+        2,
+        4
+      ]
+    }
+  },
+  {
+    "model": "footballers.footballer",
+    "pk": 53,
+    "fields": {
+      "number": "#8",
+      "fullName": "Yves Bissouma",
+      "age": 25,
+      "profileImage": "https://img.a.transfermarkt.technology/portrait/big/410425-1506674936.jpg?lm=1",
+      "dateOfBirth": "Aug 30, 1996",
+      "placeOfBirth": "Issia",
+      "citizenship": "Mali",
+      "height": 182,
+      "position": "Central Midfield",
+      "currentInternational": "Mali",
+      "caps": 18,
+      "goals": 3,
+      "club": "Brighton",
+      "league": "Premier League",
+      "leagueLevel": "Tier 1",
+      "joinedClub": "Jul 17, 2018",
+      "contractExpires": "Jun 30, 2023",
+      "marketValue": "€35.00",
+      "continent": "Africa",
+      "styles": [
+        1,
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "model": "footballers.footballer",
+    "pk": 54,
+    "fields": {
+      "number": "#18",
+      "fullName": "Takehiro Tomiyasu",
+      "age": 23,
+      "profileImage": "https://img.a.transfermarkt.technology/portrait/big/331560-1516724308.jpg?lm=1",
+      "dateOfBirth": "Nov 5, 1998",
+      "placeOfBirth": "Fukuoka, Fukuoka",
+      "citizenship": "Japan",
+      "height": 188,
+      "position": "Right-Back",
+      "currentInternational": "Japan",
+      "caps": 28,
+      "goals": 1,
+      "club": "Arsenal",
+      "league": "Premier League",
+      "leagueLevel": "Tier 1",
+      "joinedClub": "Aug 31, 2021",
+      "contractExpires": "Jun 30, 2025",
+      "marketValue": "€25.00",
+      "continent": "Asia",
+      "styles": [
+        1,
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "model": "footballers.footballer",
+    "pk": 55,
+    "fields": {
+      "number": "#15",
+      "fullName": "Daichi Kamada",
+      "age": 25,
+      "profileImage": "https://img.a.transfermarkt.technology/portrait/big/356141-1599992224.jpg?lm=1",
+      "dateOfBirth": "Aug 5, 1996",
+      "placeOfBirth": "Ehime",
+      "citizenship": "Japan",
+      "height": 184,
+      "position": "Attacking Midfield",
+      "currentInternational": "Japan",
+      "caps": 18,
+      "goals": 5,
+      "club": "E. Frankfurt",
+      "league": "Bundesliga",
+      "leagueLevel": "Tier 1",
+      "joinedClub": "Jul 1, 2017",
+      "contractExpires": "Jun 30, 2023",
+      "marketValue": "€22.00",
+      "continent": "Asia",
+      "styles": [
+        1,
+        3
+      ]
+    }
+  },
+  {
+    "model": "footballers.footballer",
+    "pk": 56,
+    "fields": {
+      "number": "#9",
+      "fullName": "Sardar Azmoun",
+      "age": 27,
+      "profileImage": "https://img.a.transfermarkt.technology/portrait/big/180337-1602271105.png?lm=1",
+      "dateOfBirth": "Jan 1, 1995",
+      "placeOfBirth": "Gonbad-e Kavus",
+      "citizenship": "Iran",
+      "height": 186,
+      "position": "Centre-Forward",
+      "currentInternational": "Iran",
+      "caps": 62,
+      "goals": 40,
+      "club": "Bay. Leverkusen",
+      "league": "Bundesliga",
+      "leagueLevel": "Tier 1",
+      "joinedClub": "Jan 30, 2022",
+      "contractExpires": "Jun 30, 2027",
+      "marketValue": "€22.00",
+      "continent": "Asia",
+      "styles": [
+        1,
+        3
+      ]
+    }
+  },
+  {
+    "model": "footballers.footballer",
+    "pk": 57,
+    "fields": {
+      "number": "#9",
+      "fullName": "Mehdi Taremi",
+      "age": 29,
+      "profileImage": "https://img.a.transfermarkt.technology/portrait/big/307058-1606396744.png?lm=1",
+      "dateOfBirth": "Jul 18, 1992",
+      "placeOfBirth": "Bushehr",
+      "citizenship": "Iran",
+      "height": 187,
+      "position": "Centre-Forward",
+      "currentInternational": "Iran",
+      "caps": 57,
+      "goals": 27,
+      "club": "FC Porto",
+      "league": "Liga Portugal",
+      "leagueLevel": "Tier 1",
+      "joinedClub": "Aug 31, 2020",
+      "contractExpires": "Jun 30, 2024",
+      "marketValue": "€20.00",
+      "continent": "Asia",
+      "styles": [
+        1,
+        3
+      ]
+    }
+  },
+  {
+    "model": "footballers.footballer",
+    "pk": 58,
+    "fields": {
+      "number": "#26",
+      "fullName": "Hee-chan Hwang",
+      "age": 26,
+      "profileImage": "https://img.a.transfermarkt.technology/portrait/big/292246-1613997961.jpg?lm=1",
+      "dateOfBirth": "Jan 26, 1996",
+      "placeOfBirth": "Chuncheon, Gangwon",
+      "citizenship": "Korea, South",
+      "height": 177,
+      "position": "Centre-Forward",
+      "currentInternational": "South Korea",
+      "caps": 47,
+      "goals": 8,
+      "club": "Wolves",
+      "league": "Premier League",
+      "leagueLevel": "Tier 1",
+      "joinedClub": "Jul 1, 2022",
+      "contractExpires": "Jun 30, 2022",
+      "marketValue": "€16.00",
+      "continent": "Asia",
+      "styles": [
+        1,
+        3
+      ]
+    }
+  },
+  {
+    "model": "footballers.footballer",
+    "pk": 59,
+    "fields": {
+      "number": "#25",
+      "fullName": "Ritsu Doan",
+      "age": 23,
+      "profileImage": "https://img.a.transfermarkt.technology/portrait/big/358504-1651735848.jpg?lm=1",
+      "dateOfBirth": "Jun 16, 1998",
+      "placeOfBirth": "Amagasaki, Hyogo",
+      "citizenship": "Japan",
+      "height": 172,
+      "position": "Right Winger",
+      "currentInternational": "Japan",
+      "caps": 25,
+      "goals": 3,
+      "club": "PSV Eindhoven",
+      "league": "Eredivisie",
+      "leagueLevel": "Tier 1",
+      "joinedClub": "Aug 30, 2019",
+      "contractExpires": "Jun 30, 2024",
+      "marketValue": "€8.00",
+      "continent": "Asia",
+      "styles": [
+        1,
+        3
+      ]
+    }
+  },
+  {
+    "model": "footballers.footballer",
+    "pk": 60,
+    "fields": {
+      "number": "#14",
+      "fullName": "Eldor Shomurodov",
+      "age": 26,
+      "profileImage": "https://img.a.transfermarkt.technology/portrait/big/358166-1575203437.png?lm=1",
+      "dateOfBirth": "Jun 29, 1995",
+      "placeOfBirth": "Jarkurgan",
+      "citizenship": "Uzbekistan",
+      "height": 190,
+      "position": "Centre-Forward",
+      "currentInternational": "Uzbekistan",
+      "caps": 55,
+      "goals": 30,
+      "club": "AS Roma",
+      "league": "Serie A",
+      "leagueLevel": "Tier 1",
+      "joinedClub": "Aug 2, 2021",
+      "contractExpires": "Jun 30, 2026",
+      "marketValue": "€8.00",
+      "continent": "Asia",
+      "styles": [
+        1,
+        3
+      ]
+    }
+  },
+  {
+    "model": "footballers.footballer",
+    "pk": 61,
+    "fields": {
+      "number": "#9",
+      "fullName": "Jonathan David",
+      "age": 22,
+      "profileImage": "https://img.a.transfermarkt.technology/portrait/big/533738-1532349195.jpg?lm=1",
+      "dateOfBirth": "Jan 14, 2000",
+      "placeOfBirth": "Brooklyn, New York",
+      "citizenship": "Canada",
+      "height": 180,
+      "position": "Centre-Forward",
+      "currentInternational": "Canada",
+      "caps": 30,
+      "goals": 20,
+      "club": "LOSC Lille",
+      "league": "Ligue 1",
+      "leagueLevel": "Tier 1",
+      "joinedClub": "Aug 11, 2020",
+      "contractExpires": "Jun 30, 2025",
+      "marketValue": "€45.00",
+      "continent": "North America",
+      "styles": [
+        1,
+        3
+      ]
+    }
+  },
+  {
+    "model": "footballers.footballer",
+    "pk": 62,
+    "fields": {
+      "number": "#31",
+      "fullName": "Leon Bailey",
+      "age": 24,
+      "profileImage": "https://img.a.transfermarkt.technology/portrait/big/387626-1615896919.jpg?lm=1",
+      "dateOfBirth": "Aug 9, 1997",
+      "placeOfBirth": "Kingston",
+      "citizenship": "Jamaica",
+      "height": 178,
+      "position": "Left Winger",
+      "currentInternational": "Jamaica",
+      "caps": 14,
+      "goals": 2,
+      "club": "Aston Villa",
+      "league": "Premier League",
+      "leagueLevel": "Tier 1",
+      "joinedClub": "Aug 4, 2021",
+      "contractExpires": "Jun 30, 2025",
+      "marketValue": "€30.00",
+      "continent": "North America",
+      "styles": [
+        1,
+        3
+      ]
+    }
+  },
+  {
+    "model": "footballers.footballer",
+    "pk": 63,
+    "fields": {
+      "number": "#1",
+      "fullName": "Keylor Navas",
+      "age": 35,
+      "profileImage": "https://img.a.transfermarkt.technology/portrait/big/79422-1602848579.jpg?lm=1",
+      "dateOfBirth": "Dec 15, 1986",
+      "placeOfBirth": "Isidro de El",
+      "citizenship": "Costa Rica",
+      "height": 185,
+      "position": "Goalkeeper",
+      "currentInternational": "Costa Rica",
+      "caps": 100,
+      "goals": 0,
+      "club": "Paris SG",
+      "league": "Ligue 1",
+      "leagueLevel": "Tier 1",
+      "joinedClub": "Sep 2, 2019",
+      "contractExpires": "Jun 30, 2024",
+      "marketValue": "€8.00",
+      "continent": "North America",
+      "styles": [
+        2
+      ]
+    }
+  },
+  {
+    "model": "footballers.footballer",
+    "pk": 64,
+    "fields": {
+      "number": "$4",
+      "fullName": "Luis Romo",
+      "age": 27,
+      "profileImage": "https://img.a.transfermarkt.technology/portrait/big/532938-1580830010.jpg?lm=1",
+      "dateOfBirth": "Jun 5, 1995",
+      "placeOfBirth": "Ahome",
+      "citizenship": "Mexico",
+      "height": 182,
+      "position": "Central Midfield",
+      "currentInternational": "Mexico",
+      "caps": 20,
+      "goals": 0,
+      "club": "Monterrey",
+      "league": "Liga MX Clausura",
+      "leagueLevel": "Tier 1",
+      "joinedClub": "Jan 6, 2022",
+      "contractExpires": "Dec 31, 2025",
+      "marketValue": "€7.00",
+      "continent": "North America",
+      "styles": [
+        1,
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "model": "footballers.footballer",
+    "pk": 65,
+    "fields": {
+      "number": "#27",
+      "fullName": "Sheraldo Becker",
+      "age": 27,
+      "profileImage": "https://img.a.transfermarkt.technology/portrait/big/188888-1605790601.jpg?lm=1",
+      "dateOfBirth": "Feb 9, 1995",
+      "placeOfBirth": "Amsterdam",
+      "citizenship": "Suriname",
+      "height": 180,
+      "position": "Right Winger",
+      "currentInternational": "Suriname",
+      "caps": 5,
+      "goals": 2,
+      "club": "Union Berlin",
+      "league": "Bundesliga",
+      "leagueLevel": "Tier 1",
+      "joinedClub": "Jul 1, 2019",
+      "contractExpires": "Jun 30, 2023",
+      "marketValue": "€7.00",
+      "continent": "North America",
+      "styles": [
+        1,
+        3
+      ]
+    }
+  },
+  {
+    "model": "footballers.footballer",
+    "pk": 66,
+    "fields": {
+      "number": "#19",
+      "fullName": "Shamar Nicholson",
+      "age": 25,
+      "profileImage": "https://img.a.transfermarkt.technology/portrait/big/354666-1642180212.png?lm=1",
+      "dateOfBirth": "Mar 16, 1997",
+      "placeOfBirth": "Kingston",
+      "citizenship": "Jamaica",
+      "height": 192,
+      "position": "Centre-Forward",
+      "currentInternational": "Jamaica",
+      "caps": 29,
+      "goals": 10,
+      "club": "Spartak Moscow",
+      "league": "Premier Liga",
+      "leagueLevel": "Tier 1",
+      "joinedClub": "Jan 7, 2022",
+      "contractExpires": "Jun 30, 2026",
+      "marketValue": "€7.50",
+      "continent": "North America",
+      "styles": [
+        1,
+        3
+      ]
+    }
+  },
+  {
+    "model": "footballers.footballer",
+    "pk": 67,
+    "fields": {
+      "number": "#14",
+      "fullName": "Weston McKennie",
+      "age": 23,
+      "profileImage": "https://img.a.transfermarkt.technology/portrait/big/332697-1642687384.jpg?lm=1",
+      "dateOfBirth": "Aug 28, 1998",
+      "placeOfBirth": "Little Elm, Texas",
+      "citizenship": "United States",
+      "height": 177,
+      "position": "Central Midfield",
+      "currentInternational": "USA",
+      "caps": 34,
+      "goals": 9,
+      "club": "Juventus",
+      "league": "Serie A",
+      "leagueLevel": "Tier 1",
+      "joinedClub": "Jul 1, 2021",
+      "contractExpires": "Jun 30, 2025",
+      "marketValue": "€25.00",
+      "continent": "North America",
+      "styles": [
+        1,
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "model": "footballers.footballer",
+    "pk": 68,
+    "fields": {
+      "number": "#28",
+      "fullName": "Érick Sánchez",
+      "age": 22,
+      "profileImage": "https://img.a.transfermarkt.technology/portrait/big/370875-1649415959.jpg?lm=1",
+      "dateOfBirth": "Sep 27, 1999",
+      "placeOfBirth": "Mexico City",
+      "citizenship": "Mexico",
+      "height": 167,
+      "position": "Central Midfield",
+      "currentInternational": "Mexico",
+      "caps": 3,
+      "goals": 0,
+      "club": "Pachuca",
+      "league": "Liga MX Clausura",
+      "leagueLevel": "Tier 1",
+      "joinedClub": "Jul 1, 2018",
+      "contractExpires": "-",
+      "marketValue": "€7.00",
+      "continent": "North America",
+      "styles": [
+        1,
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "model": "footballers.footballer",
+    "pk": 69,
+    "fields": {
+      "number": "#20",
+      "fullName": "Chris Wood",
+      "age": 30,
+      "profileImage": "https://img.a.transfermarkt.technology/portrait/big/108725-1497617065.jpg?lm=1",
+      "dateOfBirth": "Dec 7, 1991",
+      "placeOfBirth": "Auckland",
+      "citizenship": "New Zealand",
+      "height": 191,
+      "position": "Centre-Forward",
+      "currentInternational": "New Zealand",
+      "caps": 67,
+      "goals": 33,
+      "club": "Newcastle",
+      "league": "Premier League",
+      "leagueLevel": "Tier 1",
+      "joinedClub": "Jan 13, 2022",
+      "contractExpires": "Jun 30, 2024",
+      "marketValue": "€10.00",
+      "continent": "Oceania",
+      "styles": [
+        1,
+        3
+      ]
+    }
+  },
+  {
+    "model": "footballers.footballer",
+    "pk": 70,
+    "fields": {
+      "number": "#19",
+      "fullName": "Aaron Mooy",
+      "age": 174,
+      "profileImage": "https://img.a.transfermarkt.technology/portrait/big/123951-1410963340.jpg?lm=1",
+      "dateOfBirth": "Sep 15, 1990",
+      "placeOfBirth": "Sydney",
+      "citizenship": "Australia",
+      "height": 174,
+      "position": "Central Midfield",
+      "currentInternational": "Australia",
+      "caps": 47,
+      "goals": 6,
+      "club": "SH Port",
+      "league": "Super League",
+      "leagueLevel": "Tier 1",
+      "joinedClub": "Sep 1, 2020",
+      "contractExpires": "Jul 31, 2023",
+      "marketValue": "€5.00",
+      "continent": "Oceania",
+      "styles": [
+        1,
+        2,
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "model": "footballers.footballer",
+    "pk": 71,
+    "fields": {
+      "number": "-",
+      "fullName": "Roy Krishna",
+      "age": 34,
+      "profileImage": "https://img.a.transfermarkt.technology/portrait/big/64495-1413381501.jpg?lm=1",
+      "dateOfBirth": "Aug 30, 1987",
+      "placeOfBirth": "Siberia, Macuata",
+      "citizenship": "Fiji",
+      "height": 170,
+      "position": "Centre-Forward",
+      "currentInternational": "Fiji",
+      "caps": 45,
+      "goals": 31,
+      "club": "Without Club",
+      "league": "Without League",
+      "leagueLevel": "None",
+      "joinedClub": "Without club since Jun 1, 2022",
+      "contractExpires": "expired",
+      "marketValue": "€350Th.",
+      "continent": "Oceania",
+      "styles": [
+        1,
+        3
+      ]
+    }
+  },
+  {
+    "model": "footballers.footballer",
+    "pk": 72,
+    "fields": {
+      "number": "#36",
+      "fullName": "Harry Souttar",
+      "age": 23,
+      "profileImage": "https://img.a.transfermarkt.technology/portrait/big/298091-1547411047.png?lm=1",
+      "dateOfBirth": "Oct 22, 1998",
+      "placeOfBirth": "Aberdeen",
+      "citizenship": "Australia",
+      "height": 201,
+      "position": "Centre-Back",
+      "currentInternational": "Australia",
+      "caps": 10,
+      "goals": 6,
+      "club": "Stoke City",
+      "league": "Premier League",
+      "leagueLevel": "Tier 1",
+      "joinedClub": "Sep 29, 2016",
+      "contractExpires": "Jun 30, 2025",
+      "marketValue": "€5.00",
+      "continent": "Oceania",
+      "styles": [
+        2,
+        4
+      ]
+    }
+  }
+  ]

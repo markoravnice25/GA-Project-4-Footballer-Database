@@ -24,7 +24,7 @@ const Home = () => {
     dots: false,
     infinite: true,
     speed: 400,
-    slidesToShow: 4,
+    slidesToShow: 5,
     slidesToScroll: 1,
   }
 
@@ -40,7 +40,7 @@ const Home = () => {
 
   return (
     <main>
-      <Slider {...settingsSingle} className='big-slider'>
+      <Slider {...settingsSingle} className='main-slider'>
         <img src="/images/Argentina.jpg" alt="" />
         <img src="/images/Qatar.jpeg" alt="Qatar" />
         <img src="/images/USA.jpg" alt="USA" />
@@ -49,7 +49,7 @@ const Home = () => {
         <img src="/images/Senegal.jpeg" alt='Senegal' />
       </Slider>
 
-      <div className='genre-row fiction'>
+      <div className='continent-row'>
         <h2>Europe</h2>
         <Slider {...settings} className='carousel-wrapper'>
           {footballers.map(item => {
@@ -65,10 +65,10 @@ const Home = () => {
                       <div className='card-title'>
                         <h4>{fullName}</h4>
                       </div>
-                      <div className='authors-home'>
+                      <div className='player-age'>
                         <h5>{age}</h5>
                       </div>
-                      <h4 className="price">{citizenship}</h4>
+                      <h4 className="player-citizenship">{citizenship}</h4>
                     </div>
                   </Link>
                 </div>
@@ -78,7 +78,7 @@ const Home = () => {
         </Slider>
       </div>
 
-      <div className='genre-row graphic-novel'>
+      <div className='continent-row'>
         <hr />
         <h2>South America</h2>
         <Slider {...settings} className='carousel-wrapper'>
@@ -97,10 +97,10 @@ const Home = () => {
                         <div className='card-title'>
                           <h4>{fullName}</h4>
                         </div>
-                        <div className='authors-home'>
+                        <div className='player-age'>
                           <h5>{age}</h5>
                         </div>
-                        <h4 className="price">{citizenship}</h4>
+                        <h4 className="player-citizenship">{citizenship}</h4>
                       </div>
                     </div>
                   </Link>
@@ -111,7 +111,7 @@ const Home = () => {
         </Slider>
       </div>
 
-      <div className='genre-row fiction'>
+      <div className='continent-row'>
         <h2>Africa</h2>
         <Slider {...settings} className='carousel-wrapper'>
           {footballers.map(item => {
@@ -127,10 +127,10 @@ const Home = () => {
                       <div className='card-title'>
                         <h4>{fullName}</h4>
                       </div>
-                      <div className='authors-home'>
+                      <div className='player-age'>
                         <h5>{age}</h5>
                       </div>
-                      <h4 className="price">{citizenship}</h4>
+                      <h4 className="player-citizenship">{citizenship}</h4>
                     </div>
                   </Link>
                 </div>
@@ -140,7 +140,7 @@ const Home = () => {
         </Slider>
       </div>
 
-      <div className='genre-row fiction'>
+      <div className='continent-row'>
         <h2>North America</h2>
         <Slider {...settings} className='carousel-wrapper'>
           {footballers.map(item => {
@@ -156,10 +156,10 @@ const Home = () => {
                       <div className='card-title'>
                         <h4>{fullName}</h4>
                       </div>
-                      <div className='authors-home'>
+                      <div className='player-age'>
                         <h5>{age}</h5>
                       </div>
-                      <h4 className="price">{citizenship}</h4>
+                      <h4 className="player-citizenship">{citizenship}</h4>
                     </div>
                   </Link>
                 </div>
@@ -169,7 +169,7 @@ const Home = () => {
         </Slider>
       </div>
 
-      <div className='genre-row fiction'>
+      <div className='continent-row'>
         <h2>Asia</h2>
         <Slider {...settings} className='carousel-wrapper'>
           {footballers.map(item => {
@@ -185,10 +185,10 @@ const Home = () => {
                       <div className='card-title'>
                         <h4>{fullName}</h4>
                       </div>
-                      <div className='authors-home'>
+                      <div className='player-age'>
                         <h5>{age}</h5>
                       </div>
-                      <h4 className="price">{citizenship}</h4>
+                      <h4 className="player-citizenship">{citizenship}</h4>
                     </div>
                   </Link>
                 </div>
@@ -198,7 +198,7 @@ const Home = () => {
         </Slider>
       </div>
 
-      <div className='genre-row fiction'>
+      <div className='continent-row'>
         <h2>Oceania</h2>
         <Slider {...settings} className='carousel-wrapper'>
           {footballers.map(item => {
@@ -214,10 +214,10 @@ const Home = () => {
                       <div className='card-title'>
                         <h4>{fullName}</h4>
                       </div>
-                      <div className='authors-home'>
+                      <div className='player-age'>
                         <h5>{age}</h5>
                       </div>
-                      <h4 className="price">{citizenship}</h4>
+                      <h4 className="player-citizenship">{citizenship}</h4>
                     </div>
                   </Link>
                 </div>

@@ -22,12 +22,13 @@
   },
   "rules": {
     "brace-style": "error",
-    "camelcase": [
-      "error",
-      {
-        "properties": "never"
-      }
-    ],
+    "camelcase": "off",
+    // "camelcase": [
+    //   "error",
+    //   {
+    //     "properties": "never"
+    //   }
+    // ],
     "func-call-spacing": [
       "error",
       "never"
