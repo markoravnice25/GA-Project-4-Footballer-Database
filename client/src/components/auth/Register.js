@@ -50,12 +50,12 @@ const Register = () => {
       {/* Heading */}
       <Form className='auth-register' onSubmit={handleSubmit}>
         <Row>
-          <h3 className='create-account'>Testing! CREATE AN ACCOUNT</h3>
+          <h3 className='create-account'>CREATE AN ACCOUNT</h3>
         </Row>
         {/* Description */}
         <Row>
           <p className='create-account-paragraph'>Start your footballer-database journey by creating your account. Already have an account?
-            <a href="/login"> <span className='inline-plus'> LOGIN </span></a> and get
+            <a href="/login"> LOGIN</a> and get
             browsing through our database.</p>
         </Row>
         <Row>
