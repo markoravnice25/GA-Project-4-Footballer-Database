@@ -146,25 +146,32 @@ const FootballerShow = () => {
         {footballer ?
           <>
             <div className="container">
-              <div className="row">
-                <div className="col-md-3"><h3>{footballer.number} {footballer.fullName}</h3></div>
-              </div>
-              <div className="row">
+              <Col md='4'>
+                <div className="row">
+                  <div className="col-md-4"><h3>{footballer.number} {footballer.fullName} ({footballer.age})</h3></div>
+                </div>
                 <div className="col-md-2"><img src={footballer.profileImage} alt={footballer.fullName} /></div>
-                <div className="col-md-3 offset-md-6"><h4>{footballer.club}</h4></div>
-                <div className="col-md-3 offset-md-7"><h4>{footballer.league}</h4></div>
-              </div>
-
-              <div className="row">
-              </div>
-              <div className="row">
-              </div>
-              <div className="row">
-              </div>
-              <div className="row">
-              </div>
-              <div className="row">
-              </div>
+              </Col>
+              <Col md=''>
+                <div className="row">
+                  <div className="col-md-2 offset-md-3"><p>DOB: {footballer.dateOfBirth}</p></div>
+                  <div className="col-md-2"><p>Height: {footballer.height}cm</p></div>
+                  <div className="col-md-2"><p>Country: {footballer.currentInternational}</p></div>
+                  <div className="col-md-2"><p>Club: {footballer.leagueLevel}</p></div>
+                </div>
+                <div className="row">
+                  <div className="col-md-2 offset-md-3"><p>Place of birth: {footballer.placeOfBirth}</p></div>
+                  <div className="col-md-2"><p>Position: {footballer.position}cm</p></div>
+                  <div className="col-md-2"><p>Caps/Goals: {footballer.caps}/{footballer.goals}</p></div>
+                  <div className="col-md-2"><p>League: {footballer.joinedClub}</p></div>
+                </div>
+                <div className="row">
+                  <div className="col-md-2 offset-md-3"><p>Citizenship: {footballer.citizenship}</p></div>
+                  <div className="col-md-2"><p>Club: {footballer.club}</p></div>
+                  <div className="col-md-2"><p>Value: {footballer.marketValue}</p></div>
+                  <div className="col-md-2"><p>Club: {footballer.contractExpires}</p></div>
+                </div>
+              </Col>
             </div>
 
 
