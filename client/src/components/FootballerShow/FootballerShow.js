@@ -72,18 +72,20 @@ const FootballerShow = () => {
   useEffect(() => {
     const getFootballer = async () => {
       try {
-        const { data } = await axios.get(`/api/footballers/${id}`)
-        setFootballer(data)
+        const response = await axios.get(`/api/footballers/${id}`)
+        console.log(response)
+        setFootballer(response.data)
         // setFormData(data)
         // setReviews(data.reviews)
       } catch (error) {
         setErrors(true)
-
       }
     }
     getFootballer()
     // console.log('reviews --->', reviews)
   }, [id])
+  console.log(footballer)
+
   // to get all the books
   // useEffect(() => {
   //   const getSimilarBooks = async () => {
@@ -143,34 +145,29 @@ const FootballerShow = () => {
       <Row>
         {footballer ?
           <>
-            <Col xs="12">
-              <h3>{footballer.title}</h3>
-              <hr />
-            </Col>
-            <Col md="6">
-              <img src={footballer.image} alt={footballer.name} />
-              {/* <button className="wishlist-button" onClick={addOrRemove}>{wishlistItem}</button> */}
-            </Col>
+            <div className="container">
+              <div className="row">
+                <div className="col-md-3"><h3>{footballer.number} {footballer.fullName}</h3></div>
+              </div>
+              <div className="row">
+                <div className="col-md-2"><img src={footballer.profileImage} alt={footballer.fullName} /></div>
+                <div className="col-md-3 offset-md-6"><h4>{footballer.club}</h4></div>
+                <div className="col-md-3 offset-md-7"><h4>{footballer.league}</h4></div>
+              </div>
 
-            <Col md="6">
+              <div className="row">
+              </div>
+              <div className="row">
+              </div>
+              <div className="row">
+              </div>
+              <div className="row">
+              </div>
+              <div className="row">
+              </div>
+            </div>
 
-              <h4>Author</h4>
-              <p>{footballer.author}</p>
-              <hr />
 
-              <h4>Price</h4>
-              <p>£{footballer.price}</p>
-              <hr />
-              <h4>Year Published</h4>
-              <p>{footballer.yearPublished}</p>
-              <hr />
-              <h4>Description</h4>
-              <p>{footballer.description}</p>
-              <hr />
-              <h4>Authors</h4>
-              <p>{footballer.authors}</p>
-              <hr />
-            </Col>
             {/* <h4 className='you-may-also'>You may also be interested in...</h4>
             <div className='similar-books-wrapper'>
               {similarBooks.filter(item => item.subGenre === book.subGenre && item.id !== book.id).map((item, index) => {
