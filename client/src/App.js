@@ -3,7 +3,7 @@ import axios from 'axios'
 import React from 'react'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
-import Home from './components/Home.js'
+import Home from './components/Home/Home.js'
 import PageNavBar from './components/common/PageNavBar.js'
 import Footer from './components/common/Footer.js'
 import NotFound from './components/common/NotFound.js'

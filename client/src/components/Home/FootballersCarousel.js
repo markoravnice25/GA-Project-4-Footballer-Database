@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 
 
 
-const FootballerCarousel = ({ settings, footballers, continent }) => {
+const FootballersCarousel = ({ settings, footballers, continent }) => {
   return (
     <div className='continent-row'>
       <h2>{continent}</h2>
@@ -38,4 +38,4 @@ const FootballerCarousel = ({ settings, footballers, continent }) => {
   )
 }
 
-export default FootballerCarousel
+export default FootballersCarousel
