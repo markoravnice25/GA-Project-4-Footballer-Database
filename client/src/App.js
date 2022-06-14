@@ -14,18 +14,22 @@ import Login from './components/auth/Login.js'
 const App = () => {
 
   return (
-    <BrowserRouter>
-      <PageNavBar />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path='/footballer/:id' element={<FootballerShow />} />
-        <Route path='/register' element={<Register />} />
-        <Route path='/login'  element={<Login />} />
+    <main className='background-main'>
+      <section className='background-contents'>
+        <BrowserRouter>
+          <PageNavBar />
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path='/footballer/:id' element={<FootballerShow />} />
+            <Route path='/register' element={<Register />} />
+            <Route path='/login' element={<Login />} />
 
-        <Route path="*" element={<NotFound />} />
-      </Routes>
-      <Footer />
-    </BrowserRouter>
+            <Route path="*" element={<NotFound />} />
+          </Routes>
+          <Footer />
+        </BrowserRouter>
+      </section>
+    </main>
   )
 }
 

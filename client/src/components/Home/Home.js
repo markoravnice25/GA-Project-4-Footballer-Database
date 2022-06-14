@@ -42,7 +42,7 @@ const Home = () => {
     dots: false,
     infinite: true,
     speed: 400,
-    slidesToShow: 7,
+    slidesToShow: 6,
     slidesToScroll: 1,
   }
 
