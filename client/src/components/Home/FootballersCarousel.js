@@ -1,10 +1,11 @@
+// TODO - imports
+// react
 import React from 'react'
-import Slider from 'react-slick'
 import { Link } from 'react-router-dom'
+// slider
+import Slider from 'react-slick'
 
-
-
-
+//TODO - component
 const FootballersCarousel = ({ settings, footballers, continent }) => {
   return (
     <div className='continent-row'>

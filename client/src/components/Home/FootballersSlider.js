@@ -1,6 +1,8 @@
+// TODO - imports
 import React from 'react'
 import Slider from 'react-slick'
 
+// TODO - components
 const FootballersSlider = ({ settingsSingle }) => {
   return (
     <Slider {...settingsSingle} className='main-slider'>
