@@ -1,8 +1,8 @@
+//TODO - Imports
+// react; axios
 import React from 'react'
 import axios from 'axios'
 import { useNavigate } from 'react-router-dom'
-
-
 // Bootstrap components
 import Row from 'react-bootstrap/Row'
 import Form from 'react-bootstrap/Form'
@@ -54,10 +54,9 @@ const Register = () => {
         </Row>
         {/* Description */}
         <Row>
-          <p className='create-account-paragraph'>Start your Waterstones journey by creating your account. For enhanced rewards,
-            <a href="/register"> REGISTER</a> for
-            <span className='inline-plus'> plus </span>
-            and join our hugely popular email programme.</p>
+          <p className='create-account-paragraph'>Start your footballer-database journey by creating your account. Already have an account?
+            <a href="/login"> <span className='inline-plus'> LOGIN </span></a> and get
+            browsing through our database.</p>
         </Row>
         <Row>
           <p className='create-account-paragraph-2'>Denotes required field *</p>
@@ -116,11 +115,11 @@ const Register = () => {
         </Row>
         {/* Checkboxes and register button */}
         <Form.Group className="mb-3 form-label" id="formGridCheckbox">
-          <Form.Check className='checkbox' type="checkbox" label="Recieve reading recommendations and be the first to hear about our special editions and author events, straight to your inbox" />
+          <Form.Check className='checkbox' type="checkbox" label="Receive the latest football news and be the first to hear about player updates" />
         </Form.Group>
         <Row>
           <Form.Group as={Col} className="mb-3 form-label" id="formGridCheckbox">
-            <Form.Check className='checkbox2' type="checkbox" label="I agree to the Waterstones.com Terms and Conditions." />
+            <Form.Check className='checkbox2' type="checkbox" label="I agree to the footballer-database Terms and Conditions." />
           </Form.Group>
           <Form.Group as={Col}>
             <Button className='button-register' type="submit">

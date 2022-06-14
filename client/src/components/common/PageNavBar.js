@@ -27,7 +27,7 @@ const PageNavBar = () => {
   }
 
   return (
-    <Navbar bg="warning" expand="sm">
+    <Navbar expand="sm">
       <Container>
         {/* Navbar brand */}
         {/* Wherever you use a href on a bootstrap component, replace it with an as={Link} and a to="/" */}
@@ -37,16 +37,16 @@ const PageNavBar = () => {
           {/* Nav Link is an individual link inside a nav. Same as Nav Brand, to spcifiy react navigation use "as" and "to" */}
           {userIsAuthenticated() ?
             <>
-              <Nav.Link as={Link} to="/account">Account</Nav.Link>
-              <Nav.Link onClick={handleLogout}>Logout</Nav.Link>
-              <Nav.Link as={Link} to="/account/wishlist">♥️Wish List</Nav.Link>
+              <Nav.Link as={Link} to="/">ACCOUNT</Nav.Link>
+              <Nav.Link onClick={handleLogout}>LOGOUT</Nav.Link>
+              <Nav.Link as={Link} to="/">FAVOURITES</Nav.Link>
               
             </>
 
             :
             <>
-              <Nav.Link as={Link} to="/register">Register</Nav.Link>
-              <Nav.Link as={Link} to="/login">Login</Nav.Link>
+              <Nav.Link as={Link} to="/register">REGISTER</Nav.Link>
+              <Nav.Link as={Link} to="/login">LOGIN</Nav.Link>
             </>
           }
         </Navbar.Collapse>
