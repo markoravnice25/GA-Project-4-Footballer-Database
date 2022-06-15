@@ -48,6 +48,16 @@ const FootballerCreate = () => {
     setErrors({ ...errors, [e.target.name]: '' })
   }
 
+  const handleMultiChange = (e) => {
+    console.log(e.target.value)
+    console.log(e.target.name)
+    const value = Array.from(e.target.selectedOptions, option => option.value)
+    console.log(value)
+    setFormData({ ...formData, [e.target.name]: value })
+    setErrors({ ...errors, [e.target.name]: '' })
+  }
+  
+
   const handleSubmit = async (e) => {
     e.preventDefault()
     try {
@@ -56,7 +66,7 @@ const FootballerCreate = () => {
           Authorization: `Bearer ${getTokenFromLocalStorage()}`,
         },
       })
-      navigate('/login')
+      navigate(`/footballer/${data.id}`)
       console.log('data --->', data)
       setAddedPlayer([ ...addedPlayer, formData ])
       setFormData({
@@ -212,6 +222,18 @@ const FootballerCreate = () => {
             <Form.Control type="text" name='continent' value={formData.continent} onChange={handleChange} />
             {errors.continent && <p className='text-danger'>{errors.continent}</p>}
           </Form.Group>
+          <Col sm={6}>
+            <Form.Group className='mb-3' as={Col} controlId="formGridState">
+              <Form.Label>Style*</Form.Label> 
+              <Form.Control as='select' className='trigger' multiple={true} name='styles' value={formData.styles} onChange={handleMultiChange} >
+                <option value={1}>Attacking</option>
+                <option value={2}>defensive</option>
+                <option value={3}>creative</option>
+                <option value={4}>destructive</option>
+              </Form.Control>
+              {errors.title && <p className='text-danger'>{errors.title.message}</p>}
+            </Form.Group>
+          </Col>
         </Row>
         
         
