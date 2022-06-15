@@ -1,12 +1,22 @@
 // TODO - imports
 // react
-import React from 'react'
+import React, { useState, useEffect } from 'react'
+import axios from 'axios'
 import { Link } from 'react-router-dom'
 // slider
 import Slider from 'react-slick'
 
 //TODO - component
-const FootballersCarousel = ({ settings, footballers, continent, club }) => {
+const FootballersCarousel = ({ continent, footballers }) => {
+
+  const settings = {
+    dots: false,
+    infinite: true,
+    speed: 400,
+    slidesToShow: 6,
+    slidesToScroll: 1,
+  }
+
   return (
     <>
       <div className='continent-row'>

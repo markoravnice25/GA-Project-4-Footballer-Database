@@ -1,14 +1,14 @@
 //TODO - Imports
 // react; axios
 import React from 'react'
-import axios from 'axios'
+import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
+import axios from 'axios'
 // Bootstrap components
 import Row from 'react-bootstrap/Row'
 import Form from 'react-bootstrap/Form'
 import Button from 'react-bootstrap/Button'
 import Col from 'react-bootstrap/esm/Col'
-import { useState } from 'react'
 
 const Register = () => {
 

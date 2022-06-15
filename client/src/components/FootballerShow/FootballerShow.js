@@ -14,9 +14,12 @@ import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 
+// Components
+import FootballersCarousel from '../Home/FootballersCarousel'
+
 // import Spinner from '../utilities/Spinner'
 import { userIsAuthenticated, userIsOwner, getTokenFromLocalStorage } from '../../helpers/auth'
-const FootballerShow = () => {
+const FootballerShow = ({ footballers }) => {
   const navigate = useNavigate()
   const { id, reviewID, bookId } = useParams()
   // const [review, setReview] = useState('')
@@ -173,6 +176,11 @@ const FootballerShow = () => {
                 </div>
               </Col>
             </div>
+            <div className='carousel-column'>
+              <FootballersCarousel footballers={footballers} continent={footballer.continent} />
+            </div>
+
+
 
 
             {/* <h4 className='you-may-also'>You may also be interested in...</h4>

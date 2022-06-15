@@ -3,7 +3,18 @@ import React from 'react'
 import Slider from 'react-slick'
 
 // TODO - components
-const FootballersSlider = ({ settingsSingle }) => {
+const FootballersSlider = () => {
+
+  const settingsSingle = {
+    dots: true,
+    infinite: true,
+    speed: 3000,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 1500,
+  }
+
   return (
     <Slider {...settingsSingle} className='main-slider'>
       <img src="/images/Argentina.jpg" alt="" />
