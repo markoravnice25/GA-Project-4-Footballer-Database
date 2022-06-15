@@ -11,6 +11,7 @@ import FootballerShow from './components/FootballerShow/FootballerShow.js'
 import Register from './components/auth/Register.js'
 import Login from './components/auth/Login.js'
 import FootballerCreate from './components/User/FootballerCreate.js'
+import FootballerEdit from './components/User/FootballerEdit.js'
 
 const App = () => {
 
@@ -38,6 +39,7 @@ const App = () => {
             <Route path='/register' element={<Register />} />
             <Route path='/login' element={<Login />} />
             <Route path='/footballer/create' element={<FootballerCreate />} />
+            <Route path='/footballer/edit' element={<FootballerEdit />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
           <Footer />

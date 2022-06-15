@@ -1,7 +1,7 @@
 //TODO - Imports
 // react; axios
-import React, { useState } from 'react'
-import { useNavigate } from 'react-router-dom'
+import React, { useState, useEffect } from 'react'
+import { useNavigate, useParams } from 'react-router-dom'
 import axios from 'axios'
 // bootstrap
 import Row from 'react-bootstrap/Row'
@@ -10,16 +10,17 @@ import Button from 'react-bootstrap/Button'
 import Col from 'react-bootstrap/esm/Col'
 
 // components
-import { getTokenFromLocalStorage } from '../../helpers/auth.js'
+import { getTokenFromLocalStorage, userIsOwner } from '../../helpers/auth.js'
 
-//TODO - component
-const FootballerCreate = () => {
+
+const FootballerEdit = () => {
   const navigate = useNavigate()
+  const { id } = useParams()
 
-  // states
-  const [addedPlayer, setAddedPlayer ] = useState([])
-  const [ errors, setErrors ] = useState({})
-  const [ formData, setFormData ] = useState({
+
+  const [addedPlayer, setAddedPlayer] = useState([])
+
+  const [formData, setFormData] = useState({
     number: '#',
     fullName: '',
     age: '',
@@ -41,7 +42,32 @@ const FootballerCreate = () => {
     continent: '',
   })
 
-  // user input functions
+  const [errors, setErrors] = useState({})
+
+  // UseEffect
+  useEffect(() => {
+    // Want to make a request for info about the cheese and update each field with it's current value in the db
+    const getSingleCheese = async () => {
+      try {
+        const { data } = await axios.get(`/api/footballers/${id}`)
+        console.log(data)
+        setAddedPlayer(data)
+        setFormData(data)
+      } catch (err) {
+        console.log(err)
+      }
+    }
+    getSingleCheese()
+  }, [id])
+
+  // This useEffect checks to see if the user is the owner
+  useEffect(() => {
+    if (addedPlayer) {
+      // On page load we want to check the user is owner
+      !userIsOwner(addedPlayer) && navigate(`/footballer/${id}`)
+    }
+  }, [addedPlayer, navigate])
+
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value })
     setErrors({ ...errors, [e.target.name]: '' })
@@ -66,7 +92,7 @@ const FootballerCreate = () => {
       })
       navigate(`/footballer/${data.id}`)
       console.log('data --->', data)
-      setAddedPlayer([ ...addedPlayer, formData ])
+      setAddedPlayer([...addedPlayer, formData])
       setFormData({
         number: '#',
         fullName: '',
@@ -95,7 +121,7 @@ const FootballerCreate = () => {
     }
   }
 
-  // Display
+
   return (
     <section className='section-register'>
       {/* Heading */}
@@ -239,7 +265,7 @@ const FootballerCreate = () => {
           </Form.Group>
           <Col sm={6}>
             <Form.Group className='mb-3' as={Col} controlId="formGridState">
-              <Form.Label>Style*</Form.Label> 
+              <Form.Label>Style*</Form.Label>
               <Form.Control as='select' className='trigger' multiple={true} name='styles' value={formData.styles} onChange={handleMultiChange} >
                 <option value={1}>Attacking</option>
                 <option value={2}>defensive</option>
@@ -250,8 +276,8 @@ const FootballerCreate = () => {
             </Form.Group>
           </Col>
         </Row>
-        
-        
+
+
         {/* Checkboxes and register button */}
         <Form.Group className="mb-3 form-label" id="formGridCheckbox">
           <Form.Check className='checkbox' type="checkbox" label="Receive the latest football news and be the first to hear about player updates" />
@@ -271,4 +297,4 @@ const FootballerCreate = () => {
   )
 }
 
-export default FootballerCreate
+export default FootballerEdit
