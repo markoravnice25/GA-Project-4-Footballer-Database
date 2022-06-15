@@ -21,6 +21,11 @@ class Footballer(models.Model):
   contractExpires = models.CharField(max_length=30, default=None)
   marketValue = models.CharField(max_length=50, default=None)
   continent = models.CharField(max_length=30, default=None)
+  owner = models.ForeignKey(
+    'jwt_auth.User',
+    related_name='footballers',
+    on_delete=models.CASCADE,
+  )
   styles = models.ManyToManyField(
     'styles.Style',
     related_name='footballers'

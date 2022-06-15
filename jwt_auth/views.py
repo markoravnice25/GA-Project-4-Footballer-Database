@@ -3,6 +3,7 @@ from rest_framework.views import APIView
 from rest_framework.response import Response
 from rest_framework import status
 from rest_framework.exceptions import PermissionDenied, ValidationError
+from rest_framework.permissions import IsAuthenticated
 
 # python imports
 from datetime import datetime, timedelta
@@ -17,7 +18,19 @@ User = get_user_model()
 
 # serializer import
 from .serializers.common import UserSerializer
+from .serializers.populated import PopulatedUserSerializer
 
+class ProfileView(APIView):
+  permission_classes = (IsAuthenticated, )
+  def get(self, request, pk):
+    try:
+      user = User.objects.get(pk=pk)
+      serialized_user = PopulatedUserSerializer(user)
+      return Response(serialized_user.data, status.HTTP_200_OK)
+    except Exception as e:
+      print(e)
+      return Response({ 'detail': str(e) }, status.HTTP_422_UNPROCESSABLE_ENTITY)
+    
 class RegisterView(APIView):
 
   def post(self, request):

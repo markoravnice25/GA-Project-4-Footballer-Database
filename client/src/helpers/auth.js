@@ -25,10 +25,10 @@ export const userIsAuthenticated = () => {
   return currentTime < payload.exp
 }
 
-export const userIsOwner = (reviews) => {
+export const userIsOwner = (footballer) => {
   // get payload and check it has a value
   // console.log('reviews user owner', reviews.owner._id)
   const payload = getPayload()
   if (!payload) return
-  return reviews.owner._id === payload.sub
+  return footballer.owner === payload.sub
 }

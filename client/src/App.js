@@ -39,7 +39,7 @@ const App = () => {
             <Route path='/register' element={<Register />} />
             <Route path='/login' element={<Login />} />
             <Route path='/footballer/create' element={<FootballerCreate />} />
-            <Route path='/footballer/edit' element={<FootballerEdit />} />
+            <Route path='/footballer/edit/:id' element={<FootballerEdit />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
           <Footer />

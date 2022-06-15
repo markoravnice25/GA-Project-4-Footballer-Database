@@ -18,7 +18,7 @@ const FootballerEdit = () => {
   const { id } = useParams()
 
 
-  const [addedPlayer, setAddedPlayer] = useState([])
+  const [addedPlayer, setAddedPlayer] = useState(false)
 
   const [formData, setFormData] = useState({
     number: '#',
@@ -47,24 +47,32 @@ const FootballerEdit = () => {
   // UseEffect
   useEffect(() => {
     // Want to make a request for info about the cheese and update each field with it's current value in the db
-    const getSingleCheese = async () => {
+    const getFootballer = async () => {
       try {
         const { data } = await axios.get(`/api/footballers/${id}`)
         console.log(data)
         setAddedPlayer(data)
         setFormData(data)
+        // validateUser(addedPlayer)
       } catch (err) {
         console.log(err)
       }
     }
-    getSingleCheese()
+    // const validateUser = (addedPlayer) => {
+    //   if (!userIsOwner(addedPlayer)) {
+    //     console.log('not user')
+    //   }
+    // }
+    getFootballer()
   }, [id])
 
   // This useEffect checks to see if the user is the owner
   useEffect(() => {
-    if (addedPlayer) {
+    if (!userIsOwner(addedPlayer) && addedPlayer) {
       // On page load we want to check the user is owner
-      !userIsOwner(addedPlayer) && navigate(`/footballer/${id}`)
+      console.log('addedplayer ->', addedPlayer)
+      console.log('testing -> ', userIsOwner(addedPlayer))
+      // navigate(`/footballer/${id}`)
     }
   }, [addedPlayer, navigate])
 

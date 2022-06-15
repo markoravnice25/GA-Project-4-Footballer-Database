@@ -13,6 +13,8 @@ import { useParams, Link, useNavigate } from 'react-router-dom'
 import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
+import Button from 'react-bootstrap/Button'
+
 
 // Components
 import FootballersCarousel from '../Home/FootballersCarousel'
@@ -175,6 +177,14 @@ const FootballerShow = ({ footballers }) => {
                   <div className="col-md-2"><p>Club: {footballer.contractExpires}</p></div>
                 </div>
               </Col>
+            </div>
+            <div>
+              {userIsOwner(footballer) &&
+                <div className="owner-buttons mb-4">
+                  <Button variant="danger">Delete Footballer</Button>
+                  <Link className='btn btn-primary' to={`/footballer/edit/${id}`}>Edit Footballer</Link>
+                </div>
+              }
             </div>
             <div className='carousel-column'>
               <FootballersCarousel footballers={footballers} continent={footballer.continent} />
