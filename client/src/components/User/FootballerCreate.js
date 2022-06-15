@@ -11,7 +11,7 @@ import Button from 'react-bootstrap/Button'
 import Col from 'react-bootstrap/esm/Col'
 
 // components
-import { getTokenFromLocalStorage } from '../../helpers/auth'
+import { getTokenFromLocalStorage } from '../../helpers/auth.js'
 
 
 const FootballerCreate = () => {
@@ -56,7 +56,6 @@ const FootballerCreate = () => {
     setFormData({ ...formData, [e.target.name]: value })
     setErrors({ ...errors, [e.target.name]: '' })
   }
-  
 
   const handleSubmit = async (e) => {
     e.preventDefault()
@@ -70,8 +69,25 @@ const FootballerCreate = () => {
       console.log('data --->', data)
       setAddedPlayer([ ...addedPlayer, formData ])
       setFormData({
-        reviewTitle: '',
-        text: '',
+        number: '#',
+        fullName: '',
+        age: '',
+        profileImage: '',
+        dateOfBirth: '',
+        placeOfBirth: '',
+        citizenship: '',
+        height: '',
+        position: '',
+        currentInternational: '',
+        caps: '',
+        goals: '',
+        club: '',
+        league: '',
+        leagueLevel: '',
+        joinedClub: '',
+        contractExpires: '',
+        marketValue: '€',
+        continent: '',
       })
     } catch (error) {
       console.log(error)

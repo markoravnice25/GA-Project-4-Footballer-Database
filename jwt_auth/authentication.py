@@ -23,6 +23,7 @@ class JWTAuthentication(BasicAuthentication):
       return None
 
     # check token starts with 'Bearer' (which is the correct format)
+    print(request.headers)
     if not header.startswith('Bearer'):
       raise PermissionDenied(detail="Auth token is invalid")
 

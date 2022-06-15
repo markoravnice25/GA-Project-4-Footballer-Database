@@ -5,10 +5,12 @@ export const getTokenFromLocalStorage = () => {
 
 export const getPayload = () => {
   const token = getTokenFromLocalStorage()
+  console.log(token)
   
   if (!token) return
 
   const payload = token.split('.')[1]
+  console.log(payload)
   
   // console.log(JSON.parse(atob(payload)))
   return JSON.parse(atob(payload))
@@ -16,14 +18,10 @@ export const getPayload = () => {
 
 // ? function that checks that user is authenticated
 export const userIsAuthenticated = () => {
- 
+
   const payload = getPayload()
-
   if (!payload) return false
- 
   const currentTime = Math.floor(Date.now() / 1000)
-
-
   return currentTime < payload.exp
 }
 

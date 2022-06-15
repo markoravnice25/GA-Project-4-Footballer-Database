@@ -50,7 +50,7 @@ class LoginView(APIView):
     # user is now validated - create expiry for login
     dt = datetime.now() + timedelta(hours=3)
 
-    #TODO - creare token
+    #TODO - create token
     token = jwt.encode(
       # 1st argument is 'sub' and expiry.
       {

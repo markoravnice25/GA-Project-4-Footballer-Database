@@ -1,12 +1,12 @@
 @import './variables.scss';
 
 .background-main {
-  background-color: #cfcbcb;
+  // background-color: #cfcbcb;
 
   .background-contents {
     margin: 0 50px;
     .carousel-column{
-      background-color: #cfcbcb;
+      // background-color: #cfcbcb;
       hr{
         color: black;
       }
@@ -17,7 +17,7 @@
       .continent-row{
         margin-bottom: 0px;
         text-align: center;
-        background-color: rgb(222, 215, 215);
+        // background-color: rgb(222, 215, 215);
         box-shadow: 0px 2px 10px rgba(0,0,0,0.8);
         h2{
           font-weight: 400;
