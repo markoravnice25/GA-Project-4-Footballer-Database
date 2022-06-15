@@ -17,8 +17,7 @@ const FootballerEdit = () => {
   const navigate = useNavigate()
   const { id } = useParams()
 
-
-  const [addedPlayer, setAddedPlayer] = useState(false)
+  const [playerToUpdate, setplayerToUpdate] = useState(false)
 
   const [formData, setFormData] = useState({
     number: '#',
@@ -51,30 +50,25 @@ const FootballerEdit = () => {
       try {
         const { data } = await axios.get(`/api/footballers/${id}`)
         console.log(data)
-        setAddedPlayer(data)
+        setplayerToUpdate(data)
         setFormData(data)
-        // validateUser(addedPlayer)
       } catch (err) {
         console.log(err)
       }
     }
-    // const validateUser = (addedPlayer) => {
-    //   if (!userIsOwner(addedPlayer)) {
-    //     console.log('not user')
-    //   }
-    // }
+
     getFootballer()
   }, [id])
 
-  // This useEffect checks to see if the user is the owner
+  // This useEffect checks to see if the user is the owner, if not navigates back to show page
   useEffect(() => {
-    if (!userIsOwner(addedPlayer) && addedPlayer) {
+    if (!userIsOwner(playerToUpdate) && playerToUpdate) {
       // On page load we want to check the user is owner
-      console.log('addedplayer ->', addedPlayer)
-      console.log('testing -> ', userIsOwner(addedPlayer))
-      // navigate(`/footballer/${id}`)
+      console.log('playerToUpdate ->', playerToUpdate)
+      console.log('testing -> ', userIsOwner(playerToUpdate))
+      navigate(`/footballer/${id}`)
     }
-  }, [addedPlayer, navigate])
+  }, [playerToUpdate, navigate])
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value })
@@ -93,14 +87,14 @@ const FootballerEdit = () => {
   const handleSubmit = async (e) => {
     e.preventDefault()
     try {
-      const { data } = await axios.post('/api/footballers/', formData, {
+      const { data } = await axios.put(`/api/footballers/${id}`, formData, {
         headers: {
           Authorization: `Bearer ${getTokenFromLocalStorage()}`,
         },
       })
       navigate(`/footballer/${data.id}`)
       console.log('data --->', data)
-      setAddedPlayer([...addedPlayer, formData])
+      setplayerToUpdate([...playerToUpdate, formData])
       setFormData({
         number: '#',
         fullName: '',

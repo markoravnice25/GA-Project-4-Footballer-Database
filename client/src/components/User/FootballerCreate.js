@@ -1,7 +1,7 @@
 //TODO - Imports
 // react; axios
-import React, { useState } from 'react'
-import { useNavigate } from 'react-router-dom'
+import React, { useState, useEffect } from 'react'
+import { useNavigate, useParams } from 'react-router-dom'
 import axios from 'axios'
 // bootstrap
 import Row from 'react-bootstrap/Row'
@@ -11,15 +11,17 @@ import Col from 'react-bootstrap/esm/Col'
 
 // components
 import { getTokenFromLocalStorage } from '../../helpers/auth.js'
+import { userIsAuthenticated } from '../../helpers/auth.js'
 
 //TODO - component
 const FootballerCreate = () => {
   const navigate = useNavigate()
+  const { id } = useParams()
 
   // states
-  const [addedPlayer, setAddedPlayer ] = useState([])
-  const [ errors, setErrors ] = useState({})
-  const [ formData, setFormData ] = useState({
+  const [playerToAdd, setplayerToAdd] = useState([])
+  const [errors, setErrors] = useState({})
+  const [formData, setFormData] = useState({
     number: '#',
     fullName: '',
     age: '',
@@ -40,6 +42,17 @@ const FootballerCreate = () => {
     marketValue: '€',
     continent: '',
   })
+
+  // This useEffect checks to see if the user is the owner, if not navigates back to show page
+  useEffect(() => {
+    if (!userIsAuthenticated()) {
+      // On page load we want to check the user is authenticated
+      console.log('user not authenticated')
+      navigate('/login')
+    } else {
+      console.log('user is authenticated')
+    }
+  }, [navigate])
 
   // user input functions
   const handleChange = (e) => {
@@ -66,7 +79,7 @@ const FootballerCreate = () => {
       })
       navigate(`/footballer/${data.id}`)
       console.log('data --->', data)
-      setAddedPlayer([ ...addedPlayer, formData ])
+      setplayerToAdd([...playerToAdd, formData])
       setFormData({
         number: '#',
         fullName: '',
@@ -239,7 +252,7 @@ const FootballerCreate = () => {
           </Form.Group>
           <Col sm={6}>
             <Form.Group className='mb-3' as={Col} controlId="formGridState">
-              <Form.Label>Style*</Form.Label> 
+              <Form.Label>Style*</Form.Label>
               <Form.Control as='select' className='trigger' multiple={true} name='styles' value={formData.styles} onChange={handleMultiChange} >
                 <option value={1}>Attacking</option>
                 <option value={2}>defensive</option>
@@ -250,8 +263,8 @@ const FootballerCreate = () => {
             </Form.Group>
           </Col>
         </Row>
-        
-        
+
+
         {/* Checkboxes and register button */}
         <Form.Group className="mb-3 form-label" id="formGridCheckbox">
           <Form.Check className='checkbox' type="checkbox" label="Receive the latest football news and be the first to hear about player updates" />

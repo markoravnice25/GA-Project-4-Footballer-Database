@@ -12,6 +12,7 @@ import Register from './components/auth/Register.js'
 import Login from './components/auth/Login.js'
 import FootballerCreate from './components/User/FootballerCreate.js'
 import FootballerEdit from './components/User/FootballerEdit.js'
+import UserProfile from './components/User/UserProfile.js'
 
 const App = () => {
 
@@ -40,6 +41,8 @@ const App = () => {
             <Route path='/login' element={<Login />} />
             <Route path='/footballer/create' element={<FootballerCreate />} />
             <Route path='/footballer/edit/:id' element={<FootballerEdit />} />
+            <Route path='/user' element={<UserProfile />} />
+
             <Route path="*" element={<NotFound />} />
           </Routes>
           <Footer />

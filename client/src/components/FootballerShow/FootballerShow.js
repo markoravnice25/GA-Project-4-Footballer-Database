@@ -18,6 +18,7 @@ import Button from 'react-bootstrap/Button'
 
 // Components
 import FootballersCarousel from '../Home/FootballersCarousel'
+import FootballerCard from './FootballerCard'
 
 // import Spinner from '../utilities/Spinner'
 import { userIsAuthenticated, userIsOwner, getTokenFromLocalStorage } from '../../helpers/auth'
