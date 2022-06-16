@@ -37,6 +37,7 @@ const AccountProfile = () => {
     getAccount()
 
   }, [])
+  console.log(account)
 
   return (
     <>

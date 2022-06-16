@@ -65,45 +65,94 @@ const FootballerShow = ({ footballers, callback }) => {
         <>
           <div className="container footballer-show-container">
             <div className='row footballer-title-row'>
-              <h1>{footballer.number} - {footballer.fullName}</h1>
+              <h4>{footballer.number} - {footballer.fullName}</h4>
             </div>
             <div className="row">
-              <div className="col-md-3">
+              <div className="col-md-3 profile-pic">
                 <img src={footballer.profileImage} alt="" />
               </div>
-              <div className="col footballer-info">
+              <div className="col-md-4 footballer-info personal-information">
                 <div className="row footballer-info-row">
-                  <div className="col-md-4"><h4>DOB: {footballer.dateOfBirth} ({footballer.age})</h4></div>
-                  <div className="col-md-4"><h4>Height: {footballer.height}cm</h4></div>
+                  <h2>Personal Information</h2>
                 </div>
                 <div className="row footballer-info-row">
-                  <div className="col-md-4"><h4>Place of birth: {footballer.placeOfBirth}</h4></div>
-                  <div className="col-md-4"><h4>Position: {footballer.position}</h4></div>
+                  <div className="col-md-6"><h4>Date of birth: <br></br><span>{footballer.dateOfBirth}</span></h4></div>
+                  <div className="col-md-6"><h4>Age: <br></br><span>{footballer.age}</span></h4></div>
                 </div>
                 <div className="row footballer-info-row">
-                  <div className="col-md-4"><h4>Citizenship: {footballer.citizenship}</h4></div>
-                  <div className="col-md-4"><h4>Club: {footballer.club}</h4></div>
+                  <div className="col-md-6"><h4>Place of Birth: <br></br><span>{footballer.placeOfBirth}</span></h4></div>
+                  <div className="col-md-6"><h4>Citizenship: <br></br><span>{footballer.citizenship}</span></h4></div>
                 </div>
                 <div className="row footballer-info-row">
-                  <div className="col-md-4"><h4>Country: {footballer.currentInternational}</h4></div>
-                  <div className="col-md-4"><h4>Club: {footballer.leagueLevel}</h4></div>
+                  <div className="col-md-6"><h4>Height: <br></br><span>{footballer.height}cm</span></h4></div>
+                  <div className="col-md-6"><h4>Continent: <br></br><span>{footballer.continent}</span></h4></div>
                 </div>
                 <div className="row footballer-info-row">
-                  <div className="col-md-4"><h4>Caps/Goals: {footballer.caps}/{footballer.goals}</h4></div>
-                  <div className="col-md-4"><h4>League: {footballer.joinedClub}</h4></div>
+                  <div className="col-md-6"><h4>International Caps: <br></br><span>{footballer.caps}</span></h4></div>
+                  <div className="col-md-6"><h4>International Goals: <br></br><span>{footballer.goals}</span></h4></div>
+                </div>
+                {/* {footballer.styles && footballers.styles.map(style => {
+                    return (
+                      <div key={style.name}>
+                        <p>{style.name}</p>
+                      </div>
+                    )
+                  })} */}
+              </div>
+              <div className="col-md-4 footballer-info football-information">
+                <div className="row footballer-info-row">
+                  <h2>Football Information</h2>
                 </div>
                 <div className="row footballer-info-row">
-                  <div className="col-md-4"><h4>Value: {footballer.marketValue}</h4></div>
-                  <div className="col-md-4"><h4>Club: {footballer.contractExpires}</h4></div>
+                  <div className="col-md-6"><h4>Position: <br></br><span>{footballer.position}</span></h4></div>
+                  <div className="col-md-6"><h4>Current International: <br></br><span>{footballer.currentInternational}</span></h4></div>
+                </div>
+                <div className="row footballer-info-row">
+                  <div className="col-md-6"><h4>Club: <br></br><span>{footballer.club}</span></h4></div>
+                  <div className="col-md-6"><h4>League: <br></br><span>{footballer.league}</span></h4></div>
+                </div>
+                <div className="row footballer-info-row">
+                  <div className="col-md-6"><h4>League Level: <br></br><span>{footballer.leagueLevel}</span></h4></div>
+                  <div className="col-md-6"><h4>Joined Club: <br></br><span>{footballer.joinedClub}</span></h4></div>
+                </div>
+                <div className="row footballer-info-row">
+                  <div className="col-md-6"><h4>Contract Expires: <br></br><span>{footballer.contractExpires}</span></h4></div>
+                  <div className="col-md-6"><h4>marketValue: <br></br><span>{footballer.marketValue}</span></h4></div>
                 </div>
               </div>
+              {/* <div className="col-md-3 footballer-info">
+                <div className="row footballer-info-row">
+                  <div className="col-md-6"><h4>Place of birth: {footballer.placeOfBirth}</h4></div>
+                  <div className="col-md-6"><h4>Position: {footballer.position}</h4></div>
+                </div>
+                <div className="row footballer-info-row">
+                  <div className="col-md-6"><h4>Citizenship: {footballer.citizenship}</h4></div>
+                  <div className="col-md-6"><h4>Club: {footballer.club}</h4></div>
+                </div>
+                <div className="row footballer-info-row">
+                  <div className="col-md-6"><h4>Country: {footballer.currentInternational}</h4></div>
+                  <div className="col-md-6"><h4>Club: {footballer.leagueLevel}</h4></div>
+                </div>
+                <div className="row footballer-info-row">
+                  <div className="col-md-6"><h4>Caps/Goals: {footballer.caps}/{footballer.goals}</h4></div>
+                  <div className="col-md-6"><h4>Joined Club: {footballer.joinedClub}</h4></div>
+                </div>
+                <div className="row footballer-info-row">
+                  <div className="col-md-6"><h4>Value: {footballer.marketValue}</h4></div>
+                  <div className="col-md-6"><h4>Club: {footballer.contractExpires}</h4></div>
+                </div>
+                <div className="row footballer-info-row">
+                  <div className="col-md-6"><h4>Continent: {footballer.continent}</h4></div>
+                  <div className="col-md-6"><h4>Club: {footballer.contractExpires}</h4></div>
+                </div>
+              </div> */}
             </div>
           </div>
           {userIsOwner(footballer) && userIsAuthenticated() &&
-          <div className="owner-buttons mb-4">
-            <Button className='delete' onClick={deleteFootballer}>Delete {footballer.fullName}</Button>
-            <Link className='btn edit' to={`/footballer/edit/${id}`}>Edit {footballer.fullName}</Link>
-          </div>
+            <div className="owner-buttons mb-4">
+              <Button className='delete' onClick={deleteFootballer}>Delete {footballer.fullName}</Button>
+              <Link className='btn edit' to={`/footballer/edit/${id}`}>Edit {footballer.fullName}</Link>
+            </div>
           }
           <div className='carousel-column carousel-column-show-page'>
             <FootballersCarousel footballers={footballers} continent={footballer.continent} />

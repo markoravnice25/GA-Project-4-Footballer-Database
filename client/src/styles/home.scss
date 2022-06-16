@@ -6,7 +6,7 @@
     margin: 0 50px;
     .main-slider{
       margin: 10px 0 30px 0;
-      box-shadow: 0px 2px 10px rgba(0,0,0,0.8);
+      box-shadow: 0px 2px 10px rgba(13, 9, 90, 0.9);
     }  
     .carousel-column{
       background-color: #cfcbcb;
@@ -17,7 +17,7 @@
         margin-bottom: 0px;
         text-align: center;
         background-color: rgb(222, 215, 215);
-        box-shadow: 0px 2px 10px rgba(0,0,0,0.8);
+        box-shadow: 0px 2px 10px rgba(13, 9, 90, 0.9);
         height: 450px;
         h2{
           font-weight: 400;
@@ -92,11 +92,10 @@
                   font-weight: 900;
                 }
               }
-              .age-value{
+              .footballer-details{
                 margin-top: 0px;
                 height: 100%;
                 overflow: hidden;
-    
                 h5{
                   font-size: 0.8em;
                   // color: #beb99c;

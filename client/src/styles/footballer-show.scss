@@ -4,16 +4,61 @@
   background-color: rgb(222, 215, 215);
   box-shadow: 0px 2px 10px rgba(13, 9, 90, 0.9);
   height: 500px;
-  font-family: "Source Sans Pro",sans-serif;
   .footballer-title-row {
     margin-bottom: 20px;
+    h4 {
+      margin-top: 10px;
+      font-size: 2em;
+      font-weight: 900;
+      color: rgba(13, 9, 90, 0.9)
+    }
   }
   margin: 40px 0 20px 0;
+  .personal-information {
+    box-shadow: 0px 2px 10px rgba(187, 52, 7, 0.9);
+    h2 {
+      color: rgba(187, 52, 7, 0.9);
+    }
+    span {
+      color: rgba(187, 52, 7, 0.9);
+    }
+  }
+  .football-information {
+    box-shadow: 0px 2px 10px rgba(36, 159, 8, 0.9);
+    h2 {
+      color: rgba(36, 159, 8, 0.9);
+    }
+    span {
+      color: rgba(36, 159, 8, 0.9);
+    }
+  }
+  
   .footballer-info {
-    margin-top: 20px;
+    margin-top: 0px;
+    height: 100%;
+    overflow: hidden;
+    margin: 0 22px;
+    padding: 10px 0 16px 10px;
     .footballer-info-row {
-      margin-bottom: 20px;
-    } 
+      margin-bottom: 16px;
+      font-family: "Source Sans Pro",sans-serif;
+      h2 {
+        font-family: 'smooch';
+        font-size: 2.4em;
+        text-decoration: underline;
+      }
+      h4 {
+        font-size: 1.2em;
+        // color: #beb99c;
+        font-weight: 400;
+        margin-left: 0px;
+        span {
+          font-family: 'smooch';
+          // font-weight: 900;
+          font-size: 1.1em;
+        }
+      }
+    }
   }
 }
 .owner-buttons {
