@@ -25,22 +25,22 @@ class FootballerListView(APIView):
 
   # Post one
   def post(self, request):
-    deserialized_footballer = FootballerSerializer(data=request.data)
-    try:
-      deserialized_footballer.is_valid(True)
-      print('check deserialized -> ', deserialized_footballer.errors)
-      # if we get to this point, validation has passed. If is_valid() fails, it will throw an exception
-      deserialized_footballer.save()
-      # if we get to this point, the record has been saved
-      # when saving, a data key is added to the Album instance that contains a python copy of the record that has just been created
-      return Response(deserialized_footballer.data, status.HTTP_201_CREATED)
-    except ValidationError:
-      print(deserialized_footballer.errors)
-      return Response(deserialized_footballer.errors, status.HTTP_422_UNPROCESSABLE_ENTITY)
-    except Exception as e:
-      print(type(e))
-      print(e)
-      return Response({ 'detail': str(e) }, status.HTTP_422_UNPROCESSABLE_ENTITY)
+      deserialized_footballer = FootballerSerializer(data=request.data)
+      try:
+        deserialized_footballer.is_valid(True)
+        print('check deserialized -> ', deserialized_footballer.errors)
+        # if we get to this point, validation has passed. If is_valid() fails, it will throw an exception
+        deserialized_footballer.save()
+        # if we get to this point, the record has been saved
+        # when saving, a data key is added to the Album instance that contains a python copy of the record that has just been created
+        return Response(deserialized_footballer.data, status.HTTP_201_CREATED)
+      except ValidationError:
+        print(deserialized_footballer.errors)
+        return Response(deserialized_footballer.errors, status.HTTP_422_UNPROCESSABLE_ENTITY)
+      except Exception as e:
+        print(type(e))
+        print(e)
+        return Response({ 'detail': str(e) }, status.HTTP_422_UNPROCESSABLE_ENTITY)
 
 # Detail View
 class FootballerDetailView(APIView):

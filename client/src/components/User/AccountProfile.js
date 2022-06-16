@@ -5,13 +5,17 @@ import { useNavigate, useParams, Link } from 'react-router-dom'
 
 import Button from 'react-bootstrap/esm/Button'
 
-import { userIsAuthenticated, getTokenFromLocalStorage } from '../../helpers/auth'
+import { userIsAuthenticated, getTokenFromLocalStorage, getPayload } from '../../helpers/auth'
+
+import FootballersCarousel from '../Home/FootballersCarousel'
 
 const AccountProfile = () => {
   const navigate = useNavigate()
-  const { id } = useParams()
   const [account, setAccount] = useState('')
   const [errors, setErrors] = useState(false)
+
+  const payload = getPayload()
+  const id = payload.sub
 
   useEffect(() => {
     !userIsAuthenticated() && navigate('/login')
@@ -54,6 +58,29 @@ const AccountProfile = () => {
         {/* <Button variant="danger">Delete Footballer</Button> */}
         <Link className='btn btn-primary' to={'/footballer/add'}>Add Footballer</Link>
       </div>
+      <div>{account && account.footballers && account.footballers.map(footballer => {
+        console.log(footballer)
+        return (
+          <div key={footballer.id}>
+            <Link to={`/footballer/${footballer.id}`}>
+              <div className="image-wrapper">
+                <img src={footballer.profileImage} />
+              </div>
+              <div className='card-body-home'>
+                <div className='card-title'>
+                  <h4>{footballer.fullName}</h4>
+                </div>
+                <div className='player-age'>
+                  <h5>{footballer.age}</h5>
+                </div>
+                <h4 className="player-citizenship">{footballer.citizenship}</h4>
+              </div>
+            </Link>
+          </div>
+        )
+      })}
+      </div>
+
     </>
 
   )

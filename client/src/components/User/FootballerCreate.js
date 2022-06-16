@@ -11,12 +11,14 @@ import Col from 'react-bootstrap/esm/Col'
 
 // components
 import { getTokenFromLocalStorage } from '../../helpers/auth.js'
-import { userIsAuthenticated } from '../../helpers/auth.js'
+import { userIsAuthenticated, getPayload } from '../../helpers/auth.js'
 
 //TODO - component
-const FootballerCreate = () => {
+const FootballerCreate = ({ callback }) => {
   const navigate = useNavigate()
   const { id } = useParams()
+  const payload = getPayload()
+  console.log(payload)
 
   // states
   const [playerToAdd, setplayerToAdd] = useState([])
@@ -41,6 +43,7 @@ const FootballerCreate = () => {
     contractExpires: '',
     marketValue: '€',
     continent: '',
+    owner: payload.sub,
   })
 
   // This useEffect checks to see if the user is the owner, if not navigates back to show page
@@ -77,6 +80,7 @@ const FootballerCreate = () => {
           Authorization: `Bearer ${getTokenFromLocalStorage()}`,
         },
       })
+      callback(Math.random())
       navigate(`/footballer/${data.id}`)
       console.log('data --->', data)
       setplayerToAdd([...playerToAdd, formData])

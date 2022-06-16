@@ -42,7 +42,7 @@ const PageNavBar = () => {
               {/* <Nav.Link as={Link} to="/account/">ACCOUNT</Nav.Link> */}
               <Nav.Link onClick={handleLogout}>LOGOUT</Nav.Link>
               <Nav.Link as={Link} to="/">FAVOURITES</Nav.Link>
-
+              <Nav.Link as={Link} to="/account">ACCOUNT</Nav.Link>
             </>
 
             :

@@ -13,11 +13,13 @@ import Login from './components/auth/Login.js'
 import FootballerCreate from './components/User/FootballerCreate.js'
 import FootballerEdit from './components/User/FootballerEdit.js'
 import AccountProfile from './components/User/AccountProfile.js'
+import FootballersAdded from './components/User/FootballersAdded.js'
 
 const App = () => {
 
   // state
   const [footballers, setFootballers] = useState([])
+  const [updateFootballers, setUpdateFootballers] = useState(Math.random())
 
   // fetch data
   useEffect(() => {
@@ -29,6 +31,14 @@ const App = () => {
   }, [])
   console.log(footballers)
 
+  useEffect(() => {
+    const getData = async () => {
+      const { data } = await axios.get('/api/footballers/')
+      setFootballers(data)
+    }
+    getData()
+  }, [updateFootballers])
+
   return (
     <main className='background-main'>
       <section className='background-contents'>
@@ -36,12 +46,13 @@ const App = () => {
           <PageNavBar />
           <Routes>
             <Route path="/" element={<Home footballers={footballers} />} />
-            <Route path='/footballer/:id' element={<FootballerShow footballers={footballers} />} />
+            <Route path='/footballer/:id' element={<FootballerShow callback={setUpdateFootballers} footballers={footballers} />} />
             <Route path='/register' element={<Register />} />
             <Route path='/login' element={<Login />} />
-            <Route path='/footballer/add' element={<FootballerCreate />} />
+            <Route path='/footballer/add' element={<FootballerCreate callback={setUpdateFootballers} />} />
             <Route path='/footballer/edit/:id' element={<FootballerEdit />} />
-            <Route path='/account/:id' element={<AccountProfile />} />
+            <Route path='/account' element={<AccountProfile />} />
+            <Route path='/account/favourites' element={<FootballersAdded />} />
 
             <Route path="*" element={<NotFound />} />
           </Routes>
