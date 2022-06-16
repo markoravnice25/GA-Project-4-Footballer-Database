@@ -13,7 +13,6 @@ import Login from './components/auth/Login.js'
 import FootballerCreate from './components/User/FootballerCreate.js'
 import FootballerEdit from './components/User/FootballerEdit.js'
 import AccountProfile from './components/User/AccountProfile.js'
-import FootballersAdded from './components/User/FootballersAdded.js'
 
 const App = () => {
 
@@ -52,7 +51,6 @@ const App = () => {
             <Route path='/footballer/add' element={<FootballerCreate callback={setUpdateFootballers} />} />
             <Route path='/footballer/edit/:id' element={<FootballerEdit />} />
             <Route path='/account' element={<AccountProfile />} />
-            <Route path='/account/favourites' element={<FootballersAdded />} />
 
             <Route path="*" element={<NotFound />} />
           </Routes>
