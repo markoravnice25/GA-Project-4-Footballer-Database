@@ -10,7 +10,7 @@ import NotFound from './components/common/NotFound.js'
 import FootballerShow from './components/FootballerShow/FootballerShow.js'
 import Register from './components/auth/Register.js'
 import Login from './components/auth/Login.js'
-import FootballerCreate from './components/User/FootballerCreate.js'
+import FootballerAdd from './components/User/FootballerAdd.js'
 import FootballerEdit from './components/User/FootballerEdit.js'
 import AccountProfile from './components/User/AccountProfile.js'
 
@@ -48,7 +48,7 @@ const App = () => {
             <Route path='/footballer/:id' element={<FootballerShow callback={setUpdateFootballers} footballers={footballers} />} />
             <Route path='/register' element={<Register />} />
             <Route path='/login' element={<Login />} />
-            <Route path='/footballer/add' element={<FootballerCreate callback={setUpdateFootballers} />} />
+            <Route path='/footballer/add' element={<FootballerAdd callback={setUpdateFootballers} />} />
             <Route path='/footballer/edit/:id' element={<FootballerEdit />} />
             <Route path='/account' element={<AccountProfile />} />
 

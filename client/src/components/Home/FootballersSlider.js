@@ -16,7 +16,7 @@ const FootballersSlider = () => {
   }
 
   return (
-    <Slider {...settingsSingle} className='main-slider'>
+    <Slider {...settingsSingle}>
       <img src="/images/Argentina.jpg" alt="" />
       <img src="/images/Qatar.jpeg" alt="Qatar" />
       <img src="/images/USA.jpg" alt="USA" />

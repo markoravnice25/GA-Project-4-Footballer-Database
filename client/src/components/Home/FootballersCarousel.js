@@ -1,7 +1,6 @@
 // TODO - imports
 // react
 import React, { useState, useEffect } from 'react'
-import axios from 'axios'
 import { Link } from 'react-router-dom'
 // slider
 import Slider from 'react-slick'
@@ -23,7 +22,7 @@ const FootballersCarousel = ({ continent, footballers }) => {
         <h2>{continent}</h2>
         <Slider {...settings} className='carousel-wrapper'>
           {footballers.map(item => {
-            const { fullName, age, profileImage, citizenship, id } = item
+            const { fullName, age, profileImage, citizenship, id, club, position, marketValue } = item
             if (item.continent === continent) {
               return (
                 <div key={id}>
@@ -35,10 +34,18 @@ const FootballersCarousel = ({ continent, footballers }) => {
                       <div className='card-title'>
                         <h4>{fullName}</h4>
                       </div>
-                      <div className='player-age'>
+                      <div className='age-value'>
+                        <h5>{citizenship}</h5>
+                        <h5>{marketValue}</h5>
+                        <h5>{club}</h5>
+                        <h5>{position}</h5>
                         <h5>{age}</h5>
                       </div>
-                      <h4 className="player-citizenship">{citizenship}</h4>
+                      {/* <div className="player-citizenship">
+                        <h4>{club}</h4>
+                        <h4>{position}</h4>
+                        <h4>{age}</h4>
+                      </div> */}
                     </div>
                   </Link>
                 </div>
@@ -49,7 +56,6 @@ const FootballersCarousel = ({ continent, footballers }) => {
       </div>
       <hr />
     </>
-
   )
 }
 

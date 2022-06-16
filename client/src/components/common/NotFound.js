@@ -4,12 +4,13 @@ import { Link } from 'react-router-dom'
 const NotFound = () => {
   return (
     <>
-      <h1>404 Not Found!</h1>      
+      <div>
+        <h1>404 Not Found!</h1>
+      </div>
       <div className='back-home-link'>
-        <a href="/">Back to home page</a>
+        <a href="/">⚽️ Back to home page ⚽️</a>
       </div>
       <hr />
-      
     </>
   )
 }

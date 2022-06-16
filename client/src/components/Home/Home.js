@@ -17,7 +17,9 @@ const Home = ({ footballers }) => {
   // TODO display
   return (
     <>
-      <FootballersSlider />
+      <div className='main-slider'>
+        <FootballersSlider />
+      </div>
       <div className='carousel-column'>
         <FootballersCarousel footballers={footballers} continent='Europe' />
         <FootballersCarousel footballers={footballers} continent='South America' />

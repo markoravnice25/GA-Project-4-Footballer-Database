@@ -129,13 +129,12 @@ const FootballerEdit = () => {
       {/* Heading */}
       <Form className='auth-register' onSubmit={handleSubmit}>
         <Row>
-          <h3 className='create-account'>CREATE AN ACCOUNT</h3>
+          <h3 className='create-account'>EDIT FOOTBALLER DETAILS</h3>
         </Row>
         {/* Description */}
         <Row>
-          <p className='create-account-paragraph'>Start your footballer-database journey by creating your account. Already have an account?
-            <a href="/login"> LOGIN</a> and get
-            browsing through our database.</p>
+          <p className='create-account-paragraph'>You can edit a player which you have added to the database here. Please use 
+            <a href="/https://www.transfermarkt.com/"> transfermarkt</a> website as a guide for which values to edit.</p>
         </Row>
         <Row>
           <p className='create-account-paragraph-2'>Denotes required field *</p>
@@ -144,7 +143,7 @@ const FootballerEdit = () => {
         {/* Name */}
         <Row className="mb-3 form-label">
           <Form.Group as={Col}>
-            <Form.Label>Number*</Form.Label>
+            <Form.Label>Squad Number*</Form.Label>
             <Form.Control type="text" name='number' value={formData.number} onChange={handleChange} />
             {errors.number && <p className='text-danger'>{errors.number}</p>}
           </Form.Group>
@@ -188,7 +187,7 @@ const FootballerEdit = () => {
             {errors.citizenship && <p className='text-danger'>{errors.citizenship}</p>}
           </Form.Group>
           <Form.Group as={Col}>
-            <Form.Label>Height*</Form.Label>
+            <Form.Label>Height (cm)*</Form.Label>
             <Form.Control type="text" name='height' placeholder='number needed in cm - e.g. 185' value={formData.height} onChange={handleChange} />
             {errors.height && <p className='text-danger'>{errors.height}</p>}
           </Form.Group>
@@ -209,12 +208,12 @@ const FootballerEdit = () => {
 
         <Row className="mb-3 form-label">
           <Form.Group as={Col}>
-            <Form.Label>Caps*</Form.Label>
+            <Form.Label>International Caps*</Form.Label>
             <Form.Control type="text" name='caps' placeholder='number needed - e.g. 69' value={formData.caps} onChange={handleChange} />
             {errors.caps && <p className='text-danger'>{errors.caps}</p>}
           </Form.Group>
           <Form.Group as={Col}>
-            <Form.Label>Goals*</Form.Label>
+            <Form.Label>International Goals*</Form.Label>
             <Form.Control type="text" name='goals' placeholder='number needed - e.g. 69' value={formData.goals} onChange={handleChange} />
             {errors.goals && <p className='text-danger'>{errors.goals}</p>}
           </Form.Group>

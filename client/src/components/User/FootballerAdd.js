@@ -14,7 +14,7 @@ import { getTokenFromLocalStorage } from '../../helpers/auth.js'
 import { userIsAuthenticated, getPayload } from '../../helpers/auth.js'
 
 //TODO - component
-const FootballerCreate = ({ callback }) => {
+const FootballerAdd = ({ callback }) => {
   const navigate = useNavigate()
   const { id } = useParams()
   const payload = getPayload()
@@ -118,13 +118,12 @@ const FootballerCreate = ({ callback }) => {
       {/* Heading */}
       <Form className='auth-register' onSubmit={handleSubmit}>
         <Row>
-          <h3 className='create-account'>CREATE AN ACCOUNT</h3>
+          <h3 className='create-account'>ADD YOUR PLAYER TO THE DATABASE</h3>
         </Row>
         {/* Description */}
         <Row>
-          <p className='create-account-paragraph'>Start your footballer-database journey by creating your account. Already have an account?
-            <a href="/login"> LOGIN</a> and get
-            browsing through our database.</p>
+          <p className='create-account-paragraph'>You can add a player of your choice to the database. Please use 
+            <a href="/https://www.transfermarkt.com/"> transfermarkt</a> website to input values of legitimate players with legitimate profile images.</p>
         </Row>
         <Row>
           <p className='create-account-paragraph-2'>Denotes required field *</p>
@@ -133,7 +132,7 @@ const FootballerCreate = ({ callback }) => {
         {/* Name */}
         <Row className="mb-3 form-label">
           <Form.Group as={Col}>
-            <Form.Label>Number*</Form.Label>
+            <Form.Label>Squad Number*</Form.Label>
             <Form.Control type="text" name='number' value={formData.number} onChange={handleChange} />
             {errors.number && <p className='text-danger'>{errors.number}</p>}
           </Form.Group>
@@ -147,7 +146,7 @@ const FootballerCreate = ({ callback }) => {
         <Row className="mb-3 form-label">
           <Form.Group as={Col}>
             <Form.Label>age*</Form.Label>
-            <Form.Control type="text" name='age' placeholder='number needed - e.g. 69' value={formData.age} onChange={handleChange} />
+            <Form.Control type="text" name='age' placeholder='enter age as a number only please' value={formData.age} onChange={handleChange} />
             {errors.age && <p className='text-danger'>{errors.age}</p>}
           </Form.Group>
           <Form.Group as={Col}>
@@ -177,8 +176,8 @@ const FootballerCreate = ({ callback }) => {
             {errors.citizenship && <p className='text-danger'>{errors.citizenship}</p>}
           </Form.Group>
           <Form.Group as={Col}>
-            <Form.Label>Height*</Form.Label>
-            <Form.Control type="text" name='height' placeholder='number needed in cm - e.g. 185' value={formData.height} onChange={handleChange} />
+            <Form.Label>Height (cm)*</Form.Label>
+            <Form.Control type="text" name='height' placeholder='number needed - e.g. 185' value={formData.height} onChange={handleChange} />
             {errors.height && <p className='text-danger'>{errors.height}</p>}
           </Form.Group>
         </Row>
@@ -198,13 +197,13 @@ const FootballerCreate = ({ callback }) => {
 
         <Row className="mb-3 form-label">
           <Form.Group as={Col}>
-            <Form.Label>Caps*</Form.Label>
-            <Form.Control type="text" name='caps' placeholder='number needed - e.g. 69' value={formData.caps} onChange={handleChange} />
+            <Form.Label>International Caps*</Form.Label>
+            <Form.Control type="text" name='caps' placeholder='number of international caps - e.g. 68' value={formData.caps} onChange={handleChange} />
             {errors.caps && <p className='text-danger'>{errors.caps}</p>}
           </Form.Group>
           <Form.Group as={Col}>
-            <Form.Label>Goals*</Form.Label>
-            <Form.Control type="text" name='goals' placeholder='number needed - e.g. 69' value={formData.goals} onChange={handleChange} />
+            <Form.Label>International Goals*</Form.Label>
+            <Form.Control type="text" name='goals' placeholder='number of international goals - e.g. 70' value={formData.goals} onChange={handleChange} />
             {errors.goals && <p className='text-danger'>{errors.goals}</p>}
           </Form.Group>
         </Row>
@@ -288,4 +287,4 @@ const FootballerCreate = ({ callback }) => {
   )
 }
 
-export default FootballerCreate
+export default FootballerAdd
