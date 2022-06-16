@@ -266,19 +266,10 @@ const FootballerAdd = ({ callback }) => {
             </Form.Group>
           </Col>
         </Row>
-
-
-        {/* Checkboxes and register button */}
-        <Form.Group className="mb-3 form-label" id="formGridCheckbox">
-          <Form.Check className='checkbox' type="checkbox" label="Receive the latest football news and be the first to hear about player updates" />
-        </Form.Group>
         <Row>
-          <Form.Group as={Col} className="mb-3 form-label" id="formGridCheckbox">
-            <Form.Check className='checkbox2' type="checkbox" label="I agree to the footballer-database Terms and Conditions." />
-          </Form.Group>
           <Form.Group as={Col}>
             <Button className='button-register' type="submit">
-              REGISTER
+              ADD PLAYER
             </Button>
           </Form.Group>
         </Row>

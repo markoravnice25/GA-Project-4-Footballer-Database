@@ -41,23 +41,37 @@ const AccountProfile = () => {
 
   return (
     <>
-      <div className="container">
-        <div className="row">
-          <div className="col-md-4 offset-md-3"><p>username: {account.username}</p></div>
-          <div className="col-md-4"><p>email: {account.email}</p></div>
+      <div className="container footballer-show-container">
+        <div className='row footballer-title-row'>
+          <h4>{account.username}</h4>
         </div>
         <div className="row">
-          <div className="col-md-4 offset-md-3"><p>First Name: {account.first_name}</p></div>
-          <div className="col-md-4"><p>Last Name: {account.last_name}</p></div>
+          <div className="col-md-3 profile-pic">
+            <img src={account.profile_image} alt="" />
+          </div>
+          <div className="col-md-3 footballer-info personal-information">
+            <div className="row footballer-info-row">
+              <h2>Personal Information</h2>
+            </div>
+            <div className="row footballer-info-row">
+              <div className="col-md-6"><h4>Name: <br></br><span>{account.first_name}</span></h4></div>
+            </div>
+            <div className="row footballer-info-row">
+              <div className="col-md-6"><h4>Surname: <br></br><span>{account.last_name}</span></h4></div>
+            </div>
+            <div className="row footballer-info-row">
+              <div className="col-md-6"><h4>Email: <br></br><span>{account.email}cm</span></h4></div>
+            </div>
+            <div className="row footballer-info-row">
+              <div className="col-md-6"><h4>Citizenship: <br></br><span>{account.nationality}</span></h4></div>
+            </div>
+          </div>
+          <div className="col-md-2 football-information">
+            <div className="owner-buttons mb-4">
+              <Link className='btn edit' to={'/footballer/add'}>Add Footballer</Link>
+            </div>
+          </div>
         </div>
-        <div className="row">
-          <div className="col-md-4 offset-md-3"><p>Profile Image: {account.profile_image}</p></div>
-          <div className="col-md-4"><p>Nationality: {account.nationality}</p></div>
-        </div>
-      </div>
-      <div className="owner-buttons mb-4">
-        {/* <Button variant="danger">Delete Footballer</Button> */}
-        <Link className='btn btn-primary' to={'/footballer/add'}>Add Footballer</Link>
       </div>
       <div>{account && account.footballers && account.footballers.map(footballer => {
         console.log(footballer)

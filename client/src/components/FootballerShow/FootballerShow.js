@@ -1,17 +1,9 @@
 import React, { useState, useEffect } from 'react'
 import axios from 'axios'
 import { useParams, Link, useNavigate } from 'react-router-dom'
-// import { ReviewDisplay } from './ReviewDisplay'
-// import { SimilarBookDisplay } from './SimilarBookDisplay'
-// slider
-// import Slider from 'react-slick'
-// import 'slick-carousel/slick/slick.css'
-// import 'slick-carousel/slick/slick-theme.css'
-
 
 // Bootstrap components76t
 import Button from 'react-bootstrap/Button'
-
 
 // Components
 import FootballersCarousel from '../Home/FootballersCarousel'
@@ -31,8 +23,6 @@ const FootballerShow = ({ footballers, callback }) => {
         const response = await axios.get(`/api/footballers/${id}`)
         console.log(response)
         setFootballer(response.data)
-        // setFormData(data)
-        // setReviews(data.reviews)
       } catch (error) {
         setErrors(true)
       }
@@ -50,8 +40,6 @@ const FootballerShow = ({ footballers, callback }) => {
           Authorization: `Bearer ${getTokenFromLocalStorage()}`,
         },
       })
-      // If successful navigate away from the single page back to cheeses
-      // When cheeses loads, it makes a fresh api call getting new data, without this cheese in it
       callback(Math.random())
       navigate('/account')
     } catch (error) {
@@ -120,32 +108,6 @@ const FootballerShow = ({ footballers, callback }) => {
                   <div className="col-md-6"><h4>marketValue: <br></br><span>{footballer.marketValue}</span></h4></div>
                 </div>
               </div>
-              {/* <div className="col-md-3 footballer-info">
-                <div className="row footballer-info-row">
-                  <div className="col-md-6"><h4>Place of birth: {footballer.placeOfBirth}</h4></div>
-                  <div className="col-md-6"><h4>Position: {footballer.position}</h4></div>
-                </div>
-                <div className="row footballer-info-row">
-                  <div className="col-md-6"><h4>Citizenship: {footballer.citizenship}</h4></div>
-                  <div className="col-md-6"><h4>Club: {footballer.club}</h4></div>
-                </div>
-                <div className="row footballer-info-row">
-                  <div className="col-md-6"><h4>Country: {footballer.currentInternational}</h4></div>
-                  <div className="col-md-6"><h4>Club: {footballer.leagueLevel}</h4></div>
-                </div>
-                <div className="row footballer-info-row">
-                  <div className="col-md-6"><h4>Caps/Goals: {footballer.caps}/{footballer.goals}</h4></div>
-                  <div className="col-md-6"><h4>Joined Club: {footballer.joinedClub}</h4></div>
-                </div>
-                <div className="row footballer-info-row">
-                  <div className="col-md-6"><h4>Value: {footballer.marketValue}</h4></div>
-                  <div className="col-md-6"><h4>Club: {footballer.contractExpires}</h4></div>
-                </div>
-                <div className="row footballer-info-row">
-                  <div className="col-md-6"><h4>Continent: {footballer.continent}</h4></div>
-                  <div className="col-md-6"><h4>Club: {footballer.contractExpires}</h4></div>
-                </div>
-              </div> */}
             </div>
           </div>
           {userIsOwner(footballer) && userIsAuthenticated() &&
