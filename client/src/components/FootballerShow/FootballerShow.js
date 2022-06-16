@@ -99,7 +99,7 @@ const FootballerShow = ({ footballers, callback }) => {
               </div>
             </div>
           </div>
-          {userIsOwner(footballer) &&
+          {userIsOwner(footballer) && userIsAuthenticated() &&
           <div className="owner-buttons mb-4">
             <Button className='delete' onClick={deleteFootballer}>Delete {footballer.fullName}</Button>
             <Link className='btn edit' to={`/footballer/edit/${id}`}>Edit {footballer.fullName}</Link>
