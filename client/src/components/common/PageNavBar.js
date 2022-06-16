@@ -39,7 +39,7 @@ const PageNavBar = () => {
           {/* Nav Link is an individual link inside a nav. Same as Nav Brand, to spcifiy react navigation use "as" and "to" */}
           {userIsAuthenticated() ?
             <>
-              <Nav.Link as={Link} to="/">ACCOUNT</Nav.Link>
+              {/* <Nav.Link as={Link} to="/account/">ACCOUNT</Nav.Link> */}
               <Nav.Link onClick={handleLogout}>LOGOUT</Nav.Link>
               <Nav.Link as={Link} to="/">FAVOURITES</Nav.Link>
 
