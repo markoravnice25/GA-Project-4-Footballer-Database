@@ -9,7 +9,8 @@ import Button from 'react-bootstrap/Button'
 import FootballersCarousel from '../Home/FootballersCarousel'
 
 import { userIsAuthenticated, userIsOwner, getTokenFromLocalStorage } from '../../helpers/auth'
-const FootballerShow = ({ footballers, callback }) => {
+
+const FootballerShow = ({ footballers, callback, settings }) => {
   const navigate = useNavigate()
   const { id } = useParams()
   const [footballer, setFootballer] = useState(null)

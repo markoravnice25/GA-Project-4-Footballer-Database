@@ -3,7 +3,7 @@ import axios from 'axios'
 
 import { useNavigate, useParams, Link } from 'react-router-dom'
 
-import Button from 'react-bootstrap/esm/Button'
+import Slider from 'react-slick'
 
 import { userIsAuthenticated, getTokenFromLocalStorage, getPayload } from '../../helpers/auth'
 
@@ -16,6 +16,14 @@ const AccountProfile = () => {
 
   const payload = getPayload()
   const id = payload.sub
+
+  const settings = {
+    dots: false,
+    infinite: true,
+    speed: 400,
+    slidesToShow: 6,
+    slidesToScroll: 1,
+  }
 
   useEffect(() => {
     !userIsAuthenticated() && navigate('/login')
@@ -73,31 +81,33 @@ const AccountProfile = () => {
           </div>
         </div>
       </div>
-      <div>{account && account.footballers && account.footballers.map(footballer => {
-        console.log(footballer)
-        return (
-          <div key={footballer.id}>
-            <Link to={`/footballer/${footballer.id}`}>
-              <div className="image-wrapper">
-                <img src={footballer.profileImage} />
+      <div className='continent-row'>
+        <h2>Your Added Players</h2>
+        <Slider {...settings} className='carousel-wrapper'>
+          <div>{account && account.footballers && account.footballers.map(footballer => {
+            console.log(footballer)
+            return (
+              <div key={footballer.id}>
+                <Link to={`/footballer/${footballer.id}`}>
+                  <div className="image-wrapper">
+                    <img src={footballer.profileImage} />
+                  </div>
+                  <div className='card-body-home'>
+                    <div className='card-title'>
+                      <h4>{footballer.fullName}</h4>
+                    </div>
+                    <div className='player-age'>
+                      <h5>{footballer.age}</h5>
+                    </div>
+                    <h4 className="player-citizenship">{footballer.citizenship}</h4>
+                  </div>
+                </Link>
               </div>
-              <div className='card-body-home'>
-                <div className='card-title'>
-                  <h4>{footballer.fullName}</h4>
-                </div>
-                <div className='player-age'>
-                  <h5>{footballer.age}</h5>
-                </div>
-                <h4 className="player-citizenship">{footballer.citizenship}</h4>
-              </div>
-            </Link>
-          </div>
-        )
-      })}
+            )
+          })} </div>
+        </Slider>
       </div>
-
     </>
-
   )
 }
 
