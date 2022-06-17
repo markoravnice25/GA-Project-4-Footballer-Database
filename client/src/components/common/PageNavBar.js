@@ -39,8 +39,8 @@ const PageNavBar = () => {
         <Navbar.Brand as={Link} to="/">⚽️</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <form className='form-inline '>
-          <input type="text" name="searchTerm" placeholder='Search' onChange={handleChange} />
-          <button type="submit" className="btn btn-outline-dark btn-sm" onClick={handleSubmit}>Search</button>
+          <input type="text" name="searchTerm" placeholder='Find Footballer' onChange={handleChange} />
+          <button type="submit" className="search-button" onClick={handleSubmit}>Search</button>
         </form>
         <Navbar.Collapse id="basic-navbar-nav">
           {userIsAuthenticated() ?

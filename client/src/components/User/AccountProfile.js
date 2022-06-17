@@ -83,7 +83,10 @@ const AccountProfile = () => {
       </div>
       <div className='account-page-carousel'>
         <div className='continent-row'>
-          <h2>{account.username}, Here are footballers you&apos;ve added to the database!</h2>
+          <div className='user-added-footballers'>
+            <h2>{account.username} - Here are footballers you&apos;ve added to the database!</h2>
+          </div>
+
           <Slider {...settings} className='carousel-wrapper'>
             {account && account.footballers && account.footballers.map(item => {
               const { fullName, age, profileImage, citizenship, id, club, position, marketValue } = item
