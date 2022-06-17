@@ -13,7 +13,13 @@ const SearchResult = ({ footballers }) => {
     if (footballers.length) {
       const regexSearch = new RegExp(term, 'i')
       const filtered = footballers.filter(footballer => {
-        return regexSearch.test(footballer.fullName) || regexSearch.test(footballer.continent)
+        return regexSearch.test(footballer.fullName) ||
+          regexSearch.test(footballer.continent) ||
+          regexSearch.test(footballer.citizenship) ||
+          regexSearch.test(footballer.number) ||
+          regexSearch.test(footballer.placeOfBirth) ||
+          regexSearch.test(footballer.league) ||
+          regexSearch.test(footballer.position)
       })
       setFilteredFootballers(filtered)
     }
@@ -21,32 +27,36 @@ const SearchResult = ({ footballers }) => {
 
   return (
     <>
-      <section className='serchDisplay'>
-        <h4>Here is your search result</h4>
-        <Container className='mt-5'>
-          {filteredFootballers && filteredFootballers.map(footballer => {
-            console.log(footballer)
-            return (
-              <div key={footballer.id}>
-                <Link to={`/footballer/${footballer.id}`}>
-                  <div className="image-wrapper">
-                    <img src={footballer.profileImage} />
-                  </div>
-                  <div className='card-body-home'>
-                    <div className='card-title'>
-                      <h4>{footballer.fullName}</h4>
+      {filteredFootballers.length ?
+        <section className='serchDisplay'>
+          <h4>Here is your search result</h4>
+          <Container className='mt-5'>
+            {filteredFootballers && filteredFootballers.map(footballer => {
+              console.log(footballer)
+              return (
+                <div key={footballer.id}>
+                  <Link to={`/footballer/${footballer.id}`}>
+                    <div className="image-wrapper">
+                      <img src={footballer.profileImage} />
                     </div>
-                    <div className='player-age'>
-                      <h5>{footballer.age}</h5>
+                    <div className='card-body-home'>
+                      <div className='card-title'>
+                        <h4>{footballer.fullName}</h4>
+                      </div>
+                      <div className='player-age'>
+                        <h5>{footballer.age}</h5>
+                      </div>
+                      <h4 className="player-citizenship">{footballer.citizenship}</h4>
                     </div>
-                    <h4 className="player-citizenship">{footballer.citizenship}</h4>
-                  </div>
-                </Link>
-              </div>
-            )
-          })}
-        </Container>
-      </section>
+                  </Link>
+                </div>
+              )
+            })}
+          </Container>
+        </section>
+        :
+        <p>No results</p>
+      }
     </>
   )
 

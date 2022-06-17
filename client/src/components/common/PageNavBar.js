@@ -1,6 +1,6 @@
 // Todo - imports
 // react
-import React from 'react'
+import React, { useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 
 // components
@@ -16,10 +16,20 @@ import { components } from 'react-select'
 const PageNavBar = () => {
 
   const navigate = useNavigate()
+  const [term, setTerm] = useState('')
 
   const handleLogout = () => {
     window.localStorage.removeItem('project-4-footballer-database')
     navigate('/login')
+  }
+
+  const handleChange = (e) => {
+    setTerm(e.target.value)
+  }
+
+  const handleSubmit = async (e) => {
+    e.preventDefault()
+    navigate(`/search/${term}`)
   }
 
   // todo - return
@@ -28,6 +38,10 @@ const PageNavBar = () => {
       <Container>
         <Navbar.Brand as={Link} to="/">⚽️</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <form className='form-inline '>
+          <input type="text" name="searchTerm" placeholder='Search' onChange={handleChange} />
+          <button type="submit" className="btn btn-outline-dark btn-sm" onClick={handleSubmit}>Search</button>
+        </form>
         <Navbar.Collapse id="basic-navbar-nav">
           {userIsAuthenticated() ?
             <>
