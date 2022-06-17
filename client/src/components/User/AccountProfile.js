@@ -57,7 +57,7 @@ const AccountProfile = () => {
           <div className="col-md-3 profile-pic">
             <img src={account.profile_image} alt="" />
           </div>
-          <div className="col-md-3 footballer-info personal-information">
+          <div className="col-md-3 footballer-info personal-information-account">
             <div className="row footballer-info-row">
               <h2>Personal Information</h2>
             </div>
@@ -74,38 +74,36 @@ const AccountProfile = () => {
               <div className="col-md-6"><h4>Citizenship: <br></br><span>{account.nationality}</span></h4></div>
             </div>
           </div>
-          <div className="col-md-2 football-information">
-            <div className="owner-buttons mb-4">
+          <div className="col-md-2 account-buttons-div">
+            <div className="owner-buttons owner-buttons-account mb-4">
               <Link className='btn edit' to={'/footballer/add'}>Add Footballer</Link>
             </div>
           </div>
         </div>
       </div>
-      <div className='continent-row'>
+      <div>
         <h2>Your Added Players</h2>
-        <Slider {...settings} className='carousel-wrapper'>
-          <div>{account && account.footballers && account.footballers.map(footballer => {
-            console.log(footballer)
-            return (
-              <div key={footballer.id}>
-                <Link to={`/footballer/${footballer.id}`}>
-                  <div className="image-wrapper">
-                    <img src={footballer.profileImage} />
+        <div>{account && account.footballers && account.footballers.map(footballer => {
+          console.log(footballer)
+          return (
+            <div className='your-added-players' key={footballer.id}>
+              <Link to={`/footballer/${footballer.id}`}>
+                <div className="added-image">
+                  <img src={footballer.profileImage} />
+                </div>
+                <div className='added-card-body'>
+                  <div className='added-card-title'>
+                    <h4>{footballer.fullName}</h4>
                   </div>
-                  <div className='card-body-home'>
-                    <div className='card-title'>
-                      <h4>{footballer.fullName}</h4>
-                    </div>
-                    <div className='player-age'>
-                      <h5>{footballer.age}</h5>
-                    </div>
-                    <h4 className="player-citizenship">{footballer.citizenship}</h4>
+                  <div className='added-player-age'>
+                    <h5>{footballer.age}</h5>
                   </div>
-                </Link>
-              </div>
-            )
-          })} </div>
-        </Slider>
+                  <h4 className="added-player-citizenship">{footballer.citizenship}</h4>
+                </div>
+              </Link>
+            </div>
+          )
+        })} </div>
       </div>
     </>
   )

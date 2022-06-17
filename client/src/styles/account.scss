@@ -1,8 +1,17 @@
 .football-information {
-  margin-bottom: 300px;
   .owner-buttons {
+
+  }
+  .owner-buttons-account {
     display: flex;
     justify-content: center;
+    margin: 0 10px;
   }
 }
-
+.account-buttons-div {
+  margin-bottom: 100px;
+}
+.your-added-players {
+display: inline-block;
+margin: 10px;
+}

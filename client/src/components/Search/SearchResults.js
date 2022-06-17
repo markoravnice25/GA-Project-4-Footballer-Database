@@ -28,8 +28,8 @@ const SearchResult = ({ footballers }) => {
   return (
     <>
       {filteredFootballers.length ?
-        <section className='serchDisplay'>
-          <h4>Here is your search result</h4>
+        <section className='search-display'>
+          <h1>Search results:</h1>
           <Container className='mt-5'>
             {filteredFootballers && filteredFootballers.map(footballer => {
               console.log(footballer)
@@ -55,7 +55,9 @@ const SearchResult = ({ footballers }) => {
           </Container>
         </section>
         :
-        <p>No results</p>
+        <div className='no-results'>
+          <h1>No results</h1>
+        </div>
       }
     </>
   )
