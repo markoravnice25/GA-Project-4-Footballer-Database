@@ -13,6 +13,7 @@ import Login from './components/auth/Login.js'
 import FootballerAdd from './components/User/FootballerAdd.js'
 import FootballerEdit from './components/User/FootballerEdit.js'
 import AccountProfile from './components/User/AccountProfile.js'
+import SearchResult from './components/Search/SearchResults.js'
 
 const App = () => {
 
@@ -49,8 +50,9 @@ const App = () => {
             <Route path='/register' element={<Register />} />
             <Route path='/login' element={<Login />} />
             <Route path='/footballer/add' element={<FootballerAdd callback={setUpdateFootballers} />} />
-            <Route path='/footballer/edit/:id' element={<FootballerEdit />} />
+            <Route path='/footballer/edit/:id' element={<FootballerEdit callback={setUpdateFootballers} />} />
             <Route path='/account' element={<AccountProfile />} />
+            <Route path='/search/:term' element={<SearchResult footballers={footballers} />} />
 
             <Route path="*" element={<NotFound />} />
           </Routes>

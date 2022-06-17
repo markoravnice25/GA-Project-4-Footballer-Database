@@ -80,13 +80,13 @@ const FootballerShow = ({ footballers, callback, settings }) => {
                   <div className="col-md-6"><h4>International Caps: <br></br><span>{footballer.caps}</span></h4></div>
                   <div className="col-md-6"><h4>International Goals: <br></br><span>{footballer.goals}</span></h4></div>
                 </div>
-                {/* {footballer.styles && footballers.styles.map(style => {
-                    return (
-                      <div key={style.name}>
-                        <p>{style.name}</p>
-                      </div>
-                    )
-                  })} */}
+                {footballer && footballer.styles && footballer.styles.map(style => {
+                  return (
+                    <div key={style.name}>
+                      <p>{style.name}</p>
+                    </div>
+                  )
+                })}
               </div>
               <div className="col-md-4 footballer-info football-information">
                 <div className="row footballer-info-row">

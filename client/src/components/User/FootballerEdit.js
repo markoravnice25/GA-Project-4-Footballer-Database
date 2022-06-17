@@ -13,11 +13,12 @@ import Col from 'react-bootstrap/esm/Col'
 import { getTokenFromLocalStorage, userIsOwner } from '../../helpers/auth.js'
 
 
-const FootballerEdit = () => {
+const FootballerEdit = ({ callback }) => {
   const navigate = useNavigate()
   const { id } = useParams()
 
   const [playerToUpdate, setplayerToUpdate] = useState(false)
+  
 
   const [formData, setFormData] = useState({
     number: '#',
@@ -92,6 +93,7 @@ const FootballerEdit = () => {
           Authorization: `Bearer ${getTokenFromLocalStorage()}`,
         },
       })
+      callback(Math.random())
       navigate(`/footballer/${data.id}`)
       console.log('data --->', data)
       setplayerToUpdate([...playerToUpdate, formData])
