@@ -1,0 +1,48 @@
+
+.footballer-card {
+display: inline-block;
+margin: 10px 10px;
+  a {
+    text-decoration: none;
+  }
+  .image-wrapper {
+  max-width: 230px;
+  }
+  .card-body-home {
+    height: 120px;
+    text-align: left;
+    color: black;
+    .card-title{
+      margin-top: 0px;
+      overflow: hidden;
+      height:20%;
+      width: 100%;
+      text-align: center;
+      text-decoration: none;
+      h4{
+        margin-top: 0px;
+        font-size: 1em;
+        font-weight: 900;
+      }
+    }
+    .player-age{
+      margin-top: 0px;
+      height: 100%;
+      overflow: hidden;
+      h5{
+        font-size: 0.8em;
+        // color: #beb99c;
+        font-weight: 400;
+        margin-left: 0px;
+      }
+    }
+    .player-citizenship{
+      h4 {
+        font-size: 1.1em;
+        font-weight: 400;
+        margin-top: -100px;
+      }
+    }
+  }
+}
+

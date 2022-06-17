@@ -29,24 +29,26 @@ const SearchResult = ({ footballers }) => {
     <>
       {filteredFootballers.length ?
         <section className='search-display'>
-          <h1>Search results:</h1>
+          <h2>Search results:</h2>
           <Container className='mt-5'>
             {filteredFootballers && filteredFootballers.map(footballer => {
               console.log(footballer)
               return (
-                <div key={footballer.id}>
+                <div className='footballer-card' key={footballer.id}>
                   <Link to={`/footballer/${footballer.id}`}>
                     <div className="image-wrapper">
                       <img src={footballer.profileImage} />
                     </div>
                     <div className='card-body-home'>
                       <div className='card-title'>
-                        <h4>{footballer.fullName}</h4>
+                        <h4>Name: {footballer.fullName}</h4>
                       </div>
                       <div className='player-age'>
-                        <h5>{footballer.age}</h5>
+                        <h5>Age: {footballer.age}</h5>
                       </div>
-                      <h4 className="player-citizenship">{footballer.citizenship}</h4>
+                      <div className="player-citizenship">
+                        <h4>Citizenship: {footballer.citizenship}</h4>
+                      </div>
                     </div>
                   </Link>
                 </div>
