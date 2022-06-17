@@ -81,7 +81,41 @@ const AccountProfile = () => {
           </div>
         </div>
       </div>
-      <div>
+      <div className='account-page-carousel'>
+        <div className='continent-row'>
+          <h2>{account.username}, Here are footballers you&apos;ve added to the database!</h2>
+          <Slider {...settings} className='carousel-wrapper'>
+            {account && account.footballers && account.footballers.map(item => {
+              const { fullName, age, profileImage, citizenship, id, club, position, marketValue } = item
+
+              return (
+                <div key={id}>
+                  <Link to={`/footballer/${id}`}>
+                    <div className="image-wrapper">
+                      <img src={profileImage} />
+                    </div>
+                    <div className='card-body-home'>
+                      <div className='card-title'>
+                        <h4>{fullName}</h4>
+                      </div>
+                      <div className='footballer-details'>
+                        <h5>{citizenship}</h5>
+                        <h5>{marketValue}m</h5>
+                        <h5>{club}</h5>
+                        <h5>{position}</h5>
+                        <h5>{age}</h5>
+                      </div>
+                    </div>
+                  </Link>
+                </div>
+              )
+
+            })}
+          </Slider>
+        </div>
+        <hr />
+      </div>
+      {/* <div>
         <h2>Your Added Players</h2>
         <div>{account && account.footballers && account.footballers.map(footballer => {
           console.log(footballer)
@@ -104,7 +138,7 @@ const AccountProfile = () => {
             </div>
           )
         })} </div>
-      </div>
+      </div> */}
     </>
   )
 }
