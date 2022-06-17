@@ -54,7 +54,19 @@ const FootballerShow = ({ footballers, callback, settings }) => {
         <>
           <div className="container footballer-show-container">
             <div className='row footballer-title-row'>
-              <h4>{footballer.number} - {footballer.fullName}</h4>
+              <div className='col-md-6'>
+                <h4>{footballer.number} - {footballer.fullName}</h4>
+              </div>
+              <div className="styles col-md-4 offset-md-2">
+                <h2>Styles</h2>
+                {footballer && footballer.styles && footballer.styles.map(style => {
+                  return (
+                    <div className="footballer-styles" key={style.name}>
+                      <p><span>{style.name} </span></p>
+                    </div>
+                  )
+                })}
+              </div>
             </div>
             <div className="row">
               <div className="col-md-3 profile-pic">
@@ -80,13 +92,6 @@ const FootballerShow = ({ footballers, callback, settings }) => {
                   <div className="col-md-6"><h4>International Caps: <br></br><span>{footballer.caps}</span></h4></div>
                   <div className="col-md-6"><h4>International Goals: <br></br><span>{footballer.goals}</span></h4></div>
                 </div>
-                {footballer && footballer.styles && footballer.styles.map(style => {
-                  return (
-                    <div key={style.name}>
-                      <p>{style.name}</p>
-                    </div>
-                  )
-                })}
               </div>
               <div className="col-md-4 footballer-info football-information">
                 <div className="row footballer-info-row">
@@ -106,7 +111,7 @@ const FootballerShow = ({ footballers, callback, settings }) => {
                 </div>
                 <div className="row footballer-info-row">
                   <div className="col-md-6"><h4>Contract Expires: <br></br><span>{footballer.contractExpires}</span></h4></div>
-                  <div className="col-md-6"><h4>marketValue: <br></br><span>{footballer.marketValue}</span></h4></div>
+                  <div className="col-md-6"><h4>marketValue: <br></br><span>{footballer.marketValue}m</span></h4></div>
                 </div>
               </div>
             </div>

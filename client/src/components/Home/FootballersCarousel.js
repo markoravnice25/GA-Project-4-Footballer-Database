@@ -36,7 +36,7 @@ const FootballersCarousel = ({ continent, footballers }) => {
                       </div>
                       <div className='footballer-details'>
                         <h5>{citizenship}</h5>
-                        <h5>{marketValue}</h5>
+                        <h5>{marketValue}m</h5>
                         <h5>{club}</h5>
                         <h5>{position}</h5>
                         <h5>{age}</h5>

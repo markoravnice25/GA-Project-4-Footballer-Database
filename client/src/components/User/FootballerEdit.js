@@ -18,7 +18,7 @@ const FootballerEdit = ({ callback }) => {
   const { id } = useParams()
 
   const [playerToUpdate, setplayerToUpdate] = useState(false)
-  
+
 
   const [formData, setFormData] = useState({
     number: '#',
@@ -135,7 +135,7 @@ const FootballerEdit = ({ callback }) => {
         </Row>
         {/* Description */}
         <Row>
-          <p className='create-account-paragraph'>You can edit a player which you have added to the database here. Please use 
+          <p className='create-account-paragraph'>You can edit a player which you have added to the database here. Please use
             <a href="/https://www.transfermarkt.com/"> transfermarkt</a> website as a guide for which values to edit.</p>
         </Row>
         <Row>
