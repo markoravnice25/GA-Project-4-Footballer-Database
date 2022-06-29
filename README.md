@@ -53,6 +53,17 @@ Planning the project out was extremely useful, I would almost say that it was th
 The first step in planning was to write up a draft wireframe on a bunch of A4 pages - I found it extremely useful to put my thoughts down on paper first before creating a digital wireframe.
 
 #### Complete wireframe on excalidaraw
+Before completing the front-end wireframe, I designed the relationships model for the back-end using an [ERD](https://app.quickdatabasediagrams.com). As can be seen on the ERD there are 'one to many' and 'many to many' relationships with the 'User' and 'Footballer' models being the central models for the project. The Footballer, Review and Favourite models are accessible only through an authenticated User; whereas the Style and Continent models are related only to the Footballer model.
+
+![ERD-footballer-database-day-4](https://user-images.githubusercontent.com/101732786/176516583-e27262fe-8a4c-4e91-b6db-a18af8fba46e.png)
+
+
+As can be seen in the wireframe, 4 phases were designed for the fron end - the 1st phase was a MUST in order to meet the project requirements, with the other 3 phases good additions. The phases were colour-coded on the wireframe:
+1) Phase 1 (green) pages: Home; Player Show; Register; Login; Account; Add Footballer; Update Footballer; Nav Bar
+2) Phase 2 (Orange) pages: User Reviews
+3) Phase 3 (Blue) pages: User Favourited Players
+4) Phase 4 (Red) pages: Continent page (only players from selected continent displayed)
+
 
 
 ## Approach Taken
