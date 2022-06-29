@@ -46,8 +46,6 @@ All content was sourced from [transfermarkt.com](https://www.transfermarkt.com/)
 
 
 ## Planning
-![wireframe_footballer-database](https://user-images.githubusercontent.com/101732786/176519711-281461fd-6c7d-4426-8617-2c3bfe53cc18.png)
-
 
 Planning the project out was extremely useful, I would almost say that it was the most important part of the project. Having already done three projects prior to this one I realised that it was critical to compartmentalise this project into phases so that I could meet the MVP first before moving onto other phases. I separated the project into 4 phases and ended up only getting the first one done due to the time-frame.
 
@@ -60,13 +58,13 @@ Before completing the front-end wireframe, I designed the relationships model fo
 <img width="1502" alt="ERD" src="https://user-images.githubusercontent.com/101732786/176517918-c420e34c-7b8e-41ea-a280-3a4af0c2cb3b.png">
 
 #### Complete wireframe on excalidaraw
-As can be seen in the wireframe, 4 phases were designed for the fron end - the 1st phase was a MUST in order to meet the project requirements, with the other 3 phases good additions. The phases were colour-coded on the wireframe:
+As can be seen in the wireframe picture below, 4 phases were designed for the front end - the 1st phase was a MUST in order to meet the project requirements, with the other 3 phases good additions. The phases were colour-coded on the wireframe:
 1) Phase 1 (green) pages: Home; Player Show; Register; Login; Account; Add Footballer; Update Footballer; Nav Bar
 2) Phase 2 (Orange) pages: User Reviews
 3) Phase 3 (Blue) pages: User Favourited Players
 4) Phase 4 (Red) pages: Continent page (only players from selected continent displayed)
 
-
+![wireframe_footballer-database](https://user-images.githubusercontent.com/101732786/176519711-281461fd-6c7d-4426-8617-2c3bfe53cc18.png)
 
 ## Approach Taken
 
