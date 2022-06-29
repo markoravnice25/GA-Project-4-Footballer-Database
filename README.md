@@ -16,8 +16,6 @@ Table of Contents:
 * Future improvements
 * [Visit the website!](https://marko-pokemon.netlify.app/)
 
-![Pokémon home page](https://user-images.githubusercontent.com/101732786/168440028-423931ff-33af-49c5-b8f0-741c837d468e.png)
-
 ## Project Overview
 
 This is my fourth project at the end of the 13 week General Assembly Software Engineering Immersive program. It is a Full-Stack application with my own API. The idea was to have a database of one of my passions - football players. I was inspired to make the website as I frequently browse the website [transfermarkt.com](https://www.transfermarkt.com/) which I used as a guide for this project. I was really motivated for this project and had a lot of ideas, but of course within the timeframe and having under-estimated how long different components would take, I was able to complete considerably less within the 8 days we had to complete the project.
