@@ -18,6 +18,8 @@ Table of Contents:
 
 ## Project Overview
 
+<img width="1307" alt="Player-Show-page" src="https://user-images.githubusercontent.com/101732786/176521673-4440065b-d8c9-4e17-a11a-ef2ee3c7aa70.png">
+
 This is my fourth project at the end of the 13 week General Assembly Software Engineering Immersive program. It is a Full-Stack application with my own API. The idea was to have a database of one of my passions - football players. I was inspired to make the website as I frequently browse the website [transfermarkt.com](https://www.transfermarkt.com/) which I used as a guide for this project. I was really motivated for this project and had a lot of ideas, but of course within the timeframe and having under-estimated how long different components would take, I was able to complete considerably less within the 8 days we had to complete the project.
 
 The application includes:
@@ -59,7 +61,7 @@ Before completing the front-end wireframe, I designed the relationships model fo
 
 #### Complete wireframe on excalidaraw
 As can be seen in the wireframe picture below, 4 phases were designed for the front end - the 1st phase was a MUST in order to meet the project requirements, with the other 3 phases good additions. The phases were colour-coded on the wireframe:
-1) Phase 1 (green) pages: Home; Player Show; Register; Login; Account; Add Footballer; Update Footballer; Nav Bar
+1) Phase 1 (Green) pages: Home; Player Show; Register; Login; Account; Add Footballer; Update Footballer; Nav Bar
 2) Phase 2 (Orange) pages: User Reviews
 3) Phase 3 (Blue) pages: User Favourited Players
 4) Phase 4 (Red) pages: Continent page (only players from selected continent displayed)
