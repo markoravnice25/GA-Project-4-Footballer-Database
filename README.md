@@ -81,11 +81,14 @@ Day 1:
 * Design Front-End wireframe
 
 Day 2: Code Back-End
+
 Day 3: Finished Back-End apart from API
+
 Day 4: 
 * Connect to Back-End to Front-End
 * Create Home page, Nav Bar, Footer, Register/Login.
 * Seeded Back-End API with 100 footballers.
+
 Day 5:
 * Style Home page
 * Style Nav Bar
@@ -93,6 +96,7 @@ Day 5:
 * Style Register/Login pages
 * Create and Style Footballer Show page
 * Refactor Home page carousels using component files.
+
 Day 6:
 * Fix bug - pages weren't displaying
 * Functionality to check that user = owner and display edit/update button on Footballer Show page
@@ -101,11 +105,13 @@ Day 6:
 * Create 'Account Page' with 'Add Footballer' button to navigate to 'Add Player' page
 * Functionality to navigate away from 'Add Footballer' page if not logged in.
 * Bug not fixed - 'Edit Player' page implementing changes only after refreshing page.
+
 Day 7:
 * Add ‘Delete Footballer’ button on Footballer Show page
 * Bug fixed for changes to 'Edit Player' implemented only upon refreshing page
 * Add 'Account' to Nav Bar
 * Style all pages
+
 Day 8:
 * Styling the final product
 * Added Search bar functionality
