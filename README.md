@@ -2,12 +2,13 @@
 
 # Project 4: Footballer Database
 
-
 ## Visit the deployed App [here]()
+
+<img width="1417" alt="Home-page" src="https://user-images.githubusercontent.com/101732786/176667885-f448007f-e9fb-497c-a392-b2e5a06e7e7c.png">
 
 ### Code Installation
 
-Clone or download the repository then execute following commands in terminal:
+If you wish to clone or download the repository then execute following commands in terminal:
 
 #### Back-End
 
