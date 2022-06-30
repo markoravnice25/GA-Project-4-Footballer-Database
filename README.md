@@ -120,6 +120,12 @@ Day 8:
 
 ## Technology used:
 
+#### Back-End:
+* Python
+* Django
+* Django REST Framework
+* JWT
+
 #### Front-end:
 * React
 * JSX
@@ -127,11 +133,6 @@ Day 8:
 * SCSS
 * Bootstrap
 * React Router Dom
-
-#### API:
-* The 'pokeapi' is a huge library of Pokémon endpoints. We used a GET request to fetch all the 1126 Pokémon available (path='/pokemons') and a GET request to fetch individual Pokémon by name ('/pokemons/:name'). The other endpoints accessed were required for the Pokémon show page: stats and moves.
-
-![Pokemon API document](https://user-images.githubusercontent.com/101732786/168439553-60f7d363-27e7-4362-b574-97a6742a8cad.png)
 
 #### Dev tools:
 * VS code
@@ -141,13 +142,15 @@ Day 8:
 * Github
 * Google Chrome dev tools
 * Excalidraw (Wireframe design)
-* Netlify (deployment)
+* Google Docs (Planning and logging)
+* Heroku (Deployment)
+* Zoom
+* Slack
 
 ## Featured Code:
+The code example is a post request to add a footballer to the database by a verified user. First we deserialize python to pass it into a Query Set; then check validity using .is_valid(); finally save the request with .save() and return the response with status 201. If at any point the request fails and Exception is thrown with status 422.
 
-* This was the first project where we used an axios request to fetch data from a public API. It's a really simple piece of code but doing it for the first time was challenging. In this case, we have a useState() for pokemons which we update upon fetching data from the API and we also destructure { data } to have cleaner code. A good learning was also which dependencies to use at the end of the useEffect() - in this case, we use an empty array because we want the data to be fetched only once (upon initial render).
-
-<img width="1158" alt="featured-code-project-2" src="https://user-images.githubusercontent.com/101732786/176465320-d336d1c5-accf-4f3f-be7a-73c1861d12d9.png">
+<img width="1019" alt="Example-code-POST-functionality-back-end" src="https://user-images.githubusercontent.com/101732786/176660581-598f7c98-d419-4852-bc66-b3abc0faf0cf.png">
 
 ## Key learnings:
 
