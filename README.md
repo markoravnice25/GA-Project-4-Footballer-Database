@@ -2,23 +2,8 @@
 
 # Project 4: Footballer Database
 
-Table of Contents:
 
-* Visit deployed App and code installation
-* Project Overview
-* Brief
-* Planning
-* Approach taken
-* Technologies Used
-* Featured Code
-* Key Learnings
-* Challenges
-* Bugs
-* Future improvements
-
-## Visit deployed App and code installation
-
-Visit the deployed App here.
+## Visit the deployed App [here]()
 
 ### Code Installation
 
@@ -44,6 +29,21 @@ from here, execute all commands in the VS code terminal
 * rm -rf .git
 * yarn
 * yarn start
+
+## Table of Contents:
+
+* Visit deployed App and code installation
+* Project Overview
+* Brief
+* Planning
+* Approach taken
+* Technologies Used
+* Featured Code
+* Key Learnings
+* Challenges
+* Bugs
+* Future improvements
+
 
 ## Project Overview
 
