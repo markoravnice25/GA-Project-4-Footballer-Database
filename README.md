@@ -164,7 +164,7 @@ Show Page:
 Register page:
 <img width="1509" alt="Register" src="https://user-images.githubusercontent.com/101732786/176668913-fac87b18-51b7-4817-8859-a5a20e049b22.png">
 
-Update player:
+Edit Footballer page:
 <img width="1507" alt="update-footballer" src="https://user-images.githubusercontent.com/101732786/176669490-79ab9d17-ecc3-4cb7-969b-d466f76a7780.png">
 
 ## Technology used:
