@@ -68,27 +68,46 @@ As can be seen in the wireframe picture below, 4 phases were designed for the fr
 
 ![wireframe_footballer-database](https://user-images.githubusercontent.com/101732786/176519711-281461fd-6c7d-4426-8617-2c3bfe53cc18.png)
 
+#### To-do list
+Finally, to track my progress each day I would create a to-do list with taregets for the day, which I would tick off upon completion.
+
+<img width="599" alt="To-do-list-example" src="https://user-images.githubusercontent.com/101732786/176653197-3027c0c7-d97a-4ce5-9898-540314f71c20.png">
+
 ## Approach Taken
 
-* Day 1: We had our wireframe approved by our head trainer within one hour of starting. We started pair-coding to create the functionality of the Nav bar, followed by the home page. We then worked on the functionality of the Index page, before realizing that it would be wiser to delegate stand alone tasks in order to have the project finsihed on time. I styled the home page while my code-partner finished the functionality of the index page.
-
-* Day 2: We worked on the show page together, and then delegated tasks again, with my code-partner finishing the functionality of the Show page, whilst I styled the Index page. We completed the MVP required with ampple time left - so we pair-coded and added the feature of displaying the pictures of the previous and next evolutions of the Pokémon under the Pokémon picture on the Pokémon show page.
-
-The home page (Home.js) was styled using Bootstrap, and we used Pokémon gifs dowloaded from [here](https://tenor.com/search/pokemon-stickers)
-
-![Pokémon home page](https://user-images.githubusercontent.com/101732786/168438276-3269a585-c4f5-4021-85a2-a3375a95c969.png)
-
-The index (PokemonIndex.js) page was fairly simple in design also, as we used the Bootstrap components <Container /> and <Row /> to create seemingly endless rows of 6 Pokémon per row.
-
-We created handleFilter() and handleSearch() functions to allow the user to seacrh for a Pokémon.
-
-We used a useEffect() and an axios requests to fetch data from the public API, and then update the state of our 'pokemons' array.
-
-![Pokémon Index page](https://user-images.githubusercontent.com/101732786/168439030-1d33530c-f7ae-4bd9-a55a-6bc9e6c79bc0.png)
-
-The most complicated piece was the Pokémon show (PokemonShow.js) page. Here we added the <Accordion /> element to our Bootstrap styling so that the 'moves' section became a retractable dropdown. The most difficult part was creating the Pokémon evolutions to show correctly on the application.
-
-![Pokémon Show page](https://user-images.githubusercontent.com/101732786/168439187-b0581b40-7f13-4d0c-b713-564002c97454.png)
+Day 1:
+* Create Git repository
+* Design Back-End relationships
+* Design Front-End wireframe
+Day 2: Code Back-End
+Day 3: Finished Back-End apart from API
+Day 4: 
+* Connect to Back-End to Front-End
+* Create Home page, Nav Bar, Footer, Register/Login.
+* Seeded Back-End API with 100 footballers.
+Day 5:
+* Style Home page
+* Style Nav Bar
+* Style Footer
+* Style Register/Login pages
+* Create and Style Footballer Show page
+* Refactor Home page carousels using component files.
+Day 6:
+* Fix bug - pages weren't displaying
+* Functionality to check that user = owner and display edit/update button on Footballer Show page
+* Create 'Add Player' page
+* Create 'Edit Player' page (same as create player but fields pre-filled)
+* Create 'Account Page' with 'Add Footballer' button to navigate to 'Add Player' page
+* Functionality to navigate away from 'Add Footballer' page if not logged in.
+* Bug not fixed - 'Edit Player' page implementing changes only after refreshing page.
+Day 7:
+* Add ‘Delete Footballer’ button on Footballer Show page
+* Bug fixed for changes to 'Edit Player' implemented only upon refreshing page
+* Add 'Account' to Nav Bar
+* Style all pages
+Day 8:
+* Styling the final product
+* Added Search bar functionality
 
 ## Technology used:
 
