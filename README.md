@@ -2,7 +2,7 @@
 
 # Project 4: Footballer Database
 
-## Visit the deployed App [here]()
+# Visit the deployed App [here]()
 
 <img width="1417" alt="Home-page" src="https://user-images.githubusercontent.com/101732786/176667885-f448007f-e9fb-497c-a392-b2e5a06e7e7c.png">
 
@@ -152,6 +152,20 @@ Day 8:
 The code example is a post request to add a footballer to the database by a verified user. First we deserialize python to pass it into a Query Set; then check validity using .is_valid(); finally save the request with .save() and return the response with status 201. If at any point the request fails and Exception is thrown with status 422.
 
 <img width="1019" alt="Example-code-POST-functionality-back-end" src="https://user-images.githubusercontent.com/101732786/176660581-598f7c98-d419-4852-bc66-b3abc0faf0cf.png">
+
+## Screenshot walk through of main pages
+
+Home Page:
+<img width="1417" alt="Home-page" src="https://user-images.githubusercontent.com/101732786/176668979-13dcf02d-0d6c-4908-8863-a2a41b22dea3.png">
+
+Show Page:
+<img width="1490" alt="Show-page" src="https://user-images.githubusercontent.com/101732786/176669279-72eac225-4afe-4544-87c7-24f6bd076f43.png">
+
+Register page:
+<img width="1509" alt="Register" src="https://user-images.githubusercontent.com/101732786/176668913-fac87b18-51b7-4817-8859-a5a20e049b22.png">
+
+Update player:
+<img width="1507" alt="update-footballer" src="https://user-images.githubusercontent.com/101732786/176669490-79ab9d17-ecc3-4cb7-969b-d466f76a7780.png">
 
 ## Technology used:
 
