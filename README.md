@@ -79,6 +79,7 @@ Day 1:
 * Create Git repository
 * Design Back-End relationships
 * Design Front-End wireframe
+
 Day 2: Code Back-End
 Day 3: Finished Back-End apart from API
 Day 4: 
