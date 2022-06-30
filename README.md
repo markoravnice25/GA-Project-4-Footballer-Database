@@ -4,6 +4,7 @@
 
 Table of Contents:
 
+* Visit deployed App and code installation
 * Project Overview
 * Brief
 * Planning
@@ -14,7 +15,35 @@ Table of Contents:
 * Challenges
 * Bugs
 * Future improvements
-* [Visit the website!](https://marko-pokemon.netlify.app/)
+
+## Visit deployed App and code installation
+
+Visit the deployed App here.
+
+### Code Installation
+
+Clone or download the repository then execute following commands in terminal:
+
+#### Back-End
+
+* pip install pipenv (only needs to be run once ever)
+* cd into project folder
+* pipenv install django (one time command for each project to install Django)
+* code .
+
+from here, execute all commands in the VS code terminal
+* pipenv shell
+* pipenv install
+* in settings.py  check the name of the db and create it using: createdb dbname
+* python manage.py migrate (make initital migrations)
+* python manage.py runserver
+
+#### Front-End
+* open second terminal for Front-end
+* cd client
+* rm -rf .git
+* yarn
+* yarn start
 
 ## Project Overview
 
@@ -152,35 +181,23 @@ The code example is a post request to add a footballer to the database by a veri
 * Zoom
 * Slack
 
-
-
 ## Key learnings:
 
-* Learning to pair code and delegate tasks whilst working to meet a deadline;
-* Consuming a massive API and prioritising which endpoints to fetch as the pokeapi is a huge API.
-* Using Bootstrap to style the pages.
-* Separating the .js files into deifferent components to make the code cleaner.
-* Using React for the first time
-* Using Insomnia for the first time
-* Learning how to consume a public API
-* Deployment on Netlify
-* Axios requests
-* SCSS
+* Using Python and Django for the first time
+* Desigining relationships on Back-End
 
 ## Challenges:
 
-* Creating the Pokémon evolution images and names to display correctly.
+* Attempting to alter models on the Back-End after already having seeded data caused problems which took significant time to fix.
+* Time constraint means I couldn't style the page as I wished, and the styling is not responsive yet.
 
 ## Bugs
 
-* No bugs apparently present. The API was clean and easy to fetch data from. We had our biggest issues with the Pokémon evolution feature - but we were able to solve that by creating a pokemonChain state which, if truthy, would engage evoData async function which would set the values of the evolution name and image.
+* Styling is not responsive
+* As far as I can tell, bugs have been fixed.
 
 ## Future improvements
 
-* Create buttons/links to access 100 Pokemon at a time - as the index displays all 1126 Pokémon which is a little untidy.
-* Create filter for Pokémon displayed - for example Pokémon which were created in a certain year; strongest Pokémon; Pokémon with 3 evolutions and other variations.
-
-## Visit the website:
-
-* To visit the page, check out my [Netlify link](https://marko-pokemon.netlify.app/)
-* To run on your local server, use 'yarn start'.
+* Reviews page and functionality
+* Favourite Player page and functionality
+* User profile picture upload functionality
