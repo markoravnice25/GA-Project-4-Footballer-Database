@@ -80,9 +80,11 @@ Day 1:
 * Design Back-End relationships
 * Design Front-End wireframe
 
-Day 2: Code Back-End
+Day 2:
+* Code Back-End
 
-Day 3: Finished Back-End apart from API
+Day 3:
+* Finished Back-End apart from API
 
 Day 4: 
 * Connect to Back-End to Front-End
