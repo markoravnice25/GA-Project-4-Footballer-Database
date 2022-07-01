@@ -210,7 +210,11 @@ Edit Footballer page:
 
 * Styling is not responsive
 * Slider at the top of the Home Page doesn't display images. It works fine on th elocal host but not on the HEROKU server. A solution I have been working on is using the images from my cloudinary account and creating and environment variable for the CLOUDINARY_URL, but is still doesn't show up on HEROKU. Looking forward to finding a solution.
+* A bug I haven't been able to fix is with the carousel which displays players. The carousel displays the same player twice (the second underneath the original) unless the full row of designated spots is filled (There are 6 spots in my carousel design). As can be seen in the screen shots below - a test user was created (Marcus Rashford as he's a fave player of mine), Once this user has created 6 players the carousel operates correctly; however when there are less than 6 players available, the carousel displays each player twice, which is a terrible look. Still looking for a solution to this one, I look forward to solving it soon!
 
+<img width="1390" alt="bug-6-player-carousel" src="https://user-images.githubusercontent.com/101732786/176945229-8c6eac8c-ca59-4bf4-829b-4f87d6904a24.png">
+
+<img width="1408" alt="bug-5-player-carousel" src="https://user-images.githubusercontent.com/101732786/176945289-dc7ae654-fc28-4d7f-a0b4-e248fc965608.png">
 
 
 ## Future improvements
