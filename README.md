@@ -2,7 +2,7 @@
 
 # Project 4: Footballer Database
 
-# Visit the deployed App [here]()
+# Visit the deployed App [here](https://footballer-database.herokuapp.com/)
 
 <img width="1417" alt="Home-page" src="https://user-images.githubusercontent.com/101732786/176667885-f448007f-e9fb-497c-a392-b2e5a06e7e7c.png">
 
@@ -209,7 +209,7 @@ Edit Footballer page:
 ## Bugs
 
 * Styling is not responsive
-* As far as I can tell, bugs have been fixed.
+* Slider at the top of the Home Page doesn't display images. It works fine on th elocal host but not on the HEROKU server. A solution I have been working on is using the images from my cloudinary account and creating and environment variable for the CLOUDINARY_URL, but is still doesn't show up on HEROKU. Looking forward to finding a solution.
 
 ## Future improvements
 
