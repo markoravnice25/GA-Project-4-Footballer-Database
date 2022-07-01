@@ -211,6 +211,8 @@ Edit Footballer page:
 * Styling is not responsive
 * Slider at the top of the Home Page doesn't display images. It works fine on th elocal host but not on the HEROKU server. A solution I have been working on is using the images from my cloudinary account and creating and environment variable for the CLOUDINARY_URL, but is still doesn't show up on HEROKU. Looking forward to finding a solution.
 
+
+
 ## Future improvements
 
 * Reviews page and functionality
