@@ -17,7 +17,7 @@ const FootballersSlider = () => {
 
   return (
     <Slider {...settingsSingle}>
-      <img src="/images/Argentina.jpg" alt="" />
+      <img src="https://res.cloudinary.com/dnj5og0ry/image/upload/v1656692327/project-4-footballer-database/Argentina_kuqujs.jpg" alt="Argentina" />
       <img src="/images/Qatar.jpeg" alt="Qatar" />
       <img src="/images/USA.jpg" alt="USA" />
       <img src="/images/Australia.jpeg" alt="Australia" />
