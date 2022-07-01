@@ -49,7 +49,7 @@ const FootballerEdit = ({ callback }) => {
     // Want to make a request for info about the cheese and update each field with it's current value in the db
     const getFootballer = async () => {
       try {
-        const { data } = await axios.get(`/api/footballers/${id}`)
+        const { data } = await axios.get(`/api/footballers/${id}/`)
         console.log(data)
         setplayerToUpdate(data)
         setFormData(data)
@@ -88,7 +88,7 @@ const FootballerEdit = ({ callback }) => {
   const handleSubmit = async (e) => {
     e.preventDefault()
     try {
-      const { data } = await axios.put(`/api/footballers/${id}`, formData, {
+      const { data } = await axios.put(`/api/footballers/${id}/`, formData, {
         headers: {
           Authorization: `Bearer ${getTokenFromLocalStorage()}`,
         },

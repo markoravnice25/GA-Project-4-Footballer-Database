@@ -7,7 +7,7 @@ import Slider from 'react-slick'
 
 import { userIsAuthenticated, getTokenFromLocalStorage, getPayload } from '../../helpers/auth'
 
-import FootballersCarousel from '../Home/FootballersCarousel'
+import FootballersCarousel from '../home/FootballersCarousel'
 
 const AccountProfile = () => {
   const navigate = useNavigate()
@@ -30,7 +30,7 @@ const AccountProfile = () => {
 
     const getAccount = async () => {
       try {
-        const { data } = await axios.get(`/api/auth/profile/${id}`, {
+        const { data } = await axios.get(`/api/auth/profile/${id}/`, {
           headers: {
             Authorization: `Bearer ${getTokenFromLocalStorage()}`,
           },

@@ -6,7 +6,7 @@ import { useParams, Link, useNavigate } from 'react-router-dom'
 import Button from 'react-bootstrap/Button'
 
 // Components
-import FootballersCarousel from '../Home/FootballersCarousel'
+import FootballersCarousel from '../home/FootballersCarousel'
 
 import { userIsAuthenticated, userIsOwner, getTokenFromLocalStorage } from '../../helpers/auth'
 
@@ -21,7 +21,7 @@ const FootballerShow = ({ footballers, callback, settings }) => {
   useEffect(() => {
     const getFootballer = async () => {
       try {
-        const response = await axios.get(`/api/footballers/${id}`)
+        const response = await axios.get(`/api/footballers/${id}/`)
         console.log(response)
         setFootballer(response.data)
       } catch (error) {
@@ -36,7 +36,7 @@ const FootballerShow = ({ footballers, callback, settings }) => {
   const deleteFootballer = async () => {
     try {
       // Sending delete request
-      await axios.delete(`/api/footballers/${id}`, {
+      await axios.delete(`/api/footballers/${id}/`, {
         headers: {
           Authorization: `Bearer ${getTokenFromLocalStorage()}`,
         },
