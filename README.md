@@ -4,18 +4,18 @@
 
 ## Table of Contents:
 
-* Code installation
-* Project Overview
-* Brief
-* Planning
-* Approach taken
-* Screenshot Walkthrough
-* Technologies Used
-* Featured Code
-* Key Learnings
-* Challenges
-* Bugs
-* Future improvements
+* [Code installation](#code-instalaltion)
+* [Project Overview](#project-overview)
+* [Brief](#brief)
+* [Planning](#planning)
+* [Approach taken](#approach-taken)
+* [Screenshot Walkthrough](#screenshot-walkthrough)
+* [Technology Used](#technology-used)
+* [Featured Code](#featured-code)
+* [Key Learnings](#key-learnings)
+* [Challenges](#challenges)
+* [Bugs](#bugs)
+* [Future improvements](#future-improvements)
 * [Website Link](https://footballer-database.herokuapp.com/)
 
 ![wireframe_footballer-database](https://user-images.githubusercontent.com/101732786/176519711-281461fd-6c7d-4426-8617-2c3bfe53cc18.png)
