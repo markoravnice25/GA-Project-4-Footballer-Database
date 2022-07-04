@@ -9,6 +9,7 @@
 * Brief
 * Planning
 * Approach taken
+* Screenshot Walkthrough
 * Technologies Used
 * Featured Code
 * Key Learnings
@@ -17,7 +18,7 @@
 * Future improvements
 * [Website Link](https://footballer-database.herokuapp.com/)
 
-<img width="1417" alt="Home-page" src="https://user-images.githubusercontent.com/101732786/176667885-f448007f-e9fb-497c-a392-b2e5a06e7e7c.png">
+![wireframe_footballer-database](https://user-images.githubusercontent.com/101732786/176519711-281461fd-6c7d-4426-8617-2c3bfe53cc18.png)
 
 ### Code Installation
 
@@ -46,7 +47,7 @@ from here, execute all commands in the VS code terminal
 
 ## Project Overview
 
-<img width="1307" alt="Player-Show-page" src="https://user-images.githubusercontent.com/101732786/176521673-4440065b-d8c9-4e17-a11a-ef2ee3c7aa70.png">
+<img width="1417" alt="Home-page" src="https://user-images.githubusercontent.com/101732786/176667885-f448007f-e9fb-497c-a392-b2e5a06e7e7c.png">
 
 This is my fourth project at the end of the 13 week General Assembly Software Engineering Immersive program. It is a Full-Stack application with my own API. The idea was to have a database of one of my passions - football players. I was inspired to make the website as I frequently browse the website [transfermarkt.com](https://www.transfermarkt.com/) which I used as a guide for this project. I was really motivated for this project and had a lot of ideas, but of course within the timeframe and having under-estimated how long different components would take, I was able to complete considerably less within the 8 days we had to complete the project.
 
@@ -146,12 +147,7 @@ Day 8:
 * Styling the final product
 * Added Search bar functionality
 
-## Featured Code:
-The code example is a post request to add a footballer to the database by a verified user. First we deserialize python to pass it into a Query Set; then check validity using .is_valid(); finally save the request with .save() and return the response with status 201. If at any point the request fails and Exception is thrown with status 422.
-
-<img width="1019" alt="Example-code-POST-functionality-back-end" src="https://user-images.githubusercontent.com/101732786/176660581-598f7c98-d419-4852-bc66-b3abc0faf0cf.png">
-
-## Screenshot walk through of main pages
+## Screenshot Walkthrough
 
 Home Page:
 <img width="1417" alt="Home-page" src="https://user-images.githubusercontent.com/101732786/176668979-13dcf02d-0d6c-4908-8863-a2a41b22dea3.png">
@@ -193,6 +189,11 @@ Edit Footballer page:
 * Heroku (Deployment)
 * Zoom
 * Slack
+
+## Featured Code:
+The code example is a post request to add a footballer to the database by a verified user. First we deserialize python to pass it into a Query Set; then check validity using .is_valid(); finally save the request with .save() and return the response with status 201. If at any point the request fails and Exception is thrown with status 422.
+
+<img width="1019" alt="Example-code-POST-functionality-back-end" src="https://user-images.githubusercontent.com/101732786/176660581-598f7c98-d419-4852-bc66-b3abc0faf0cf.png">
 
 ## Key learnings:
 
