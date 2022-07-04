@@ -4,7 +4,7 @@
 
 ## Table of Contents:
 
-* [Code installation](#code-instalaltion)
+* [Code installation](#code-installation)
 * [Project Overview](#project-overview)
 * [Brief](#brief)
 * [Planning](#planning)
