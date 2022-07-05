@@ -35,7 +35,7 @@ from here, execute all commands in the VS code terminal
 * pipenv shell
 * pipenv install
 * in settings.py  check the name of the db and create it using: createdb dbname
-* python manage.py migrate (make initital migrations)
+* python manage.py migrate (make initial migrations)
 * python manage.py runserver
 
 #### Front-End
@@ -78,7 +78,7 @@ All content was sourced from [transfermarkt.com](https://www.transfermarkt.com/)
 
 ## Planning
 
-Planning the project out was extremely useful, I would almost say that it was the most important part of the project. Having already done three projects prior to this one I realised that it was critical to compartmentalise this project into phases so that I could meet the MVP first before moving onto other phases. I separated the project into 4 phases and ended up only getting the first one done due to the time-frame.
+Planning the project out was extremely useful, I would almost say that it was the most important part of the project. Having already done three projects prior to this one I realised that it was critical to compartmentalise this project into phases so that I could meet the MVP first before moving onto other phases. I separated the project into 4 phases which are colour-coded in the Project Wireframe below, but definitely under-estimated how long it would take to solve bugs and ended up only getting the first Phase done within the time-frame. I was happy because completion of Phase 1 was well in excess of the MVP, though I would have loved to have done more.
 
 #### Draft wireframe on paper
 The first step in planning was to write up a draft wireframe on a bunch of A4 pages - I found it extremely useful to put my thoughts down on paper first before creating a digital wireframe.
@@ -198,7 +198,7 @@ The code example is a post request to add a footballer to the database by a veri
 ## Key learnings:
 
 * Using Python and Django for the first time
-* Desigining relationships on Back-End
+* Designing relationships on Back-End
 
 ## Challenges:
 
@@ -208,7 +208,7 @@ The code example is a post request to add a footballer to the database by a veri
 ## Bugs
 
 * Styling is not responsive
-* A bug I haven't been able to fix is with the carousel which displays players. The carousel displays the same player twice (the second underneath the original) unless the full row of designated spots is filled (There are 6 spots in my carousel design). As can be seen in the screen shots below - a test user was created (Marcus Rashford as he's a fave player of mine), Once this user has created 6 players the carousel operates correctly; however when there are less than 6 players available, the carousel displays each player twice, which is a terrible look. Still looking for a solution to this one, I look forward to solving it soon!
+* A bug I haven't been able to fix is with the carousel which displays players. The carousel displays the same player twice (the second underneath the original) unless the full row of designated spots is filled (There are 6 spots in my carousel design). As can be seen in the screenshots below - a test user was created (Marcus Rashford as he's a fave player of mine), Once this user has created 6 players the carousel operates correctly; however when there are less than 6 players available, the carousel displays each player twice, which is a terrible look. Still looking for a solution to this one, I look forward to solving it soon!
 
 <img width="1390" alt="bug-6-player-carousel" src="https://user-images.githubusercontent.com/101732786/176945229-8c6eac8c-ca59-4bf4-829b-4f87d6904a24.png">
 
