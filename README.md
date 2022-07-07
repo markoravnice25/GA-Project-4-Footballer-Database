@@ -88,7 +88,7 @@ Before completing the front-end wireframe, I designed the relationships model fo
 
 <img width="1502" alt="ERD" src="https://user-images.githubusercontent.com/101732786/176517918-c420e34c-7b8e-41ea-a280-3a4af0c2cb3b.png">
 
-#### Complete wireframe on excalidaraw
+#### Complete wireframe on Excalidaraw
 As can be seen in the wireframe picture below, 4 phases were designed for the front end - the 1st phase was a MUST in order to meet the project requirements, with the other 3 phases good additions. The phases were colour-coded on the wireframe:
 1) Phase 1 (Green) pages: Home; Player Show; Register; Login; Account; Add Footballer; Update Footballer; Nav Bar
 2) Phase 2 (Orange) pages: User Reviews
@@ -98,7 +98,7 @@ As can be seen in the wireframe picture below, 4 phases were designed for the fr
 ![wireframe_footballer-database](https://user-images.githubusercontent.com/101732786/176519711-281461fd-6c7d-4426-8617-2c3bfe53cc18.png)
 
 #### To-do list
-Finally, to track my progress each day I would create a to-do list with taregets for the day, which I would tick off upon completion.
+Finally, to track my progress each day I would create a to-do list with targets for the day, which I would tick off upon completion.
 
 <img width="599" alt="To-do-list-example" src="https://user-images.githubusercontent.com/101732786/176653197-3027c0c7-d97a-4ce5-9898-540314f71c20.png">
 
