@@ -212,6 +212,13 @@ This useEffect uses the userIsOwner() function to check if the user is the owner
 * Using Python and Django for the first time
 * Designing relationships on Back-End
 
+## Wins:
+
+* First fully-functioning Full-Stack application done without assistance
+* Using Python and React simultaneously
+* Really proud of the planning - it allowed me to compartmentalise the project into phases so that I could stay focused on one part at a time
+* Creating fully-functioning one to many and many to many relationships
+
 ## Challenges:
 
 * Attempting to alter models on the Back-End after already having seeded data caused problems which took significant time to fix.
@@ -232,4 +239,4 @@ This useEffect uses the userIsOwner() function to check if the user is the owner
 * Reviews page and functionality
 * Favourite Player page and functionality
 * User profile picture upload functionality
-* Make page Responsive for Smart Phones/Tablets etc.
+* Make page Responsive for Smart Phones/Tablets etc
