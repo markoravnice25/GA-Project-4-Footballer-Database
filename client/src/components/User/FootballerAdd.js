@@ -46,7 +46,7 @@ const FootballerAdd = ({ callback }) => {
     owner: payload.sub,
   })
 
-  // This useEffect checks to see if the user is the owner, if not navigates back to show page
+  // This useEffect checks to see if the user is authenticated, if not navigates back to login page
   useEffect(() => {
     if (!userIsAuthenticated()) {
       // On page load we want to check the user is authenticated
