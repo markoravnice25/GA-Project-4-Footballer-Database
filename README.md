@@ -121,7 +121,7 @@ Day 4:
 * Seeded Back-End API with 100 footballers.
 
 Day 5:
-* Style Home page
+* Style Homepage
 * Style Nav Bar
 * Style Footer
 * Style Register/Login pages
@@ -195,7 +195,7 @@ This Back-End code example is a post request to add a footballer to the database
 
 <img width="1019" alt="Example-code-POST-functionality-back-end" src="https://user-images.githubusercontent.com/101732786/176660581-598f7c98-d419-4852-bc66-b3abc0faf0cf.png">
 
-These next three images are the featured code for authentiaction. The first image is the auth.js file which creates a payload from the token from local storage by using the split() method to get the middle component of the JWT. The userIsAuthenticated() function uses the payload to check that the user is still logged in - i.e. that the payload hasn't expired (set to 6 hours in this app). The userIsOwner() function uses the payload to check that owner of the item (footballer) is the one who is attempting to update the item's details.
+These next three images are the featured code for authentication. The first image is the auth.js file which creates a payload from the token from local storage by using the split() method to get the middle component of the JWT. The userIsAuthenticated() function uses the payload to check that the user is still logged in - i.e. that the payload hasn't expired (set to 6 hours in this app). The userIsOwner() function uses the payload to check that the owner of the item (footballer) is the one who is attempting to update the item's details.
 
 <img width="470" alt="footballer-database-featured-code" src="https://user-images.githubusercontent.com/101732786/177744050-23c341ca-4c9f-4121-897a-d07728b7bc8b.png">
 
