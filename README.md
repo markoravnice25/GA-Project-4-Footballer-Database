@@ -1,10 +1,24 @@
 ## General Assembly Software Engineering Immersive (March - July 2022)
 
-# Project 4: Footballer Database
+# Project 4: [Footballer-Database](https://footballer-database.herokuapp.com/)
 
-## Visit the deployed App [here](https://footballer-database.herokuapp.com/)
+## Table of Contents:
 
-<img width="1417" alt="Home-page" src="https://user-images.githubusercontent.com/101732786/176667885-f448007f-e9fb-497c-a392-b2e5a06e7e7c.png">
+* [Code installation](#code-installation)
+* [Project Overview](#project-overview)
+* [Brief](#brief)
+* [Planning](#planning)
+* [Approach taken](#approach-taken)
+* [Screenshot Walkthrough](#screenshot-walkthrough)
+* [Technology Used](#technology-used)
+* [Featured Code](#featured-code)
+* [Key Learnings](#key-learnings)
+* [Challenges](#challenges)
+* [Bugs](#bugs)
+* [Future improvements](#future-improvements)
+* [Website Link](https://footballer-database.herokuapp.com/)
+
+![wireframe_footballer-database](https://user-images.githubusercontent.com/101732786/176519711-281461fd-6c7d-4426-8617-2c3bfe53cc18.png)
 
 ### Code Installation
 
@@ -21,7 +35,7 @@ from here, execute all commands in the VS code terminal
 * pipenv shell
 * pipenv install
 * in settings.py  check the name of the db and create it using: createdb dbname
-* python manage.py migrate (make initital migrations)
+* python manage.py migrate (make initial migrations)
 * python manage.py runserver
 
 #### Front-End
@@ -31,24 +45,9 @@ from here, execute all commands in the VS code terminal
 * yarn
 * yarn start
 
-## Table of Contents:
-
-* Visit deployed App and code installation
-* Project Overview
-* Brief
-* Planning
-* Approach taken
-* Technologies Used
-* Featured Code
-* Key Learnings
-* Challenges
-* Bugs
-* Future improvements
-
-
 ## Project Overview
 
-<img width="1307" alt="Player-Show-page" src="https://user-images.githubusercontent.com/101732786/176521673-4440065b-d8c9-4e17-a11a-ef2ee3c7aa70.png">
+<img width="1417" alt="Home-page" src="https://user-images.githubusercontent.com/101732786/176667885-f448007f-e9fb-497c-a392-b2e5a06e7e7c.png">
 
 This is my fourth project at the end of the 13 week General Assembly Software Engineering Immersive program. It is a Full-Stack application with my own API. The idea was to have a database of one of my passions - football players. I was inspired to make the website as I frequently browse the website [transfermarkt.com](https://www.transfermarkt.com/) which I used as a guide for this project. I was really motivated for this project and had a lot of ideas, but of course within the timeframe and having under-estimated how long different components would take, I was able to complete considerably less within the 8 days we had to complete the project.
 
@@ -79,7 +78,7 @@ All content was sourced from [transfermarkt.com](https://www.transfermarkt.com/)
 
 ## Planning
 
-Planning the project out was extremely useful, I would almost say that it was the most important part of the project. Having already done three projects prior to this one I realised that it was critical to compartmentalise this project into phases so that I could meet the MVP first before moving onto other phases. I separated the project into 4 phases and ended up only getting the first one done due to the time-frame.
+Planning the project out was extremely useful, I would almost say that it was the most important part of the project. Having already done three projects prior to this one I realised that it was critical to compartmentalise this project into phases so that I could meet the MVP first before moving onto other phases. I separated the project into 4 phases which are colour-coded in the Project Wireframe below, but definitely under-estimated how long it would take to solve bugs and ended up only getting the first Phase done within the time-frame. I was happy because completion of Phase 1 was well in excess of the MVP, though I would have loved to have done more.
 
 #### Draft wireframe on paper
 The first step in planning was to write up a draft wireframe on a bunch of A4 pages - I found it extremely useful to put my thoughts down on paper first before creating a digital wireframe.
@@ -89,7 +88,7 @@ Before completing the front-end wireframe, I designed the relationships model fo
 
 <img width="1502" alt="ERD" src="https://user-images.githubusercontent.com/101732786/176517918-c420e34c-7b8e-41ea-a280-3a4af0c2cb3b.png">
 
-#### Complete wireframe on excalidaraw
+#### Complete wireframe on Excalidaraw
 As can be seen in the wireframe picture below, 4 phases were designed for the front end - the 1st phase was a MUST in order to meet the project requirements, with the other 3 phases good additions. The phases were colour-coded on the wireframe:
 1) Phase 1 (Green) pages: Home; Player Show; Register; Login; Account; Add Footballer; Update Footballer; Nav Bar
 2) Phase 2 (Orange) pages: User Reviews
@@ -99,7 +98,7 @@ As can be seen in the wireframe picture below, 4 phases were designed for the fr
 ![wireframe_footballer-database](https://user-images.githubusercontent.com/101732786/176519711-281461fd-6c7d-4426-8617-2c3bfe53cc18.png)
 
 #### To-do list
-Finally, to track my progress each day I would create a to-do list with taregets for the day, which I would tick off upon completion.
+Finally, to track my progress each day I would create a to-do list with targets for the day, which I would tick off upon completion.
 
 <img width="599" alt="To-do-list-example" src="https://user-images.githubusercontent.com/101732786/176653197-3027c0c7-d97a-4ce5-9898-540314f71c20.png">
 
@@ -148,12 +147,7 @@ Day 8:
 * Styling the final product
 * Added Search bar functionality
 
-## Featured Code:
-The code example is a post request to add a footballer to the database by a verified user. First we deserialize python to pass it into a Query Set; then check validity using .is_valid(); finally save the request with .save() and return the response with status 201. If at any point the request fails and Exception is thrown with status 422.
-
-<img width="1019" alt="Example-code-POST-functionality-back-end" src="https://user-images.githubusercontent.com/101732786/176660581-598f7c98-d419-4852-bc66-b3abc0faf0cf.png">
-
-## Screenshot walk through of main pages
+## Screenshot Walkthrough
 
 Home Page:
 <img width="1417" alt="Home-page" src="https://user-images.githubusercontent.com/101732786/176668979-13dcf02d-0d6c-4908-8863-a2a41b22dea3.png">
@@ -196,10 +190,34 @@ Edit Footballer page:
 * Zoom
 * Slack
 
+## Featured Code:
+This Back-End code example is a post request to add a footballer to the database by a verified user. First we deserialize python to pass it into a Query Set; then check validity using .is_valid(); finally save the request with .save() and return the response with status 201. If at any point the request fails and Exception is thrown with status 422.
+
+<img width="1019" alt="Example-code-POST-functionality-back-end" src="https://user-images.githubusercontent.com/101732786/176660581-598f7c98-d419-4852-bc66-b3abc0faf0cf.png">
+
+These next three images are the featured code for authentiaction. The first image is the auth.js file which creates a payload from the token from local storage by using the split() method to get the middle component of the JWT. The userIsAuthenticated() function uses the payload to check that the user is still logged in - i.e. that the payload hasn't expired (set to 6 hours in this app). The userIsOwner() function uses the payload to check that owner of the item (footballer) is the one who is attempting to update the item's details.
+
+<img width="470" alt="footballer-database-featured-code" src="https://user-images.githubusercontent.com/101732786/177744050-23c341ca-4c9f-4121-897a-d07728b7bc8b.png">
+
+This useEffect uses the userIsAuthenticated() function to check if the user is authenticated, if not navigates back to the login page.
+
+<img width="619" alt="footballer-database-featured-code-2" src="https://user-images.githubusercontent.com/101732786/177744079-f95804eb-2484-40d9-8487-fe4a6af488e0.png">
+
+This useEffect uses the userIsOwner() function to check if the user is the owner, if not navigates back to the show page.
+
+<img width="617" alt="footballer-database-featured-code-3" src="https://user-images.githubusercontent.com/101732786/177744104-b434011e-aded-45e6-b0b5-9d95933bf96d.png">
+
 ## Key learnings:
 
 * Using Python and Django for the first time
-* Desigining relationships on Back-End
+* Designing relationships on Back-End
+
+## Wins:
+
+* First fully-functioning Full-Stack application done without assistance
+* Using Python and React simultaneously
+* Really proud of the planning - it allowed me to compartmentalise the project into phases so that I could stay focused on one part at a time
+* Creating fully-functioning one to many and many to many relationships
 
 ## Challenges:
 
@@ -209,7 +227,7 @@ Edit Footballer page:
 ## Bugs
 
 * Styling is not responsive
-* A bug I haven't been able to fix is with the carousel which displays players. The carousel displays the same player twice (the second underneath the original) unless the full row of designated spots is filled (There are 6 spots in my carousel design). As can be seen in the screen shots below - a test user was created (Marcus Rashford as he's a fave player of mine), Once this user has created 6 players the carousel operates correctly; however when there are less than 6 players available, the carousel displays each player twice, which is a terrible look. Still looking for a solution to this one, I look forward to solving it soon!
+* A bug I haven't been able to fix is with the carousel which displays players. The carousel displays the same player twice (the second underneath the original) unless the full row of designated spots is filled (There are 6 spots in my carousel design). As can be seen in the screenshots below - a test user was created (Marcus Rashford as he's a fave player of mine), Once this user has created 6 players the carousel operates correctly; however when there are less than 6 players available, the carousel displays each player twice, which is a terrible look. Still looking for a solution to this one, I look forward to solving it soon!
 
 <img width="1390" alt="bug-6-player-carousel" src="https://user-images.githubusercontent.com/101732786/176945229-8c6eac8c-ca59-4bf4-829b-4f87d6904a24.png">
 
@@ -221,4 +239,4 @@ Edit Footballer page:
 * Reviews page and functionality
 * Favourite Player page and functionality
 * User profile picture upload functionality
-* Make page Responsive for Smart Phones/Tablets etc.
+* Make page Responsive for Smart Phones/Tablets etc
