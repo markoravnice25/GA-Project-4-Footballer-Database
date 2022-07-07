@@ -191,9 +191,21 @@ Edit Footballer page:
 * Slack
 
 ## Featured Code:
-The code example is a post request to add a footballer to the database by a verified user. First we deserialize python to pass it into a Query Set; then check validity using .is_valid(); finally save the request with .save() and return the response with status 201. If at any point the request fails and Exception is thrown with status 422.
+This Back-End code example is a post request to add a footballer to the database by a verified user. First we deserialize python to pass it into a Query Set; then check validity using .is_valid(); finally save the request with .save() and return the response with status 201. If at any point the request fails and Exception is thrown with status 422.
 
 <img width="1019" alt="Example-code-POST-functionality-back-end" src="https://user-images.githubusercontent.com/101732786/176660581-598f7c98-d419-4852-bc66-b3abc0faf0cf.png">
+
+These next three images are the featured code for authentiaction. The first image is the auth.js file which creates a payload from the token from local storage by using the split() method to get the middle component of the JWT. The userIsAuthenticated() function uses the payload to check that the user is still logged in - i.e. that the payload hasn't expired (set to 6 hours in this app). The userIsOwner() function uses the payload to check that owner of the item (footballer) is the one who is attempting to update the item's details.
+
+<img width="470" alt="footballer-database-featured-code" src="https://user-images.githubusercontent.com/101732786/177744050-23c341ca-4c9f-4121-897a-d07728b7bc8b.png">
+
+This useEffect uses the userIsAuthenticated() function to check if the user is authenticated, if not navigates back to the login page.
+
+<img width="619" alt="footballer-database-featured-code-2" src="https://user-images.githubusercontent.com/101732786/177744079-f95804eb-2484-40d9-8487-fe4a6af488e0.png">
+
+This useEffect uses the userIsOwner() function to check if the user is the owner, if not navigates back to the show page.
+
+<img width="617" alt="footballer-database-featured-code-3" src="https://user-images.githubusercontent.com/101732786/177744104-b434011e-aded-45e6-b0b5-9d95933bf96d.png">
 
 ## Key learnings:
 
