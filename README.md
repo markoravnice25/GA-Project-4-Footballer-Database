@@ -222,8 +222,6 @@ This useEffect uses the userIsOwner() function to check if the user is the owner
 
 <img width="537" alt="PostgreSQL-competition" src="https://user-images.githubusercontent.com/101732786/178972457-9faad461-e7f6-4752-9655-5d5dfed50af6.png">
 
-* A big win pre-project was coming first in a class PostgreSQL competition. The task was to find Carmen Sandiego by navigating a series of questions in order via a large PostgreSQL database. My partner and I won in a competition of 9 pairs.
-
 ## Challenges:
 
 * Attempting to alter models on the Back-End after already having seeded data caused problems which took significant time to fix.
